@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const heroImages = [
         "assets/hero/hero-01.webp",
         "assets/hero/hero-02.webp",
-        "assets/hero/hero-03.webp"
+        "assets/hero/hero-03.webp",
+        "assets/hero/hero-04.webp",
+        "assets/hero/hero-05.webp"
     ];
 
     const projects = {
@@ -29,27 +31,26 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         },
 
-        "bournemouth-9-bed": {
-            title: "9-Bed House — Bournemouth",
-            byline: "Large property / listing visuals",
-            description:
-                "Interior, dining, bedroom and drone photography for a nine-bedroom property in Bournemouth, produced for marketing and listing use. Coverage focused on key shared spaces, room layout clarity and aerial context shots.",
-            hero: "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining-2400.webp",
-            layout: ["w2", "h2", "", "h2", "", "w2", "", "h2", "", "w2", "w2"],
-            gallery: [
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining3-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-kitchen2-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room4-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dronef-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining2-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-kitchen-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-droneb-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room2-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room3-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room4-2400.webp",
-                "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room-2400.webp"
-            ]
-        },
+        //  "bournemouth-9-bed": {
+        //      title: "9-Bed House — Bournemouth",
+        //      byline: "Large property / listing visuals",
+        //      description:
+        //          "Interior, dining, bedroom and drone photography for a nine-bedroom property in Bournemouth, produced for marketing and listing use. Coverage focused on key shared spaces, room layout clarity and aerial context shots.",
+        //      hero: "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining-2400.webp",
+        //      layout: ["w2", "h2", "", "h2", "", "w2", "", "h2", "", "w2", "w2"],
+        //      gallery: [
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining3-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-kitchen2-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room4-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dronef-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining2-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-kitchen-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-droneb-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room2-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room3-2400.webp",
+        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room-2400.webp"
+        //      ]
+        //},
 
         "boscombe-3-bed": {
             title: "3-Bed House — Boscombe",
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description:
                 "Interior and exterior photography for The Coach House in Bournemouth, produced for marketing and listing use. Coverage focused on the property's character, key living spaces, amenities, bedroom presentation and overall layout for strong listing imagery.",
             hero: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-2400.webp",
-            layout: ["w2", "h2", "", "h2", "", "w2", "w2", "", "h2", "", "w2", "w2"],
+            layout: ["w2", "h2", "", "h2", "", "w2", "w2", "", "h2", "", "w2", "", ""],
             gallery: [
                 "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-drive-2400.webp",
                 "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed6-2400.webp",
@@ -327,37 +328,79 @@ document.addEventListener("DOMContentLoaded", () => {
     // ============================================================
     // HERO CROSSFADE
     // ============================================================
+    // ============================================================
+    // HERO CROSSFADE
+    // ============================================================
     const slideA = qs(".hero-slide-a");
     const slideB = qs(".hero-slide-b");
+
+    function loadImage(src) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.src = src;
+
+            if (img.complete) {
+                resolve(src);
+                return;
+            }
+
+            if (typeof img.decode === "function") {
+                img.decode()
+                    .then(() => resolve(src))
+                    .catch(() => resolve(src));
+            } else {
+                img.onload = () => resolve(src);
+                img.onerror = reject;
+            }
+        });
+    }
 
     if (slideA && slideB && heroImages.length) {
         let index = 0;
         let showingA = true;
+        let isTransitioning = false;
 
         slideA.style.backgroundImage = `url("${heroImages[0]}")`;
         slideA.style.opacity = "1";
         slideB.style.opacity = "0";
 
+        heroImages.forEach(preloadImage);
+
         if (!prefersReducedMotion && heroImages.length > 1) {
-            slideA.style.transition = "opacity 1s ease";
-            slideB.style.transition = "opacity 1s ease";
+            slideA.style.transition = "opacity 1.2s ease";
+            slideB.style.transition = "opacity 1.2s ease";
 
-            setInterval(() => {
-                index = (index + 1) % heroImages.length;
-                const next = heroImages[index];
+            const changeSlide = async () => {
+                if (isTransitioning) return;
+                isTransitioning = true;
 
-                if (showingA) {
-                    slideB.style.backgroundImage = `url("${next}")`;
-                    slideB.style.opacity = "1";
-                    slideA.style.opacity = "0";
-                } else {
-                    slideA.style.backgroundImage = `url("${next}")`;
-                    slideA.style.opacity = "1";
-                    slideB.style.opacity = "0";
+                const nextIndex = (index + 1) % heroImages.length;
+                const nextSrc = heroImages[nextIndex];
+
+                const incoming = showingA ? slideB : slideA;
+                const outgoing = showingA ? slideA : slideB;
+
+                try {
+                    await loadImage(nextSrc);
+                    incoming.style.backgroundImage = `url("${nextSrc}")`;
+
+                    requestAnimationFrame(() => {
+                        incoming.style.opacity = "1";
+                        outgoing.style.opacity = "0";
+
+                        showingA = !showingA;
+                        index = nextIndex;
+
+                        setTimeout(() => {
+                            isTransitioning = false;
+                        }, 1200);
+                    });
+                } catch {
+                    isTransitioning = false;
                 }
+            };
 
-                showingA = !showingA;
-            }, 5200);
+            setInterval(changeSlide, 5200);
         }
     }
 

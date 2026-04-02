@@ -177,7 +177,11 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
+    will-change: opacity;
+    transform: translateZ(0);
 }
+
+
 
 .hero::after {
     content: "";
@@ -302,7 +306,7 @@ section[id] {
     max-width: calc((100% - (2 * var(--gap))) / 3);
     width: 100%;
     border: 1px solid var(--line);
-    background: #fff;
+    background: #f0eeee;
     overflow: hidden;
     text-align: left;
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
