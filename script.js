@@ -15,12 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "5-Bed House — Boscombe",
             byline: "Holiday let / property marketing",
             description:
-                "Interior and lifestyle-focused photography for a five-bedroom property in Boscombe, created for marketing and listing use. Coverage included key living spaces, kitchen, bathrooms, bedrooms and standout amenity details.",
+                "Photography for a five-bedroom Boscombe holiday let, created to highlight the property's layout, design details and guest amenities for stronger listing and marketing presentation.",
             hero: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-kitchen-2400.webp",
             layout: ["w2", "h2", "", "h2", "", "w2", "h2", "h2", "", "w2", "w2"],
             gallery: [
-
-
                 {
                     thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living-800.webp",
                     full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living-2400.webp"
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living2-800.webp",
                     full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living2-2400.webp"
                 },
-
                 {
                     thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-kitchen2-800.webp",
                     full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-kitchen2-2400.webp"
@@ -54,36 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-shower-800.webp",
                     full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-shower-2400.webp"
                 }
-
             ]
         },
-
-        //  "bournemouth-9-bed": {
-        //      title: "9-Bed House — Bournemouth",
-        //      byline: "Large property / listing visuals",
-        //      description:
-        //          "Interior, dining, bedroom and drone photography for a nine-bedroom property in Bournemouth, produced for marketing and listing use. Coverage focused on key shared spaces, room layout clarity and aerial context shots.",
-        //      hero: "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining-2400.webp",
-        //      layout: ["w2", "h2", "", "h2", "", "w2", "", "h2", "", "w2", "w2"],
-        //      gallery: [
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining3-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-kitchen2-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room4-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dronef-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-dining2-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-kitchen-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-droneb-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room2-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room3-2400.webp",
-        //          "assets/projects/commissioned/bournemouth-9-bed/full/bournemouth-9-bed-room-2400.webp"
-        //      ]
-        //},
 
         "boscombe-3-bed": {
             title: "3-Bed House — Boscombe",
             byline: "Modern family home / property marketing",
             description:
-                "Interior and drone photography for a bright three-bedroom house in Boscombe, produced for marketing and listing use. Coverage focused on the spacious open-plan kitchen and dining area, well-presented living spaces, styled bedrooms and aerial imagery to show the plot, garden setting and surrounding residential context.",
+                "Interior and drone photography for a bright three-bedroom home in Boscombe, focused on presenting the open-plan living spaces, natural light, bedroom styling and wider exterior setting for property marketing.",
             hero: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-kitchen-2400.webp",
             layout: ["w2", "h2", "h2", "w2", "", "", "h2", "", "h2", "", "w2", "w2"],
             gallery: [
@@ -138,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "The Coach House — Bournemouth",
             byline: "Character property / listing visuals",
             description:
-                "Interior and exterior photography for The Coach House in Bournemouth, produced for marketing and listing use. Coverage focused on the property's character, key living spaces, amenities, bedroom presentation and overall layout for strong listing imagery.",
+                "Interior and exterior photography for The Coach House in Bournemouth, created to showcase the property's character, layout, bedroom presentation and outdoor setting for strong listing imagery.",
             hero: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-2400.webp",
             layout: ["w2", "h2", "", "h2", "", "w2", "w2", "", "h2", "", "w2", "", ""],
             gallery: [
@@ -444,9 +419,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // ============================================================
     // HERO CROSSFADE
     // ============================================================
-    // ============================================================
-    // HERO CROSSFADE
-    // ============================================================
     const slideA = qs(".hero-slide-a");
     const slideB = qs(".hero-slide-b");
 
@@ -480,7 +452,9 @@ document.addEventListener("DOMContentLoaded", () => {
         slideA.style.opacity = "1";
         slideB.style.opacity = "0";
 
-        heroImages.forEach(preloadImage);
+        if (heroImages[1]) {
+            preloadImage(heroImages[1]);
+        }
 
         if (!prefersReducedMotion && heroImages.length > 1) {
             slideA.style.transition = "opacity 1.2s ease";
@@ -534,7 +508,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         lastFocusedElement = document.activeElement;
         overlayEl.hidden = false;
-
         overlayEl.scrollTop = 0;
         panelEl.scrollTop = 0;
 
@@ -639,124 +612,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ============================================================
-    // PROJECT MODAL
-    // ============================================================
-    const projectOverlay = qs("#projectOverlay");
-    const projectPanel = qs(".overlay-project");
-    const projectHero = qs("#projectModalHero");
-    const projectByline = qs("#projectModalByline");
-    const projectTitle = qs("#projectModalTitle");
-    const projectDesc = qs("#projectModalDescription");
-    const projectGallery = qs("#projectModalGallery");
-
-    function renderProjectGallery(project) {
-        if (!projectGallery) return;
-        projectGallery.innerHTML = "";
-
-        const fallbackPattern = ["", "h2", "", "w2", "", "h2", "w2", "", "", "h2"];
-        const pattern = project.layout && project.layout.length ? project.layout : fallbackPattern;
-
-        const fullImages = project.gallery.map(item => item.full);
-
-        project.gallery.forEach((item, index) => {
-            const shape = pattern[index % pattern.length];
-            const btn = document.createElement("button");
-            btn.type = "button";
-            btn.className = `masonry-item${shape ? ` ${shape}` : ""}`;
-
-            btn.innerHTML = `
-            <img
-                src="${item.thumb}"
-                data-full="${item.full}"
-                alt="${project.title} image ${index + 1}"
-                loading="lazy"
-                decoding="async"
-            >
-        `;
-
-            btn.addEventListener("click", () => openLightbox(fullImages, index, project.title));
-            projectGallery.appendChild(btn);
-        });
-    }
-
-    function openProject(projectId) {
-        const project = projects[projectId];
-        if (!project || !projectOverlay || !projectPanel) return;
-
-        if (projectHero) {
-            projectHero.src = project.hero || project.gallery[0]?.full || "";
-            projectHero.alt = project.title;
-        }
-
-        if (projectByline) projectByline.textContent = project.byline || "";
-        if (projectTitle) projectTitle.textContent = project.title || "Project";
-        if (projectDesc) projectDesc.textContent = project.description || "";
-
-        renderProjectGallery(project);
-
-        if (projectOverlay) projectOverlay.scrollTop = 0;
-        if (projectPanel) projectPanel.scrollTop = 0;
-
-
-        openDialog(projectOverlay, projectPanel);
-    }
-
-    function closeProject() {
-        closeDialog(projectOverlay);
-        if (projectHero) projectHero.src = "";
-        if (projectGallery) projectGallery.innerHTML = "";
-    }
-
-    qsa(".project-card[data-project-id]").forEach(card => {
-        card.addEventListener("click", () => openProject(card.dataset.projectId));
-    });
-
-    qsa("[data-close-project]").forEach(el => el.addEventListener("click", closeProject));
-
-    // ============================================================
-    // PORTFOLIO THUMB AUTO-WIRING
-    // ============================================================
-    const THUMB_SIZES = [800, 1600];
-    const FULL_SIZE = 2400;
-
-    function sizesForTile(btn) {
-        const isWide = btn.classList.contains("w2");
-        if (!isWide) {
-            return "(max-width: 520px) 50vw, (max-width: 700px) 50vw, (max-width: 1000px) 33vw, 25vw";
-        }
-        return "(max-width: 520px) 50vw, (max-width: 700px) 100vw, (max-width: 1000px) 66vw, 50vw";
-    }
-
-    function getPortfolioRoot(imgEl) {
-        const masonry = imgEl.closest(".masonry");
-        const gallery = masonry?.getAttribute("data-gallery") || "home1";
-        return `assets/portfolio/${gallery}`;
-    }
-
-    function thumbSrc(root, base, w) {
-        return `${root}/thumb/${base}-${w}.webp`;
-    }
-
-    function fullSrc(root, base) {
-        return `${root}/full/${base}-${FULL_SIZE}.webp`;
-    }
-
-    qsa("#portfolio img[data-img]").forEach(img => {
-        const base = img.getAttribute("data-img");
-        const btn = img.closest(".masonry-item");
-        if (!base || !btn) return;
-
-        const root = getPortfolioRoot(img);
-
-        img.src = thumbSrc(root, base, THUMB_SIZES[0]);
-        img.srcset = THUMB_SIZES.map(w => `${thumbSrc(root, base, w)} ${w}w`).join(", ");
-        img.sizes = sizesForTile(btn);
-        img.loading = "lazy";
-        img.decoding = "async";
-        img.dataset.full = fullSrc(root, base);
-    });
-
-    // ============================================================
     // LIGHTBOX
     // ============================================================
     const lightbox = qs("#lightbox");
@@ -786,7 +641,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function openLightbox(images, startIndex = 0, captionText = "") {
-        if (!lightbox || !lightboxStage) return;
+        if (!lightbox || !lightboxStage || !images.length) return;
         lightboxImages = images.slice();
         lightboxIndex = Math.max(0, Math.min(startIndex, lightboxImages.length - 1));
         lightboxCaptionText = captionText;
@@ -835,23 +690,289 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ============================================================
-    // PORTFOLIO CLICK WIRING
+    // PROJECT MODAL
     // ============================================================
+    const projectOverlay = qs("#projectOverlay");
+    const projectPanel = qs(".overlay-project");
+    const projectHero = qs("#projectModalHero");
+    const projectByline = qs("#projectModalByline");
+    const projectTitle = qs("#projectModalTitle");
+    const projectDesc = qs("#projectModalDescription");
+    const projectGallery = qs("#projectModalGallery");
+
+    function renderProjectGallery(project) {
+        if (!projectGallery) return;
+        projectGallery.innerHTML = "";
+
+        const fallbackPattern = ["", "h2", "", "w2", "", "h2", "w2", "", "", "h2"];
+        const pattern = project.layout && project.layout.length ? project.layout : fallbackPattern;
+        const fullImages = project.gallery.map(item => item.full);
+
+        project.gallery.forEach((item, index) => {
+            const shape = pattern[index % pattern.length];
+            const btn = document.createElement("button");
+            btn.type = "button";
+            btn.className = `masonry-item${shape ? ` ${shape}` : ""}`;
+
+            btn.innerHTML = `
+                <img
+                    src="${item.thumb}"
+                    data-full="${item.full}"
+                    alt="${project.title} image ${index + 1}"
+                    loading="lazy"
+                    decoding="async"
+                >
+            `;
+
+            btn.addEventListener("click", () => openLightbox(fullImages, index, project.title));
+            projectGallery.appendChild(btn);
+        });
+    }
+
+    function openProject(projectId) {
+        const project = projects[projectId];
+        if (!project || !projectOverlay || !projectPanel) return;
+
+        if (projectHero) {
+            projectHero.src = project.hero || project.gallery[0]?.full || "";
+            projectHero.alt = project.title;
+        }
+
+        if (projectByline) projectByline.textContent = project.byline || "";
+        if (projectTitle) projectTitle.textContent = project.title || "Project";
+        if (projectDesc) projectDesc.textContent = project.description || "";
+
+        renderProjectGallery(project);
+
+        if (projectOverlay) projectOverlay.scrollTop = 0;
+        if (projectPanel) projectPanel.scrollTop = 0;
+
+        openDialog(projectOverlay, projectPanel);
+    }
+
+    function closeProject() {
+        closeDialog(projectOverlay);
+        if (projectHero) projectHero.src = "";
+        if (projectGallery) projectGallery.innerHTML = "";
+    }
+
+    qsa(".project-card[data-project-id]").forEach(card => {
+        card.addEventListener("click", () => openProject(card.dataset.projectId));
+    });
+
+    qsa("[data-close-project]").forEach(el => el.addEventListener("click", closeProject));
+
+    // ============================================================
+    // PORTFOLIO
+    // ============================================================
+    const THUMB_SIZES = [800, 1600];
+    const FULL_SIZE = 2400;
     const portfolioGrid = qs("#portfolioGrid");
 
-    if (portfolioGrid) {
-        const items = qsa(".masonry-item", portfolioGrid);
-        const fullList = items
-            .map(btn => qs("img", btn))
-            .map(img => img?.dataset.full || img?.src)
-            .filter(Boolean);
+    function sizesForTile(btn) {
+        const isWide = btn.classList.contains("w2");
+        if (!isWide) {
+            return "(max-width: 520px) 50vw, (max-width: 700px) 50vw, (max-width: 1000px) 33vw, 25vw";
+        }
+        return "(max-width: 520px) 50vw, (max-width: 700px) 100vw, (max-width: 1000px) 66vw, 50vw";
+    }
 
-        items.forEach((btn, index) => {
+    function getPortfolioRoot(imgEl) {
+        const masonry = imgEl.closest(".masonry");
+        const gallery = masonry?.getAttribute("data-gallery") || "home1";
+        return `assets/portfolio/${gallery}`;
+    }
+
+    function thumbSrc(root, base, w) {
+        return `${root}/thumb/${base}-${w}.webp`;
+    }
+
+    function fullSrc(root, base) {
+        return `${root}/full/${base}-${FULL_SIZE}.webp`;
+    }
+
+    function validateImage(src) {
+        return new Promise(resolve => {
+            const testImg = new Image();
+            testImg.onload = () => resolve(true);
+            testImg.onerror = () => resolve(false);
+            testImg.src = src;
+        });
+    }
+
+    function getVisiblePortfolioItems() {
+        if (!portfolioGrid) return [];
+        return qsa(".masonry-item:not(.is-hidden)", portfolioGrid);
+    }
+
+    function bindPortfolioLightbox() {
+        const visibleItems = getVisiblePortfolioItems();
+
+        visibleItems.forEach(btn => {
+            if (btn.dataset.lightboxBound === "true") return;
+
+            btn.dataset.lightboxBound = "true";
+
             btn.addEventListener("click", () => {
-                openLightbox(fullList, index, "Portfolio");
+                const currentVisibleItems = getVisiblePortfolioItems();
+                const fullList = currentVisibleItems
+                    .map(item => qs("img", item))
+                    .map(img => img?.dataset.full || img?.src)
+                    .filter(Boolean);
+
+                const clickedIndex = currentVisibleItems.indexOf(btn);
+                if (clickedIndex > -1) {
+                    openLightbox(fullList, clickedIndex, "Portfolio");
+                }
             });
         });
     }
+
+    async function setupPortfolioImages() {
+        const portfolioImages = qsa("#portfolio img[data-img]");
+        const validTiles = [];
+
+        for (const img of portfolioImages) {
+            const base = img.getAttribute("data-img");
+            const btn = img.closest(".masonry-item");
+            if (!base || !btn) continue;
+
+            const root = getPortfolioRoot(img);
+            const smallThumb = thumbSrc(root, base, THUMB_SIZES[0]);
+            const fullImage = fullSrc(root, base);
+
+            const exists = await validateImage(smallThumb);
+
+            if (!exists) {
+                btn.remove();
+                continue;
+            }
+
+            img.src = smallThumb;
+            img.srcset = THUMB_SIZES.map(w => `${thumbSrc(root, base, w)} ${w}w`).join(", ");
+            img.sizes = sizesForTile(btn);
+            img.loading = "lazy";
+            img.decoding = "async";
+            img.dataset.full = fullImage;
+
+            validTiles.push(btn);
+        }
+
+        return validTiles;
+    }
+
+    function setupPortfolioLoadMore(validItems) {
+        const loadMoreBtn = qs("#portfolioLoadMore");
+        if (!loadMoreBtn || !validItems.length) return;
+
+        const isMobile = window.innerWidth <= 720;
+        const initialCount = isMobile ? 8 : 12;
+        const stepCount = isMobile ? 8 : 12;
+
+        let visibleCount = initialCount;
+
+        function updateVisibility() {
+            validItems.forEach((item, index) => {
+                item.classList.toggle("is-hidden", index >= visibleCount);
+            });
+
+            loadMoreBtn.hidden = visibleCount >= validItems.length;
+        }
+
+        updateVisibility();
+
+        loadMoreBtn.addEventListener("click", () => {
+            visibleCount += stepCount;
+            updateVisibility();
+            bindPortfolioLightbox();
+        });
+    }
+
+    async function initPortfolio() {
+        const loadMoreBtn = qs("#portfolioLoadMore");
+        const validItems = await setupPortfolioImages();
+
+        if (!validItems.length) {
+            if (loadMoreBtn) loadMoreBtn.hidden = true;
+            return;
+        }
+
+        setupPortfolioLoadMore(validItems);
+        bindPortfolioLightbox();
+    }
+
+    initPortfolio();
+
+    // ============================================================
+    // REVIEWS CAROUSEL
+    // ============================================================
+    const reviewsCarousel = qs("#reviewsCarousel");
+    const reviewsPrev = qs("#reviewsPrev");
+    const reviewsNext = qs("#reviewsNext");
+
+    if (reviewsCarousel && reviewsPrev && reviewsNext) {
+        const getScrollAmount = () => {
+            const firstCard = qs(".review-slide", reviewsCarousel);
+            if (!firstCard) return 320;
+
+            const styles = window.getComputedStyle(reviewsCarousel);
+            const gap = parseFloat(styles.columnGap || styles.gap || 12);
+            return firstCard.offsetWidth + gap;
+        };
+
+        reviewsPrev.addEventListener("click", () => {
+            reviewsCarousel.scrollBy({
+                left: -getScrollAmount(),
+                behavior: prefersReducedMotion ? "auto" : "smooth"
+            });
+        });
+
+        reviewsNext.addEventListener("click", () => {
+            reviewsCarousel.scrollBy({
+                left: getScrollAmount(),
+                behavior: prefersReducedMotion ? "auto" : "smooth"
+            });
+        });
+    }
+
+    // ============================================================
+    // REVIEW READ MORE / HIDE
+    // ============================================================
+    function setupReviewToggles() {
+        qsa(".review-slide").forEach(card => {
+            const text = qs(".review-slide-text", card);
+            const button = qs(".review-toggle", card);
+            if (!text || !button) return;
+
+            text.classList.add("is-collapsed");
+            button.textContent = "Read more";
+            button.hidden = true;
+
+            requestAnimationFrame(() => {
+                const lineHeight = parseFloat(getComputedStyle(text).lineHeight);
+                const collapsedMaxHeight = lineHeight * 4;
+                const needsToggle = text.scrollHeight > collapsedMaxHeight + 4;
+
+                if (needsToggle) {
+                    button.hidden = false;
+                }
+            });
+
+            button.addEventListener("click", () => {
+                const isCollapsed = text.classList.contains("is-collapsed");
+
+                if (isCollapsed) {
+                    text.classList.remove("is-collapsed");
+                    button.textContent = "Hide";
+                } else {
+                    text.classList.add("is-collapsed");
+                    button.textContent = "Read more";
+                }
+            });
+        });
+    }
+
+    setupReviewToggles();
 
     // ============================================================
     // BACKDROP / CLICK-OUTSIDE CLOSE SAFETY
