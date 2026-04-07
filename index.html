@@ -14,7 +14,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/hero/hero-01.webp" />
 
-    <link rel="icon" href="assets/logo/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -244,7 +248,6 @@
     </section>
 
     <main id="main">
-        <!-- Projects -->
         <section id="projects" class="section shell" aria-labelledby="projectsTitle">
             <h2 id="projectsTitle" class="section-title">Select Projects</h2>
 
@@ -261,22 +264,6 @@
                             online presentation.</p>
                     </div>
                 </button>
-
-                <!-- Shak's pleace hidden for now
-
-                <button class="project-card" type="button" data-project-id="bournemouth-9-bed"
-                    aria-label="Open project: 9-Bed House, Bournemouth">
-                    <div class="project-card-media">
-                        <img src="assets/projects/commissioned/bournemouth-9-bed/thumb/bournemouth-9-bed-800.webp"
-                            alt="9-bed house in Bournemouth" loading="lazy" decoding="async" />
-                    </div>
-                    <div class="project-card-meta">
-                        <p class="project-card-title">9-Bed House — Bournemouth</p>
-                        <p class="project-card-subtitle">Large property / listing visuals</p>
-                    </div>
-                </button>
-
-                -->
 
                 <button class="project-card" type="button" data-project-id="bournemouth-coach"
                     aria-label="Open project: The Coach House, Bournemouth">
@@ -306,7 +293,6 @@
             </div>
         </section>
 
-        <!-- Portfolio -->
         <section id="portfolio" class="section shell" aria-labelledby="portfolioTitle">
             <div class="section-head">
                 <h2 id="portfolioTitle" class="section-title">Portfolio</h2>
@@ -419,7 +405,6 @@
             </div>
         </section>
 
-        <!-- Pricing Guide -->
         <section id="pricing" class="section shell" aria-labelledby="pricingTitle">
             <div class="section-head">
                 <h2 id="pricingTitle" class="section-title">Pricing</h2>
@@ -518,7 +503,6 @@
             </div>
         </section>
 
-        <!-- Contact -->
         <section id="contact" class="section shell" aria-labelledby="contactTitle">
             <div class="section-head">
                 <h2 id="contactTitle" class="section-title">Request a Quote</h2>
@@ -532,19 +516,69 @@
                     <h3 class="contact-static-title">Request a quote</h3>
 
                     <p class="contact-static-text">
-                        For property, hospitality and commercial photography enquiries, please use the contact form or
-                        email:
+                        Tell us about your property or project and we’ll come back with pricing and availability.
                     </p>
 
-                    <p class="contact-static-email">
+                    <form class="contact-form" action="https://formspree.io/f/mreojdnp" method="POST">
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="phone">Phone</label>
+                                <input id="phone" name="phone" type="tel">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="location">Property address or area</label>
+                                <input id="location" name="location" type="text">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="service">Services required</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option>Photography</option>
+                                    <option>Photography + Drone</option>
+                                    <option>Photography + Floor Plan</option>
+                                    <option>Drone Only</option>
+                                    <option>Video</option>
+                                    <option>360 Tour</option>
+                                    <option>Floor Plans</option>
+                                    <option>Other (Let us know what you need below)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="timeframe">Preferred timeframe</label>
+                                <input id="timeframe" name="timeframe" type="text">
+                            </div>
+
+                            <div class="form-field form-field-full">
+                                <label for="message">Project details</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                        </div>
+
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field">
+
+                        <div class="form-actions">
+                            <button class="btn" type="submit">Send enquiry</button>
+                        </div>
+                    </form>
+
+                    <p class="contact-static-text contact-static-email-fallback">
+                        Prefer email?
                         <a href="mailto:mw.photography.enquire@gmail.com?subject=Photography%20Enquiry">
                             mw.photography.enquire@gmail.com
                         </a>
-                    </p>
-
-                    <p class="contact-static-text">
-                        Let us know the property type, location, services required and preferred timeframe, and we’ll
-                        come back with the best package options.
                     </p>
 
                     <div class="contact-static-details">
@@ -581,7 +615,6 @@
         </div>
     </footer>
 
-    <!-- Project Modal -->
     <div class="overlay" id="projectOverlay" hidden>
         <div class="overlay-backdrop" data-close-project></div>
         <article class="overlay-panel overlay-project" role="dialog" aria-modal="true"
@@ -603,7 +636,6 @@
         </article>
     </div>
 
-    <!-- About Modal -->
     <div class="overlay" id="aboutOverlay" hidden>
         <div class="overlay-backdrop" data-close-about></div>
         <article class="overlay-panel overlay-about" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle"
@@ -678,7 +710,6 @@
         </article>
     </div>
 
-    <!-- Pricing Modal -->
     <div class="overlay" id="pricingOverlay" hidden>
         <div class="overlay-backdrop" data-close-pricing></div>
         <article class="overlay-panel overlay-pricing" role="dialog" aria-modal="true"
@@ -714,19 +745,24 @@
         </article>
     </div>
 
-    <!-- Lightbox -->
     <div class="lightbox" id="lightbox" hidden>
         <div class="lightbox-backdrop" data-close-lightbox></div>
 
         <div class="lightbox-stage" role="dialog" aria-modal="true" aria-label="Image viewer" tabindex="-1">
             <button class="lightbox-close" type="button" aria-label="Close image viewer"
                 data-close-lightbox><span>×</span></button>
+
+            <button class="lightbox-tapzone lightbox-tapzone-left" type="button" aria-label="Previous image"></button>
+            <button class="lightbox-tapzone lightbox-tapzone-right" type="button" aria-label="Next image"></button>
+
             <button class="lightbox-prev" type="button" aria-label="Previous image"
                 id="lightboxPrev"><span>‹</span></button>
+
             <figure class="lightbox-figure">
                 <img id="lightboxImage" class="lightbox-image" alt="" />
                 <figcaption id="lightboxCaption" class="lightbox-caption"></figcaption>
             </figure>
+
             <button class="lightbox-next" type="button" aria-label="Next image"
                 id="lightboxNext"><span>›</span></button>
         </div>

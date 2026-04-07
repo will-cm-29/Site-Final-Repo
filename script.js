@@ -620,6 +620,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const lightboxCaption = qs("#lightboxCaption");
     const lightboxPrev = qs("#lightboxPrev");
     const lightboxNext = qs("#lightboxNext");
+    const lightboxTapLeft = qs(".lightbox-tapzone-left");
+    const lightboxTapRight = qs(".lightbox-tapzone-right");
 
     let lightboxImages = [];
     let lightboxIndex = 0;
@@ -671,6 +673,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (lightboxPrev) lightboxPrev.addEventListener("click", prevLightbox);
     if (lightboxNext) lightboxNext.addEventListener("click", nextLightbox);
+    if (lightboxTapLeft) lightboxTapLeft.addEventListener("click", prevLightbox);
+    if (lightboxTapRight) lightboxTapRight.addEventListener("click", nextLightbox);
 
     qsa("[data-close-lightbox]").forEach(el => {
         el.addEventListener("click", closeLightbox);
@@ -687,6 +691,40 @@ document.addEventListener("DOMContentLoaded", () => {
                 closeLightbox();
             }
         });
+    }
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let touchStartY = 0;
+    let touchEndY = 0;
+
+    function handleLightboxSwipe() {
+        const dx = touchEndX - touchStartX;
+        const dy = touchEndY - touchStartY;
+
+        if (Math.abs(dx) < 40) return;
+        if (Math.abs(dy) > Math.abs(dx) * 0.8) return;
+
+        if (dx < 0) {
+            nextLightbox();
+        } else {
+            prevLightbox();
+        }
+    }
+
+    if (lightboxStage) {
+        lightboxStage.addEventListener("touchstart", (e) => {
+            const touch = e.changedTouches[0];
+            touchStartX = touch.clientX;
+            touchStartY = touch.clientY;
+        }, { passive: true });
+
+        lightboxStage.addEventListener("touchend", (e) => {
+            const touch = e.changedTouches[0];
+            touchEndX = touch.clientX;
+            touchEndY = touch.clientY;
+            handleLightboxSwipe();
+        }, { passive: true });
     }
 
     // ============================================================
@@ -719,7 +757,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     src="${item.thumb}"
                     data-full="${item.full}"
                     alt="${project.title} image ${index + 1}"
-                    loading="lazy"
+                    loading="${index < 4 ? "eager" : "lazy"}"
                     decoding="async"
                 >
             `;
@@ -774,7 +812,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!isWide) {
             return "(max-width: 520px) 50vw, (max-width: 700px) 50vw, (max-width: 1000px) 33vw, 25vw";
         }
-        return "(max-width: 520px) 50vw, (max-width: 700px) 100vw, (max-width: 1000px) 66vw, 50vw";
+        return "(max-width: 520px) 100vw, (max-width: 700px) 100vw, (max-width: 1000px) 66vw, 50vw";
     }
 
     function getPortfolioRoot(imgEl) {
