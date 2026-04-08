@@ -914,13 +914,28 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.classList.toggle("is-hidden", index >= visibleCount);
             });
 
-            loadMoreBtn.hidden = visibleCount >= validItems.length;
+            if (visibleCount >= validItems.length) {
+                loadMoreBtn.hidden = false;
+                loadMoreBtn.textContent = "Hide all";
+            } else {
+                loadMoreBtn.hidden = false;
+                loadMoreBtn.textContent = "Load more work";
+            }
         }
 
         updateVisibility();
 
         loadMoreBtn.addEventListener("click", () => {
-            visibleCount += stepCount;
+            if (visibleCount < validItems.length) {
+                visibleCount = Math.min(visibleCount + stepCount, validItems.length);
+            } else {
+                visibleCount = initialCount;
+                portfolioGrid?.scrollIntoView({
+                    behavior: prefersReducedMotion ? "auto" : "smooth",
+                    block: "start"
+                });
+            }
+
             updateVisibility();
             bindPortfolioLightbox();
         });
