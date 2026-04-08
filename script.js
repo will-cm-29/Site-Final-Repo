@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // ============================================================
-    // DATA
-    // ============================================================
     const heroImages = [
         "assets/hero/hero-01.webp",
         "assets/hero/hero-02.webp",
@@ -339,9 +336,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // ============================================================
-    // UTILITIES
-    // ============================================================
     const qs = (sel, root = document) => root?.querySelector(sel);
     const qsa = (sel, root = document) => Array.from(root?.querySelectorAll(sel) || []);
 
@@ -387,9 +381,6 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = src;
     }
 
-    // ============================================================
-    // MOBILE NAV
-    // ============================================================
     const navToggle = qs("#navToggle");
     const mobileNav = qs("#mobileNav");
 
@@ -416,9 +407,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ============================================================
-    // HERO CROSSFADE
-    // ============================================================
     const slideA = qs(".hero-slide-a");
     const slideB = qs(".hero-slide-b");
 
@@ -433,9 +421,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             if (typeof img.decode === "function") {
-                img.decode()
-                    .then(() => resolve(src))
-                    .catch(() => resolve(src));
+                img.decode().then(() => resolve(src)).catch(() => resolve(src));
             } else {
                 img.onload = () => resolve(src);
                 img.onerror = reject;
@@ -452,9 +438,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slideA.style.opacity = "1";
         slideB.style.opacity = "0";
 
-        if (heroImages[1]) {
-            preloadImage(heroImages[1]);
-        }
+        if (heroImages[1]) preloadImage(heroImages[1]);
 
         if (!prefersReducedMotion && heroImages.length > 1) {
             slideA.style.transition = "opacity 1.2s ease";
@@ -494,15 +478,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // ============================================================
-    // FOOTER YEAR
-    // ============================================================
     const yearEl = qs("#year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // ============================================================
-    // MODAL HELPERS
-    // ============================================================
     function openDialog(overlayEl, panelEl) {
         if (!overlayEl || !panelEl) return;
 
@@ -531,9 +509,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // ============================================================
-    // ABOUT MODAL
-    // ============================================================
     const aboutOverlay = qs("#aboutOverlay");
     const aboutPanel = qs(".overlay-about");
     const aboutOpenBtn = qs("#aboutOpen");
@@ -544,9 +519,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (aboutOpenBtn) aboutOpenBtn.addEventListener("click", openAbout);
     qsa("[data-close-about]").forEach(el => el.addEventListener("click", closeAbout));
 
-    // ============================================================
-    // PRICING MODAL
-    // ============================================================
     const pricingOverlay = qs("#pricingOverlay");
     const pricingPanel = qs(".overlay-pricing");
     const pricingTitle = qs("#pricingModalTitle");
@@ -611,9 +583,6 @@ document.addEventListener("DOMContentLoaded", () => {
         el.addEventListener("click", closePricing);
     });
 
-    // ============================================================
-    // LIGHTBOX
-    // ============================================================
     const lightbox = qs("#lightbox");
     const lightboxStage = qs(".lightbox-stage");
     const lightboxImg = qs("#lightboxImage");
@@ -727,9 +696,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, { passive: true });
     }
 
-    // ============================================================
-    // PROJECT MODAL
-    // ============================================================
     const projectOverlay = qs("#projectOverlay");
     const projectPanel = qs(".overlay-project");
     const projectHero = qs("#projectModalHero");
@@ -800,9 +766,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     qsa("[data-close-project]").forEach(el => el.addEventListener("click", closeProject));
 
-    // ============================================================
-    // PORTFOLIO
-    // ============================================================
     const THUMB_SIZES = [800, 1600];
     const FULL_SIZE = 2400;
     const portfolioGrid = qs("#portfolioGrid");
@@ -868,35 +831,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function setupPortfolioImages() {
         const portfolioImages = qsa("#portfolio img[data-img]");
-        const validTiles = [];
 
-        for (const img of portfolioImages) {
-            const base = img.getAttribute("data-img");
-            const btn = img.closest(".masonry-item");
-            if (!base || !btn) continue;
+        const results = await Promise.all(
+            portfolioImages.map(async (img) => {
+                const base = img.getAttribute("data-img");
+                const btn = img.closest(".masonry-item");
+                if (!base || !btn) return null;
 
-            const root = getPortfolioRoot(img);
-            const smallThumb = thumbSrc(root, base, THUMB_SIZES[0]);
-            const fullImage = fullSrc(root, base);
+                const root = getPortfolioRoot(img);
+                const smallThumb = thumbSrc(root, base, THUMB_SIZES[0]);
+                const fullImage = fullSrc(root, base);
 
-            const exists = await validateImage(smallThumb);
+                const exists = await validateImage(smallThumb);
 
-            if (!exists) {
-                btn.remove();
-                continue;
-            }
+                if (!exists) {
+                    btn.remove();
+                    return null;
+                }
 
-            img.src = smallThumb;
-            img.srcset = THUMB_SIZES.map(w => `${thumbSrc(root, base, w)} ${w}w`).join(", ");
-            img.sizes = sizesForTile(btn);
-            img.loading = "lazy";
-            img.decoding = "async";
-            img.dataset.full = fullImage;
+                img.src = smallThumb;
+                img.srcset = THUMB_SIZES.map(w => `${thumbSrc(root, base, w)} ${w}w`).join(", ");
+                img.sizes = sizesForTile(btn);
+                img.loading = "lazy";
+                img.decoding = "async";
+                img.dataset.full = fullImage;
 
-            validTiles.push(btn);
-        }
+                return btn;
+            })
+        );
 
-        return validTiles;
+        return results.filter(Boolean);
     }
 
     function setupPortfolioLoadMore(validItems) {
@@ -956,9 +920,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initPortfolio();
 
-    // ============================================================
-    // REVIEWS CAROUSEL
-    // ============================================================
     const reviewsCarousel = qs("#reviewsCarousel");
     const reviewsPrev = qs("#reviewsPrev");
     const reviewsNext = qs("#reviewsNext");
@@ -988,9 +949,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ============================================================
-    // REVIEW READ MORE / HIDE
-    // ============================================================
     function setupReviewToggles() {
         qsa(".review-slide").forEach(card => {
             const text = qs(".review-slide-text", card);
@@ -1027,9 +985,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setupReviewToggles();
 
-    // ============================================================
-    // BACKDROP / CLICK-OUTSIDE CLOSE SAFETY
-    // ============================================================
     projectOverlay?.addEventListener("click", (e) => {
         if (e.target === projectOverlay || e.target.classList.contains("overlay-backdrop")) {
             closeProject();
@@ -1048,9 +1003,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // ============================================================
-    // KEYBOARD HANDLING
-    // ============================================================
     document.addEventListener("keydown", (e) => {
         if (lightbox && !lightbox.hidden) {
             trapFocus(lightboxStage, e);

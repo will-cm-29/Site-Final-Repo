@@ -716,16 +716,12 @@ section[id] {
     color: var(--muted);
 }
 
-
-
 /* show more styles */
 .portfolio-load-more-wrap {
     display: flex;
     justify-content: center;
     margin-top: 18px;
 }
-
-
 
 .masonry-item.is-hidden {
     display: none;
@@ -1255,7 +1251,7 @@ section[id] {
     right: 0;
 }
 
-/* Pricing guide interactive items */
+/* Pricing modal */
 .pricing-trigger {
     appearance: none;
     text-align: left;
@@ -1272,7 +1268,6 @@ section[id] {
     outline-offset: 2px;
 }
 
-/* Pricing modal */
 .pricing-clean {
     padding: 34px 34px 30px;
     max-width: 980px;
