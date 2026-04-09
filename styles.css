@@ -615,6 +615,11 @@ section[id] {
     background: #f7f7f7;
 }
 
+button[hidden],
+[hidden] {
+    display: none !important;
+}
+
 /* Pricing guide */
 .pricing-guide {
     display: grid;
@@ -716,10 +721,12 @@ section[id] {
     color: var(--muted);
 }
 
-/* show more styles */
+/* Portfolio controls */
 .portfolio-load-more-wrap {
     display: flex;
     justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
     margin-top: 18px;
 }
 

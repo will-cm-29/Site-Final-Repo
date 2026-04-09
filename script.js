@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+
     const heroImages = [
         "assets/hero/hero-01.webp",
         "assets/hero/hero-02.webp",
@@ -199,14 +204,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Photography",
             intro: "Interior and exterior photography for listings, websites and marketing materials.",
             packages: [
-                { tier: "Small Property", price: "From £145", detail: "10–15 edited images" },
-                { tier: "Standard Property", price: "From £195", detail: "15–20 edited images" },
-                { tier: "Large Property", price: "From £245", detail: "20–30 edited images" }
+                { tier: "Small Property", price: "From £160", detail: "10–15 edited images" },
+                { tier: "Standard Property", price: "From £215", detail: "15–20 edited images" },
+                { tier: "Large Property", price: "From £270", detail: "20–25 edited images" }
             ],
             delivery: [
                 "Standard delivery: 72 hours",
-                "Next working day priority: +£25 to +£40",
-                "Same day, subject to availability: +£50 to +£90",
+                "Next working day priority: +£25 to +£45",
+                "Same day, subject to availability: +£50 to +£100",
                 "Weekend / urgent booking: +20% to +30%"
             ],
             notes: [
@@ -219,14 +224,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Photography + Drone",
             intro: "Photography with aerial coverage to show plot, setting and exterior context.",
             packages: [
-                { tier: "Essential", price: "From £235", detail: "10–15 photos + 3–5 drone images" },
-                { tier: "Plus", price: "From £285", detail: "15–20 photos + 5–8 drone images" },
-                { tier: "Premium", price: "From £345", detail: "20–30 photos + 8–12 drone images" }
+                { tier: "Essential", price: "From £260", detail: "10–15 photos + 3–5 drone images" },
+                { tier: "Plus", price: "From £315", detail: "15–20 photos + 5–8 drone images" },
+                { tier: "Premium", price: "From £380", detail: "20–25 photos + 8–12 drone images" }
             ],
             delivery: [
                 "Standard delivery: 72 hours",
-                "Next working day priority: +£25 to +£40",
-                "Same day, subject to availability: +£50 to +£90",
+                "Next working day priority: +£25 to +£45",
+                "Same day, subject to availability: +£50 to +£100",
                 "Weekend / urgent booking: +20% to +30%"
             ],
             notes: [
@@ -239,14 +244,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Photography + Floor Plan",
             intro: "Photography combined with floor plan delivery for sales, lettings and holiday-let marketing.",
             packages: [
-                { tier: "Small", price: "From £175", detail: "10–15 photos + floor plan" },
-                { tier: "Standard", price: "From £215", detail: "15–20 photos + floor plan" },
-                { tier: "Large", price: "From £255", detail: "20–30 photos + floor plan" }
+                { tier: "Small", price: "From £190", detail: "10–15 photos + floor plan" },
+                { tier: "Standard", price: "From £235", detail: "15–20 photos + floor plan" },
+                { tier: "Large", price: "From £280", detail: "20–25 photos + floor plan" }
             ],
             delivery: [
                 "Standard delivery: 72 hours",
-                "Next working day priority: +£25 to +£40",
-                "Same day, subject to availability: +£50 to +£90",
+                "Next working day priority: +£25 to +£45",
+                "Same day, subject to availability: +£50 to +£100",
                 "Weekend / urgent booking: +20% to +30%"
             ],
             notes: [
@@ -259,14 +264,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Drone Only",
             intro: "Aerial stills and optional short clip coverage for exterior presentation and site overview.",
             packages: [
-                { tier: "Basic", price: "From £95", detail: "3–5 edited drone shots" },
-                { tier: "Standard", price: "From £145", detail: "5–10 edited drone shots" },
-                { tier: "Enhanced", price: "From £195", detail: "10+ drone shots or stills + short clip" }
+                { tier: "Basic", price: "From £105", detail: "3–5 edited drone shots" },
+                { tier: "Standard", price: "From £160", detail: "5–10 edited drone shots" },
+                { tier: "Enhanced", price: "From £215", detail: "10+ drone shots or stills + short clip" }
             ],
             delivery: [
                 "Standard delivery: 72 hours",
-                "Next working day priority: +£25 to +£40",
-                "Same day, subject to availability: +£50 to +£90",
+                "Next working day priority: +£25 to +£45",
+                "Same day, subject to availability: +£50 to +£100",
                 "Weekend / urgent booking: +20% to +30%"
             ],
             notes: [
@@ -279,14 +284,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Video",
             intro: "Short-form property and marketing video tailored to the space and required output.",
             packages: [
-                { tier: "Highlight Reel", price: "From £145", detail: "30–45 sec" },
-                { tier: "Walkthrough Video", price: "From £195", detail: "45–60 sec" },
-                { tier: "Feature Video", price: "From £295", detail: "60–90 sec, more polished edit" }
+                { tier: "Highlight Reel", price: "From £160", detail: "30–45 sec" },
+                { tier: "Walkthrough Video", price: "From £215", detail: "45–60 sec" },
+                { tier: "Feature Video", price: "From £325", detail: "60–90 sec, more polished edit" }
             ],
             delivery: [
                 "Standard delivery: 72 hours",
-                "Next working day priority: +£25 to +£40",
-                "Same day, subject to availability: +£50 to +£90",
+                "Next working day priority: +£25 to +£45",
+                "Same day, subject to availability: +£50 to +£100",
                 "Weekend / urgent booking: +20% to +30%"
             ],
             notes: [
@@ -299,14 +304,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "360 Tour",
             intro: "Interactive 360 tour options for stronger online presentation and walkthrough-style viewing.",
             packages: [
-                { tier: "Basic 360 Tour", price: "From £85", detail: "Entry-level 360 capture" },
-                { tier: "Standard Hosted Tour", price: "From £115", detail: "Hosted tour setup included" },
-                { tier: "Larger / Enhanced Tour", price: "From £145+", detail: "Larger property or enhanced tour setup" }
+                { tier: "Basic 360 Tour", price: "From £95", detail: "Entry-level 360 capture" },
+                { tier: "Standard Hosted Tour", price: "From £125", detail: "Hosted tour setup included" },
+                { tier: "Larger / Enhanced Tour", price: "From £160+", detail: "Larger property or enhanced tour setup" }
             ],
             delivery: [
                 "Standard delivery: 72 hours",
-                "Next working day priority: +£25 to +£40",
-                "Same day, subject to availability: +£50 to +£90",
+                "Next working day priority: +£25 to +£45",
+                "Same day, subject to availability: +£50 to +£100",
                 "Weekend / urgent booking: +20% to +30%"
             ],
             notes: [
@@ -319,14 +324,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Floor Plans",
             intro: "Clear floor plan delivery for listings and supporting marketing packs.",
             packages: [
-                { tier: "Small / Simple", price: "From £35", detail: "Smaller or simpler property layout" },
-                { tier: "Standard", price: "From £45", detail: "Typical residential property layout" },
-                { tier: "Large / Complex", price: "From £55", detail: "Larger or more complex floor plan" }
+                { tier: "Small / Simple", price: "From £40", detail: "Smaller or simpler property layout" },
+                { tier: "Standard", price: "From £50", detail: "Typical residential property layout" },
+                { tier: "Large / Complex", price: "From £60", detail: "Larger or more complex floor plan" }
             ],
             delivery: [
                 "Standard delivery: 72 hours",
-                "Next working day priority: +£25 to +£40",
-                "Same day, subject to availability: +£50 to +£90",
+                "Next working day priority: +£25 to +£45",
+                "Same day, subject to availability: +£50 to +£100",
                 "Weekend / urgent booking: +20% to +30%"
             ],
             notes: [
@@ -807,14 +812,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function bindPortfolioLightbox() {
-        const visibleItems = getVisiblePortfolioItems();
+        const allItems = qsa(".masonry-item", portfolioGrid);
 
-        visibleItems.forEach(btn => {
+        allItems.forEach(btn => {
             if (btn.dataset.lightboxBound === "true") return;
 
             btn.dataset.lightboxBound = "true";
 
             btn.addEventListener("click", () => {
+                if (btn.classList.contains("is-hidden")) return;
+
                 const currentVisibleItems = getVisiblePortfolioItems();
                 const fullList = currentVisibleItems
                     .map(item => qs("img", item))
@@ -865,7 +872,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function setupPortfolioLoadMore(validItems) {
         const loadMoreBtn = qs("#portfolioLoadMore");
-        if (!loadMoreBtn || !validItems.length) return;
+        const hideAllBtn = qs("#portfolioHideAll");
+        if (!loadMoreBtn || !hideAllBtn || !validItems.length) return;
 
         const isMobile = window.innerWidth <= 720;
         const initialCount = isMobile ? 8 : 12;
@@ -878,39 +886,45 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.classList.toggle("is-hidden", index >= visibleCount);
             });
 
-            if (visibleCount >= validItems.length) {
-                loadMoreBtn.hidden = false;
-                loadMoreBtn.textContent = "Hide all";
-            } else {
-                loadMoreBtn.hidden = false;
-                loadMoreBtn.textContent = "Load more work";
-            }
+            const allVisible = visibleCount >= validItems.length;
+            const needsExpansion = validItems.length > initialCount;
+
+            loadMoreBtn.textContent = "Show more";
+            loadMoreBtn.hidden = !needsExpansion || allVisible;
+
+            hideAllBtn.textContent = "Hide all";
+            hideAllBtn.hidden = !allVisible;
         }
 
-        updateVisibility();
-
         loadMoreBtn.addEventListener("click", () => {
-            if (visibleCount < validItems.length) {
-                visibleCount = Math.min(visibleCount + stepCount, validItems.length);
-            } else {
-                visibleCount = initialCount;
-                portfolioGrid?.scrollIntoView({
-                    behavior: prefersReducedMotion ? "auto" : "smooth",
-                    block: "start"
-                });
-            }
-
+            visibleCount = Math.min(visibleCount + stepCount, validItems.length);
             updateVisibility();
             bindPortfolioLightbox();
         });
+
+        hideAllBtn.addEventListener("click", () => {
+            visibleCount = initialCount;
+            updateVisibility();
+
+            portfolioGrid?.scrollIntoView({
+                behavior: prefersReducedMotion ? "auto" : "smooth",
+                block: "start"
+            });
+
+            bindPortfolioLightbox();
+        });
+
+        updateVisibility();
     }
 
     async function initPortfolio() {
         const loadMoreBtn = qs("#portfolioLoadMore");
+        const hideAllBtn = qs("#portfolioHideAll");
         const validItems = await setupPortfolioImages();
 
         if (!validItems.length) {
             if (loadMoreBtn) loadMoreBtn.hidden = true;
+            if (hideAllBtn) hideAllBtn.hidden = true;
             return;
         }
 
