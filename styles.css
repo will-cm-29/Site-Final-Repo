@@ -633,12 +633,20 @@ button[hidden],
     gap: 10px;
 }
 
+.pricing-summary-note {
+    margin: 14px 0 0 0;
+    max-width: 940px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(20, 20, 20, 0.88);
+}
+
 .pricing-guide-item {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 16px;
     align-items: start;
-    padding: 16px;
+    padding: 18px;
     border: 1px solid var(--line);
     border-radius: var(--radius-sm);
     background: #fff;
@@ -648,7 +656,7 @@ button[hidden],
 .pricing-guide-item:hover {
     border-color: var(--line-strong);
     box-shadow: var(--shadow);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .pricing-guide-item h3 {
@@ -661,7 +669,7 @@ button[hidden],
 .pricing-guide-item p {
     margin: 6px 0 0 0;
     font-size: 13px;
-    line-height: 1.6;
+    line-height: 1.65;
     color: var(--muted);
     max-width: 620px;
 }
@@ -674,13 +682,14 @@ button[hidden],
     font-weight: 600;
     color: var(--text) !important;
     letter-spacing: 0.01em;
+    align-self: center;
 }
 
 .pricing-guide-side {
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: var(--soft-2);
-    padding: 16px;
+    padding: 18px;
     position: sticky;
     top: calc(var(--header-h) + 14px);
 }
@@ -692,6 +701,12 @@ button[hidden],
     text-transform: uppercase;
     color: var(--muted);
     font-weight: 600;
+}
+
+.pricing-guide-booking {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
 }
 
 .pricing-guide-notes {
@@ -903,7 +918,7 @@ button[hidden],
 .footer-inner {
     padding: 18px 0 26px;
     display: grid;
-    gap: 10px;
+    gap: 14px;
 }
 
 .footer-social {
@@ -920,6 +935,32 @@ button[hidden],
 .footer-link:hover {
     color: var(--text);
     text-decoration: underline;
+}
+
+.footer-booking-notes {
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+}
+
+.footer-booking-title {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.footer-booking-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.footer-booking-grid p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: rgba(20, 20, 20, 0.88);
 }
 
 .footer-copy {
@@ -956,6 +997,20 @@ button[hidden],
     border-radius: 3.5px;
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
     overflow: hidden;
+}
+
+.overlay-pricing-wrap {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 28px 14px;
+}
+
+.overlay-pricing-wrap .overlay-panel {
+    width: min(1100px, calc(100% - 8px));
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+    margin: 0;
 }
 
 .overlay-close {
@@ -1258,6 +1313,12 @@ button[hidden],
     right: 0;
 }
 
+@media (min-width: 721px) {
+    .lightbox-tapzone {
+        display: none;
+    }
+}
+
 /* Pricing modal */
 .pricing-trigger {
     appearance: none;
@@ -1436,6 +1497,16 @@ button[hidden],
 
     .pricing-divider {
         margin: 22px 0;
+    }
+
+    .overlay-pricing-wrap {
+        display: block;
+        padding: 18px 14px;
+    }
+
+    .overlay-pricing-wrap .overlay-panel {
+        max-height: none;
+        margin: 0 auto;
     }
 
     .nav-toggle {
