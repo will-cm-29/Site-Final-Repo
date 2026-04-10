@@ -395,6 +395,7 @@ section[id] {
     scrollbar-width: none;
     -ms-overflow-style: none;
     align-items: start;
+    overscroll-behavior-x: contain;
 }
 
 .reviews-carousel::-webkit-scrollbar {

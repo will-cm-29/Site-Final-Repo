@@ -998,13 +998,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function setupInfiniteReviews() {
+    function setupReviewsConveyor() {
         if (!reviewsCarousel || reviewsCarousel.dataset.infiniteReady === "true") return;
 
         let isMoving = false;
         const animationDuration = prefersReducedMotion ? 0 : 420;
 
         reviewsCarousel.style.overflowX = "hidden";
+        reviewsCarousel.style.scrollBehavior = "auto";
+        reviewsCarousel.style.scrollSnapType = "none";
         reviewsCarousel.scrollLeft = 0;
 
         function getSlides() {
@@ -1024,15 +1026,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function setImmediateScroll(left) {
             const previousBehavior = reviewsCarousel.style.scrollBehavior;
-            const previousSnap = reviewsCarousel.style.scrollSnapType;
-
             reviewsCarousel.style.scrollBehavior = "auto";
-            reviewsCarousel.style.scrollSnapType = "none";
             reviewsCarousel.scrollLeft = left;
-
             requestAnimationFrame(() => {
-                reviewsCarousel.style.scrollBehavior = previousBehavior || "";
-                reviewsCarousel.style.scrollSnapType = previousSnap || "";
+                reviewsCarousel.style.scrollBehavior = previousBehavior || "auto";
             });
         }
 
@@ -1046,8 +1043,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const step = getStepWidth();
             isMoving = true;
 
-            reviewsCarousel.style.scrollSnapType = "none";
-
             reviewsCarousel.scrollTo({
                 left: step,
                 behavior: prefersReducedMotion ? "auto" : "smooth"
@@ -1056,7 +1051,6 @@ document.addEventListener("DOMContentLoaded", () => {
             window.setTimeout(() => {
                 reviewsCarousel.appendChild(first);
                 setImmediateScroll(0);
-                reviewsCarousel.style.scrollSnapType = "";
                 isMoving = false;
             }, animationDuration);
         }
@@ -1071,7 +1065,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const step = getStepWidth();
             isMoving = true;
 
-            reviewsCarousel.style.scrollSnapType = "none";
             reviewsCarousel.insertBefore(last, slides[0]);
             setImmediateScroll(step);
 
@@ -1084,7 +1077,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             window.setTimeout(() => {
                 setImmediateScroll(0);
-                reviewsCarousel.style.scrollSnapType = "";
                 isMoving = false;
             }, animationDuration);
         }
@@ -1123,6 +1115,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }, { passive: true });
 
+        reviewsCarousel.addEventListener("wheel", (e) => {
+            if (Math.abs(e.deltaX) < 12 && Math.abs(e.deltaY) < 12) return;
+            e.preventDefault();
+
+            if (isMoving) return;
+
+            const horizontalIntent = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+
+            if (horizontalIntent > 0) {
+                moveNext();
+            } else {
+                movePrev();
+            }
+        }, { passive: false });
+
         window.addEventListener("resize", () => {
             setImmediateScroll(0);
         });
@@ -1131,7 +1138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     setupReviewToggles();
-    setupInfiniteReviews();
+    setupReviewsConveyor();
 
     projectOverlay?.addEventListener("click", (e) => {
         if (e.target === projectOverlay || e.target.classList.contains("overlay-backdrop")) {
