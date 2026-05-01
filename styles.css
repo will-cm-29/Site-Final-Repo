@@ -230,6 +230,14 @@ a {
     margin-top: 18px;
 }
 
+/* Consent Banner */
+
+.consent {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 /* FAQs */
 .faq-list {
     display: grid;
