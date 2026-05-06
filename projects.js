@@ -10,40 +10,40 @@ document.addEventListener("DOMContentLoaded", () => {
             byline: "Holiday let / property marketing",
             description:
                 "Photography for a five-bedroom Boscombe holiday let, created to highlight the property's layout, design details and guest amenities for stronger listing and marketing presentation.",
-            hero: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-kitchen-2400.webp",
+            hero: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-kitchen-2400.webp",
             layout: ["w2", "h2", "", "h2", "", "w2", "h2", "h2", "", "w2", "w2"],
             gallery: [
                 {
-                    thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living-800.webp",
-                    full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living2-800.webp",
-                    full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living2-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living2-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-kitchen2-800.webp",
-                    full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-kitchen2-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-kitchen2-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-kitchen2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-bedroom-800.webp",
-                    full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-bedroom-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-bedroom-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-bedroom-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-bathroom-800.webp",
-                    full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-bathroom-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-bathroom-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-bathroom-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-football-800.webp",
-                    full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-football-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-football-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-football-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-tennis-800.webp",
-                    full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-tennis-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-tennis-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-tennis-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-shower-800.webp",
-                    full: "assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-shower-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-shower-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-shower-2400.webp"
                 }
             ]
         },
@@ -53,52 +53,52 @@ document.addEventListener("DOMContentLoaded", () => {
             byline: "Modern family home / property marketing",
             description:
                 "Interior and drone photography for a bright three-bedroom home in Boscombe, focused on presenting the open-plan living spaces, natural light, bedroom styling and wider exterior setting for property marketing.",
-            hero: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-kitchen-2400.webp",
+            hero: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-kitchen-2400.webp",
             layout: ["w2", "h2", "h2", "w2", "", "", "h2", "", "h2", "", "w2", "w2"],
             gallery: [
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-dining-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-dining-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-dining-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-dining-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-table-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-table-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-table-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-table-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-living-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-living-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-living-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-living-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-landing-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-landing-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-landing-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-landing-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-master-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-master-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-master-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-master-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-bed-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-bed-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-bed-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-bed-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-bedb-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-bedb-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-bedb-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-bedb-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-drone-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-drone-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-drone-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-drone-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-chair-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-chair-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-chair-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-chair-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-dronec-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-dronec-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-dronec-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-dronec-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-droned-800.webp",
-                    full: "assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-droned-2400.webp"
+                    thumb: "/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-droned-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-3-bed-j/full/boscombe-3-bed-droned-2400.webp"
                 }
             ]
         },
@@ -108,84 +108,84 @@ document.addEventListener("DOMContentLoaded", () => {
             byline: "Character property / listing visuals",
             description:
                 "Interior and exterior photography for The Coach House in Bournemouth, created to showcase the property's character, layout, bedroom presentation and outdoor setting for strong listing imagery.",
-            hero: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-2400.webp",
+            hero: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-2400.webp",
             layout: ["w2", "h2", "", "h2", "", "w2", "w2", "", "h2", "", "w2", "", ""],
             gallery: [
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-drive-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-drive-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-drive-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-drive-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed6-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed6-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed6-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed6-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-out-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-out-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-out-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-out-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed7-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed7-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed7-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed7-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-out2-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-out2-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-out2-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-out2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed11-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed11-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed11-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed11-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed12-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed12-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed12-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed12-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed13-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed13-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed13-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed13-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed10-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed10-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed10-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed10-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed8-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed8-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed8-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed8-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed9-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed9-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed9-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed9-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed2-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed2-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed2-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-living-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-living-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-living-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-living-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-lounge3-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-lounge3-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-lounge3-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-lounge3-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed4-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed4-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed4-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed4-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed5-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed5-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed5-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed5-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bath-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bath-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bath-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bath-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-game-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-game-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-game-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-game-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed-800.webp",
-                    full: "assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed-2400.webp"
+                    thumb: "/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-bed-800.webp",
+                    full: "/assets/projects/commissioned/bournemouth-coach-house/full/bournemouth-coach-bed-2400.webp"
                 }
             ]
         },
@@ -195,52 +195,52 @@ document.addEventListener("DOMContentLoaded", () => {
             byline: "Holiday let / property marketing",
             description:
                 "Interior, exterior and aerial photography for this holiday let in Poole, captured to highlight its bright presentation, practical layout, inviting bedrooms, garden space and close connection to the marina surroundings for effective listing imagery.",
-            hero: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-drone-2400.webp",
+            hero: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-drone-2400.webp",
             layout: ["h2 w2", "h2", "", "", "", "h2", "h2", "", "", "", "h2 w2"],
             gallery: [
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-front-1600.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-front-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-front-1600.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-front-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-dining-800.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-dining-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-dining-800.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-dining-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-drone4-800.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-drone4-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-drone4-800.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-drone4-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-kitchen-800.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-kitchen-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-kitchen-800.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-kitchen-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-kitchen2-800.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-kitchen2-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-kitchen2-800.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-kitchen2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-bedroom2-800.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-bedroom2-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-bedroom2-800.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-bedroom2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-bedroom-800.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-bedroom-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-bedroom-800.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-bedroom-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-bedroom3-800.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-bedroom3-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-bedroom3-800.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-bedroom3-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-drone2-800.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-drone2-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-drone2-800.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-drone2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-orange-1600.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-orange-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-orange-1600.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-orange-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-drone3-1600.webp",
-                    full: "assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-drone3-2400.webp"
+                    thumb: "/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-drone3-1600.webp",
+                    full: "/assets/projects/commissioned/poole-2-bed-j/full/poole-2-bed-drone3-2400.webp"
                 }
             ]
         },
@@ -250,72 +250,128 @@ document.addEventListener("DOMContentLoaded", () => {
             byline: "Holiday let / property marketing",
             description:
                 "Photography and aerial imagery for Ashcroft House By The Sea in Bournemouth, created to highlight the home’s spacious coastal feel, well-presented bedrooms, modern communal areas, outdoor space and desirable position near the beach for polished, high-impact listing visuals.",
-            hero: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-open-2400.webp",
+            hero: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-open-2400.webp",
             layout: ["h2", "h2", "", "", "", "h2", "h2", "", "", "", "h2 w2", "", "h2", "h2", ""],
             gallery: [
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-door-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-door-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-door-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-door-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-dining-1600.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-dining-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-dining-1600.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-dining-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-island-1600.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-island-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-island-1600.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-island-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-hall-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-hall-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-hall-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-hall-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-close-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-close-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-close-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-close-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-drone-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-drone-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-drone-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-drone-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-kitchen-1600.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-kitchen-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-kitchen-1600.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-kitchen-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-island2-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-island2-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-island2-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-island2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-open2-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-open2-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-open2-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-open2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-drone2-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-drone2-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-drone2-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-drone2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-out-1600.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-out-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-out-1600.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-out-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-chair-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-chair-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-chair-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-chair-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-out2-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-out2-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-out2-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-bed-out2-2400.webp"
                 },
                 {
-                    thumb: "assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-drone3-800.webp",
-                    full: "assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-drone3-2400.webp"
+                    thumb: "/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-drone3-800.webp",
+                    full: "/assets/projects/commissioned/bouremouth-5-bed-s/full/bouremouth-5-drone3-2400.webp"
+                }
+            ]
+        },
+
+        "poole-seaside": {
+            title: "Holiday Let — Poole",
+            byline: "Airbnb photography",
+            description:
+                "Interior, exterior and aerial photography for a coastal home in Poole, focused on translating the atmosphere of the property, from its bright living spaces and guest rooms to its outdoor areas and beachside surroundings.",
+            hero: "/assets/projects/commissioned/poole-seaside/full/poole-out2-2400.webp",
+            layout: ["", "h2", "", "", "h2", "h2", "h2", "", "", "", "h2 w2", "", "h2", "h2", ""],
+            gallery: [
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-living-800.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-living-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-drone4-1600.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-drone4-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-kitchen-800.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-kitchen-1600.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-bed-800.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-bed-2400.webp"
+                },
+
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-out2-800.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-out2-2400.webp"
+                },
+
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-bed2-800.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-bed2-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-bed3-800.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-bed3-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-drone3-1600.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-drone3-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-drone2-800.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-drone2-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-out-800.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-out-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-drone1-1600.webp",
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-drone1-2400.webp"
                 }
             ]
         }
-
     };
 
     const qs = (sel, root = document) => root?.querySelector(sel);
