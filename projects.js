@@ -11,23 +11,36 @@ document.addEventListener("DOMContentLoaded", () => {
             description:
                 "Photography for a five-bedroom Boscombe holiday let, created to highlight the property's layout, design details and guest amenities for stronger listing and marketing presentation.",
             hero: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-kitchen-2400.webp",
-            layout: ["w2", "h2", "", "h2", "", "w2", "h2", "h2", "", "w2", "w2"],
+            layout: ["w2", "h2", "", "h2", "", "w2", "h2", "h2", "h2", "h2", "w2",],
             gallery: [
                 {
                     thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living-800.webp",
                     full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living-2400.webp"
                 },
                 {
-                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living2-800.webp",
-                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living2-2400.webp"
-                },
-                {
                     thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-kitchen2-800.webp",
                     full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-kitchen2-2400.webp"
                 },
                 {
-                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-bedroom-800.webp",
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-drone-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-drone-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-living2-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-living2-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-clock-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-clock-2400.webp"
+                },
+
+                {
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-bedroom-1600.webp",
                     full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-bedroom-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-bed2-800.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-bed2-2400.webp"
                 },
                 {
                     thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-bathroom-800.webp",
@@ -38,13 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-football-2400.webp"
                 },
                 {
-                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-tennis-800.webp",
-                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-tennis-2400.webp"
-                },
-                {
                     thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-shower-800.webp",
                     full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-shower-2400.webp"
+                },
+                {
+                    thumb: "/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-tennis-1600.webp",
+                    full: "/assets/projects/commissioned/boscombe-5-bed/full/boscombe-5-bed-tennis-2400.webp"
                 }
+
             ]
         },
 
