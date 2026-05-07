@@ -216,104 +216,180 @@ document.addEventListener("DOMContentLoaded", () => {
     const pricingData = {
         "photography": {
             title: "Photography",
-            intro: "Interior and exterior photography for listings, websites and marketing materials.",
+            intro: "Interior and exterior photography for listings, websites, lettings, HMOs, holiday lets and marketing materials.",
             packages: [
-                { tier: "Essential", price: "From £179", detail: "10–15 edited images • ideal for smaller homes, apartments and straightforward listings" },
-                { tier: "Signature", price: "From £249", detail: "18–22 edited images • best fit for most homes and holiday lets" },
-                { tier: "Showcase", price: "From £309", detail: "25–30 edited images • broader coverage for larger or higher-spec properties" }
+                {
+                    tier: "Essential",
+                    price: "From £95",
+                    detail: "7–10 final edited images • best for rooms, small flats, quick rental listings and refresh shoots"
+                },
+                {
+                    tier: "Listing",
+                    price: "From £215",
+                    detail: "17–23 final edited images • best for most homes, HMOs, serviced accommodation and stronger listing coverage"
+                },
+                {
+                    tier: "Premium",
+                    price: "From £255",
+                    detail: "25+ final edited images • best for larger homes, premium listings, holiday lets, commercial spaces and full marketing sets"
+                }
             ],
             delivery: [
-                "Standard delivery: 48 hours",
-                "Next working day priority: +£35",
-                "Same day, subject to availability: +£75",
-                "Weekend / urgent booking: +25%"
+                "Standard delivery: usually within 24–48 hours",
+                "Same-day priority: from £15 for smaller photography-only shoots",
+                "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "Final pricing depends on property size, access and location.",
-                "Image count and scope may vary depending on the layout and brief.",
+                "All prices are starting points.",
+                "Final pricing depends on property size, access, location, required deliverables and turnaround.",
+                "Image ranges are based on final edited images delivered, not every image taken on the day.",
+                "Same-day delivery is subject to availability and may increase for larger shoots or multi-service bookings.",
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
+                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners.",
                 "A 25% deposit secures the booking, with the remaining balance due before final delivery."
             ]
         },
 
         "photography-drone": {
             title: "Photography + Drone",
-            intro: "Photography with aerial coverage to show plot, setting and exterior context.",
+            intro: "Property photography with aerial coverage to show the plot, setting, exterior context and surrounding area.",
             packages: [
-                { tier: "Essential", price: "From £289", detail: "10–15 photos + 3–5 drone images • strong entry point for standard listings" },
-                { tier: "Signature", price: "From £369", detail: "18–22 photos + 5–8 drone images • most suitable for most homes and holiday lets" },
-                { tier: "Showcase", price: "From £459", detail: "25–30 photos + 8–12 drone images • best for standout settings, larger sites or premium listings" }
+                {
+                    tier: "Essential",
+                    price: "From £235",
+                    detail: "7–10 final edited property images + 3–5 drone images • strong entry point for smaller listings, rentals and exterior context"
+                },
+                {
+                    tier: "Listing",
+                    price: "From £295",
+                    detail: "17–23 final edited property images + 5–8 drone images • suitable for most homes, HMOs, holiday lets and stronger listing coverage"
+                },
+                {
+                    tier: "Premium",
+                    price: "From £345",
+                    detail: "25+ final edited property images + 8–12 drone images • best for larger homes, premium listings, land, commercial spaces and standout settings"
+                }
             ],
             delivery: [
-                "Standard delivery: 48 hours",
-                "Next working day priority: +£35",
-                "Same day, subject to availability: +£75",
-                "Weekend / urgent booking: +25%"
+                "Standard delivery: usually within 24–48 hours",
+                "Same-day priority: from £15 for smaller photography-led shoots",
+                "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "Drone coverage is subject to weather, permissions and safe operating conditions.",
-                "Image counts may vary depending on property size and exterior scope.",
-                "Bundled pricing is intended to offer better value than booking photography and drone separately."
+                "All prices are starting points.",
+                "Drone coverage is subject to weather, permissions, airspace restrictions and safe operating conditions.",
+                "Image ranges are based on final edited images delivered, not every image taken on the day.",
+                "Same-day delivery is subject to availability and may increase for larger shoots, drone-heavy briefs or multi-service bookings.",
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
+                "Bundled pricing is intended to offer better value than booking photography and drone separately.",
+                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
             ]
         },
 
         "photography-floorplan": {
             title: "Photography + Floor Plan",
-            intro: "Photography combined with floor plan delivery for sales, lettings and holiday-let marketing.",
+            intro: "Property photography combined with a clear floor plan for sales, lettings, HMOs, serviced accommodation and holiday-let marketing.",
             packages: [
-                { tier: "Essential", price: "From £209", detail: "10–15 photos + floor plan • efficient option for straightforward marketing needs" },
-                { tier: "Signature", price: "From £269", detail: "18–22 photos + floor plan • best overall value for most residential properties" },
-                { tier: "Showcase", price: "From £339", detail: "25–30 photos + floor plan • suited to larger homes and stronger listing presentation" }
+                {
+                    tier: "Essential",
+                    price: "From £125",
+                    detail: "7–10 final edited images + floor plan • efficient option for smaller properties, rentals and straightforward marketing needs"
+                },
+                {
+                    tier: "Listing",
+                    price: "From £265",
+                    detail: "17–23 final edited images + floor plan • best overall value for most homes, HMOs and serviced accommodation"
+                },
+                {
+                    tier: "Premium",
+                    price: "From £305",
+                    detail: "25+ final edited images + floor plan • suited to larger homes, premium listings, holiday lets and stronger property presentation"
+                }
             ],
             delivery: [
-                "Standard delivery: 48 hours",
-                "Next working day priority: +£35",
-                "Same day, subject to availability: +£75",
-                "Weekend / urgent booking: +25%"
+                "Standard delivery: usually within 24–48 hours",
+                "Same-day priority: from £15 for smaller photography-led shoots",
+                "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "Final pricing depends on size, access and complexity.",
-                "Larger or more complex properties may require a tailored quote.",
-                "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents."
+                "All prices are starting points.",
+                "Final pricing depends on property size, access, location, floor plan complexity and turnaround.",
+                "Image ranges are based on final edited images delivered, not every image taken on the day.",
+                "Same-day delivery is subject to availability and may increase for larger shoots, complex floor plans or multi-service bookings.",
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
+                "Larger, multi-level or more complex properties may require a tailored quote.",
+                "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents.",
+                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
             ]
         },
 
         "drone-only": {
             title: "Drone Only",
-            intro: "Aerial stills and optional short clip coverage for exterior presentation and site overview.",
+            intro: "Aerial stills and optional short clip coverage for exterior presentation, development sites, land, commercial property and wider location context.",
             packages: [
-                { tier: "Essential", price: "From £135", detail: "4–6 edited drone shots • suitable for simple exterior coverage" },
-                { tier: "Signature", price: "From £185", detail: "7–10 edited drone shots • best for most residential properties" },
-                { tier: "Showcase", price: "From £255", detail: "10+ drone shots or stills + short clip • broader coverage for larger sites or stronger marketing use" }
+                {
+                    tier: "Essential",
+                    price: "From £135",
+                    detail: "4–6 edited drone shots • suitable for simple exterior coverage"
+                },
+                {
+                    tier: "Listing",
+                    price: "From £185",
+                    detail: "7–10 edited drone shots • best for most residential properties and stronger exterior context"
+                },
+                {
+                    tier: "Premium",
+                    price: "From £255",
+                    detail: "10+ drone shots or stills + short clip • broader coverage for larger sites or stronger marketing use"
+                }
             ],
             delivery: [
-                "Standard delivery: 48 hours",
-                "Next working day priority: +£35",
-                "Same day, subject to availability: +£75",
-                "Weekend / urgent booking: +25%"
+                "Standard delivery: usually within 24–48 hours",
+                "Same-day priority: from £15 for smaller drone-only shoots",
+                "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "Drone-only work is subject to weather, permissions and safe flying conditions.",
-                "Exterior scope and site restrictions may affect final pricing."
+                "All prices are starting points.",
+                "Drone-only work is subject to weather, permissions, airspace restrictions and safe flying conditions.",
+                "Exterior scope, site restrictions, location and turnaround may affect final pricing.",
+                "Same-day delivery is subject to availability and may increase for larger sites or more involved drone coverage.",
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote."
             ]
         },
 
         "video": {
             title: "Video",
-            intro: "Short-form property and marketing video tailored to the space and required output.",
+            intro: "Short-form property and marketing video tailored to the space, platform and required output.",
             packages: [
-                { tier: "Highlight Reel", price: "From £225", detail: "30–45 sec • clean, concise edit for core marketing use" },
-                { tier: "Walkthrough", price: "From £325", detail: "45–60 sec • most popular for fuller room-to-room coverage" },
-                { tier: "Showcase Film", price: "From £465", detail: "60–90 sec • more polished edit, stronger pacing and a more premium finish" }
+                {
+                    tier: "Highlight Reel",
+                    price: "From £225",
+                    detail: "30–45 sec • clean, concise edit for core marketing use"
+                },
+                {
+                    tier: "Walkthrough",
+                    price: "From £325",
+                    detail: "45–60 sec • most popular for fuller room-to-room coverage"
+                },
+                {
+                    tier: "Showcase Film",
+                    price: "From £465",
+                    detail: "60–90 sec • more polished edit, stronger pacing and a more premium finish"
+                }
             ],
             delivery: [
-                "Standard delivery: 72 hours",
-                "Next working day priority: +£45",
-                "Same day, subject to availability: +£95",
-                "Weekend / urgent booking: +25%"
+                "Standard delivery: usually within 48–72 hours",
+                "Priority turnaround: quoted depending on edit complexity and workload",
+                "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "Final pricing depends on edit complexity, shot list and required output.",
-                "Agent-led pieces, scripting or more involved edits may be quoted individually depending on scope."
+                "All prices are starting points.",
+                "Final pricing depends on edit complexity, shot list, required output and turnaround.",
+                "Video turnaround depends more heavily on edit complexity than photography.",
+                "Same-day or next-day video delivery may be available for simpler edits but should be quoted separately.",
+                "Agent-led pieces, scripting or more involved edits may be quoted individually depending on scope.",
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
+                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
             ]
         },
 
@@ -321,40 +397,68 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "360 Tour",
             intro: "Interactive 360 tour options for stronger online presentation and walkthrough-style viewing.",
             packages: [
-                { tier: "Essential 360", price: "From £119", detail: "Entry-level 360 capture for simpler properties" },
-                { tier: "Hosted Tour", price: "From £169", detail: "Hosted tour setup included • best value for most users" },
-                { tier: "Enhanced Tour", price: "From £229", detail: "Larger property or enhanced tour setup with broader coverage" }
+                {
+                    tier: "Essential 360",
+                    price: "From £119",
+                    detail: "Entry-level 360 capture for simpler properties"
+                },
+                {
+                    tier: "Hosted Tour",
+                    price: "From £169",
+                    detail: "Hosted tour setup included • best value for most users"
+                },
+                {
+                    tier: "Enhanced Tour",
+                    price: "From £229",
+                    detail: "Larger property or enhanced tour setup with broader coverage"
+                }
             ],
             delivery: [
-                "Standard delivery: 48 hours",
-                "Next working day priority: +£35",
-                "Same day, subject to availability: +£75",
-                "Weekend / urgent booking: +25%"
+                "Standard delivery: usually within 24–48 hours",
+                "Same-day priority: from £15 depending on property size and workload",
+                "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
+                "All prices are starting points.",
                 "Hosted tour requirements and property size can affect final pricing.",
                 "Larger or multi-level properties may require a tailored quote.",
-                "Any ongoing hosting or platform costs should be confirmed where relevant."
+                "Same-day delivery is subject to availability and may increase for larger or more complex tours.",
+                "Any ongoing hosting or platform costs should be confirmed where relevant.",
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote."
             ]
         },
 
         "floor-plans": {
             title: "Floor Plans",
-            intro: "Clear floor plan delivery for listings and supporting marketing packs.",
+            intro: "Clear floor plan delivery for listings, lettings, HMOs, holiday lets and supporting marketing packs.",
             packages: [
-                { tier: "Essential", price: "From £45", detail: "Smaller or simpler property layout" },
-                { tier: "Standard", price: "From £55", detail: "Typical residential property layout" },
-                { tier: "Large / Complex", price: "From £75", detail: "Larger or more complex floor plan" }
+                {
+                    tier: "Essential",
+                    price: "From £45",
+                    detail: "Smaller or simpler property layout"
+                },
+                {
+                    tier: "Standard",
+                    price: "From £55",
+                    detail: "Typical residential property layout"
+                },
+                {
+                    tier: "Large / Complex",
+                    price: "From £75",
+                    detail: "Larger, multi-level or more complex floor plan"
+                }
             ],
             delivery: [
-                "Standard delivery: 48 hours",
-                "Next working day priority: +£25",
-                "Same day, subject to availability: +£45",
-                "Weekend / urgent booking: +25%"
+                "Standard delivery: usually within 24–48 hours",
+                "Same-day priority: from £15 depending on property size and workload",
+                "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
+                "All prices are starting points.",
                 "Final pricing depends on size and layout complexity.",
                 "Larger multi-level properties may be quoted individually.",
+                "Same-day delivery is subject to availability and may increase for larger or more complex floor plans.",
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents."
             ]
         }
