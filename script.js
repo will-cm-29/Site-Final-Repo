@@ -236,14 +236,14 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15 for smaller photography-only shoots",
+                "Same-day priority: from £15",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
                 "All prices are starting points.",
                 "Final pricing depends on property size, access, location, required deliverables and turnaround.",
                 "Image ranges are based on final edited images delivered, not every image taken on the day.",
-                "Same-day delivery is subject to availability and may increase for larger shoots or multi-service bookings.",
+                "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners.",
                 "A 25% deposit secures the booking, with the remaining balance due before final delivery."
@@ -272,14 +272,14 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15 for smaller photography-led shoots",
+                "Same-day priority: from £15",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
                 "All prices are starting points.",
                 "Drone coverage is subject to weather, permissions, airspace restrictions and safe operating conditions.",
                 "Image ranges are based on final edited images delivered, not every image taken on the day.",
-                "Same-day delivery is subject to availability and may increase for larger shoots, drone-heavy briefs or multi-service bookings.",
+                "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Bundled pricing is intended to offer better value than booking photography and drone separately.",
                 "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Essential",
-                    price: "From £125",
+                    price: "From £135",
                     detail: "7–10 final edited images + floor plan • efficient option for smaller properties, rentals and straightforward marketing needs"
                 },
                 {
@@ -308,14 +308,14 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15 for smaller photography-led shoots",
+                "Same-day priority: from £15",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
                 "All prices are starting points.",
                 "Final pricing depends on property size, access, location, floor plan complexity and turnaround.",
                 "Image ranges are based on final edited images delivered, not every image taken on the day.",
-                "Same-day delivery is subject to availability and may increase for larger shoots, complex floor plans or multi-service bookings.",
+                "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Larger, multi-level or more complex properties may require a tailored quote.",
                 "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents.",
@@ -345,14 +345,14 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15 for smaller drone-only shoots",
+                "Same-day priority: from £15",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
                 "All prices are starting points.",
                 "Drone-only work is subject to weather, permissions, airspace restrictions and safe flying conditions.",
                 "Exterior scope, site restrictions, location and turnaround may affect final pricing.",
-                "Same-day delivery is subject to availability and may increase for larger sites or more involved drone coverage.",
+                "Same-day delivery may increase depending on site size, shoot complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote."
             ]
         },
@@ -378,8 +378,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             ],
             delivery: [
-                "Standard delivery: usually within 48–72 hours",
-                "Priority turnaround: quoted depending on edit complexity and workload",
+                "Standard delivery: usually within 2–4 days",
+                "Priority turnaround: from £95 depending on edit complexity and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
@@ -415,14 +415,14 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15 depending on property size and workload",
+                "Same-day priority: from £15",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
                 "All prices are starting points.",
                 "Hosted tour requirements and property size can affect final pricing.",
                 "Larger or multi-level properties may require a tailored quote.",
-                "Same-day delivery is subject to availability and may increase for larger or more complex tours.",
+                "Same-day delivery may increase depending on property size, tour complexity and workload.",
                 "Any ongoing hosting or platform costs should be confirmed where relevant.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote."
             ]
@@ -450,14 +450,14 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15 depending on property size and workload",
+                "Same-day priority: from £15",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
                 "All prices are starting points.",
                 "Final pricing depends on size and layout complexity.",
                 "Larger multi-level properties may be quoted individually.",
-                "Same-day delivery is subject to availability and may increase for larger or more complex floor plans.",
+                "Same-day delivery may increase depending on property size, floor plan complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents."
             ]
