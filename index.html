@@ -3,18 +3,36 @@
 
 <head>
 
+    <!-- Google Consent Mode: default denied before GA4 loads -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            functionality_storage: 'denied',
+            personalization_storage: 'denied',
+            security_storage: 'granted',
+            wait_for_update: 500
+        });
+    </script>
+
     <script defer id="cookieyes" type="text/javascript"
         src="https://cdn-cookieyes.com/client_data/0ddc21c3c67c71450f35c2b6/script.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-80M87RBH17"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-80M87RBH17');
     </script>
+
+    <meta charset="UTF-8" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -102,252 +120,259 @@
         </nav>
     </header>
 
-    <section class="hero" aria-label="Featured photography slideshow">
-        <div class="hero-slides" aria-hidden="true">
-            <div class="hero-slide hero-slide-a"></div>
-            <div class="hero-slide hero-slide-b"></div>
-        </div>
-
-        <div class="hero-overlay">
-            <div class="shell hero-content">
-                <p class="hero-kicker">Property • Hospitality • Commercial Interiors</p>
-                <h1 class="hero-title">Premium photography for spaces that need to stand out.</h1>
-                <div class="hero-actions">
-                    <a class="btn" href="#contact">Request a quote</a>
-                    <a class="btn btn-secondary" href="#projects">View projects</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="intro shell" aria-labelledby="introTitle">
-        <h2 id="introTitle" class="visually-hidden">Introduction</h2>
-        <p class="intro-statement">
-            MW Photography provides professional property, hospitality and commercial photography based on the South
-            Coast, working across London, Hampshire and Dorset. We create clean, well-composed imagery for homes,
-            holiday lets and business spaces, designed for listings, websites and marketing materials.
-        </p>
-    </section>
-
-    <section class="reviews-strip shell" aria-labelledby="reviewsTitle">
-        <div class="section-head">
-            <h2 id="reviewsTitle" class="section-title">Client Reviews</h2>
-            <p class="section-note">Rated 5★ from 8 Google reviews.</p>
-        </div>
-
-        <div class="reviews-carousel-layout">
-            <div class="reviews-summary">
-                <p class="reviews-summary-label">Excellent</p>
-                <p class="reviews-summary-stars" aria-label="5 out of 5 stars">★★★★★</p>
-                <p class="reviews-summary-meta">
-                    Based on <strong>8 reviews</strong>
-                </p>
-                <a class="reviews-summary-link" href="https://g.page/r/CbXHp07n2jS2EAE/review" target="_blank"
-                    rel="noopener noreferrer">
-                    Read our Google reviews
-                </a>
-            </div>
-
-            <div class="reviews-track-wrap">
-                <button class="reviews-arrow reviews-arrow-left" type="button" id="reviewsPrev"
-                    aria-label="Previous reviews">
-                    ‹
-                </button>
-
-                <div class="reviews-carousel" id="reviewsCarousel" aria-label="Client reviews carousel">
-                    <article class="review-slide">
-                        <div class="review-slide-head">
-                            <div>
-                                <p class="review-slide-name">Shak</p>
-                                <p class="review-slide-date">February 2026</p>
-                            </div>
-                        </div>
-
-                        <p class="review-slide-stars">★★★★★</p>
-
-                        <div class="review-slide-body">
-                            <p class="review-slide-text is-collapsed">
-                                "Will and Elliot are great photographers who are professional and courteous. They’ve
-                                provided a great service and I would definitely recommend them."
-                            </p>
-
-                            <button class="review-toggle" type="button" hidden>
-                                Read more
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="review-slide">
-                        <div class="review-slide-head">
-                            <div>
-                                <p class="review-slide-name">James</p>
-                                <p class="review-slide-date">February 2026</p>
-                            </div>
-                        </div>
-
-                        <p class="review-slide-stars">★★★★★</p>
-
-                        <div class="review-slide-body">
-                            <p class="review-slide-text is-collapsed">
-                                "Will & Elliot provided us with beautiful shots of our home that were both a lovely
-                                record and helped us enhance our airbnb listings. They were super polite and respectful
-                                and gave the shoot plenty of time and attention. Definitely recommend."
-                            </p>
-
-                            <button class="review-toggle" type="button" hidden>
-                                Read more
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="review-slide">
-                        <div class="review-slide-head">
-                            <div>
-                                <p class="review-slide-name">JJ</p>
-                                <p class="review-slide-date">March 2026</p>
-                            </div>
-                        </div>
-
-                        <p class="review-slide-stars">★★★★★</p>
-
-                        <div class="review-slide-body">
-                            <p class="review-slide-text is-collapsed">
-                                "Elliot and Will created stunning videos and photos for my Airbnb property. They have a
-                                keen eye for detail and were extremely courteous, professional, and very easy to work
-                                with. I'll most definitely be using their services again the future."
-                            </p>
-
-                            <button class="review-toggle" type="button" hidden>
-                                Read more
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="review-slide">
-                        <div class="review-slide-head">
-                            <div>
-                                <p class="review-slide-name">Issac</p>
-                                <p class="review-slide-date">March 2026</p>
-                            </div>
-                        </div>
-
-                        <p class="review-slide-stars">★★★★★</p>
-
-                        <div class="review-slide-body">
-                            <p class="review-slide-text is-collapsed">
-                                "Will and Elliot created some stunning footage for my rental. The photography was
-                                perfect and having a video and 360 tour were really worth it. Can’t recommend them
-                                more!"
-                            </p>
-
-                            <button class="review-toggle" type="button" hidden>
-                                Read more
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="review-slide">
-                        <div class="review-slide-head">
-                            <div>
-                                <p class="review-slide-name">Carl</p>
-                                <p class="review-slide-date">March 2026</p>
-                            </div>
-                        </div>
-
-                        <p class="review-slide-stars">★★★★★</p>
-
-                        <div class="review-slide-body">
-                            <p class="review-slide-text is-collapsed">
-                                "We had MW Photography round to do photos, drone shots and a video for our luxury
-                                Airbnb. I was really pleased with the results. The photos were excellent, some great
-                                angles, stand out shots, top class all round. And then they sent us the
-                                video......absolutely first class!! Would highly recommend!"
-                            </p>
-
-                            <button class="review-toggle" type="button" hidden>
-                                Read more
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="review-slide">
-                        <div class="review-slide-head">
-                            <div>
-                                <p class="review-slide-name">Mohammed</p>
-                                <p class="review-slide-date">March 2026</p>
-                            </div>
-                        </div>
-
-                        <p class="review-slide-stars">★★★★★</p>
-
-                        <div class="review-slide-body">
-                            <p class="review-slide-text is-collapsed">
-                                "They produce some amazing work and I highly recommend them. I will be using them more
-                                in the future."
-                            </p>
-
-                            <button class="review-toggle" type="button" hidden>
-                                Read more
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="review-slide">
-                        <div class="review-slide-head">
-                            <div>
-                                <p class="review-slide-name">Sean</p>
-                                <p class="review-slide-date">May 2026</p>
-                            </div>
-                        </div>
-
-                        <p class="review-slide-stars">★★★★★</p>
-
-                        <div class="review-slide-body">
-                            <p class="review-slide-text is-collapsed">
-                                "Elliott reached out to me via my Airbnb listing Asking if we’re interested in getting
-                                professional pics taken to update my listing. He & Will turned up on time and did a
-                                great job of taking new pics including drone shots. I can highly recommend these guys"
-                            </p>
-
-                            <button class="review-toggle" type="button" hidden>
-                                Read more
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="review-slide">
-                        <div class="review-slide-head">
-                            <div>
-                                <p class="review-slide-name">Jay</p>
-                                <p class="review-slide-date">May 2026</p>
-                            </div>
-                        </div>
-
-                        <p class="review-slide-stars">★★★★★</p>
-
-                        <div class="review-slide-body">
-                            <p class="review-slide-text is-collapsed">
-                                "We had MW Photography over for a couple of our properties and the results were
-                                stunning, highly recommend."
-                            </p>
-
-                            <button class="review-toggle" type="button" hidden>
-                                Read more
-                            </button>
-                        </div>
-                    </article>
-
-                </div>
-
-                <button class="reviews-arrow reviews-arrow-right" type="button" id="reviewsNext"
-                    aria-label="Next reviews">
-                    ›
-                </button>
-            </div>
-        </div>
-    </section>
-
     <main id="main">
+        <section class="hero" aria-label="Featured photography slideshow">
+            <div class="hero-slides" aria-hidden="true">
+                <div class="hero-slide hero-slide-a"></div>
+                <div class="hero-slide hero-slide-b"></div>
+            </div>
+
+            <div class="hero-overlay">
+                <div class="shell hero-content">
+                    <p class="hero-kicker">Property • Hospitality • Commercial Interiors</p>
+                    <h1 class="hero-title">Premium photography for spaces that need to stand out.</h1>
+                    <div class="hero-actions">
+                        <a class="btn" href="#contact">Request a quote</a>
+                        <a class="btn btn-secondary" href="#projects">View projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro shell" aria-labelledby="introTitle">
+            <h2 id="introTitle" class="visually-hidden">Introduction</h2>
+            <p class="intro-statement">
+                MW Photography provides professional property, hospitality and commercial photography based on the South
+                Coast, working across London, Hampshire and Dorset. We create clean, well-composed imagery for homes,
+                holiday lets and business spaces, designed for listings, websites and marketing materials.
+            </p>
+        </section>
+
+        <section class="reviews-strip shell" aria-labelledby="reviewsTitle">
+            <div class="section-head">
+                <h2 id="reviewsTitle" class="section-title">Client Reviews</h2>
+                <p class="section-note">Rated 5★ from 8 Google reviews.</p>
+            </div>
+
+            <div class="reviews-carousel-layout">
+                <div class="reviews-summary">
+                    <p class="reviews-summary-label">Excellent</p>
+                    <p class="reviews-summary-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                    <p class="reviews-summary-meta">
+                        Based on <strong>8 reviews</strong>
+                    </p>
+                    <a class="reviews-summary-link" href="https://g.page/r/CbXHp07n2jS2EAE/review" target="_blank"
+                        rel="noopener noreferrer">
+                        Read our Google reviews
+                    </a>
+                </div>
+
+                <div class="reviews-track-wrap">
+                    <button class="reviews-arrow reviews-arrow-left" type="button" id="reviewsPrev"
+                        aria-label="Previous reviews">
+                        ‹
+                    </button>
+
+                    <div class="reviews-carousel" id="reviewsCarousel" aria-label="Client reviews carousel">
+                        <article class="review-slide">
+                            <div class="review-slide-head">
+                                <div>
+                                    <p class="review-slide-name">Shak</p>
+                                    <p class="review-slide-date">February 2026</p>
+                                </div>
+                            </div>
+
+                            <p class="review-slide-stars">★★★★★</p>
+
+                            <div class="review-slide-body">
+                                <p class="review-slide-text is-collapsed">
+                                    "Will and Elliot are great photographers who are professional and courteous. They’ve
+                                    provided a great service and I would definitely recommend them."
+                                </p>
+
+                                <button class="review-toggle" type="button" hidden>
+                                    Read more
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="review-slide">
+                            <div class="review-slide-head">
+                                <div>
+                                    <p class="review-slide-name">James</p>
+                                    <p class="review-slide-date">February 2026</p>
+                                </div>
+                            </div>
+
+                            <p class="review-slide-stars">★★★★★</p>
+
+                            <div class="review-slide-body">
+                                <p class="review-slide-text is-collapsed">
+                                    "Will & Elliot provided us with beautiful shots of our home that were both a lovely
+                                    record and helped us enhance our airbnb listings. They were super polite and
+                                    respectful
+                                    and gave the shoot plenty of time and attention. Definitely recommend."
+                                </p>
+
+                                <button class="review-toggle" type="button" hidden>
+                                    Read more
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="review-slide">
+                            <div class="review-slide-head">
+                                <div>
+                                    <p class="review-slide-name">JJ</p>
+                                    <p class="review-slide-date">March 2026</p>
+                                </div>
+                            </div>
+
+                            <p class="review-slide-stars">★★★★★</p>
+
+                            <div class="review-slide-body">
+                                <p class="review-slide-text is-collapsed">
+                                    "Elliot and Will created stunning videos and photos for my Airbnb property. They
+                                    have
+                                    a
+                                    keen eye for detail and were extremely courteous, professional, and very easy to
+                                    work
+                                    with. I'll most definitely be using their services again the future."
+                                </p>
+
+                                <button class="review-toggle" type="button" hidden>
+                                    Read more
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="review-slide">
+                            <div class="review-slide-head">
+                                <div>
+                                    <p class="review-slide-name">Issac</p>
+                                    <p class="review-slide-date">March 2026</p>
+                                </div>
+                            </div>
+
+                            <p class="review-slide-stars">★★★★★</p>
+
+                            <div class="review-slide-body">
+                                <p class="review-slide-text is-collapsed">
+                                    "Will and Elliot created some stunning footage for my rental. The photography was
+                                    perfect and having a video and 360 tour were really worth it. Can’t recommend them
+                                    more!"
+                                </p>
+
+                                <button class="review-toggle" type="button" hidden>
+                                    Read more
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="review-slide">
+                            <div class="review-slide-head">
+                                <div>
+                                    <p class="review-slide-name">Carl</p>
+                                    <p class="review-slide-date">March 2026</p>
+                                </div>
+                            </div>
+
+                            <p class="review-slide-stars">★★★★★</p>
+
+                            <div class="review-slide-body">
+                                <p class="review-slide-text is-collapsed">
+                                    "We had MW Photography round to do photos, drone shots and a video for our luxury
+                                    Airbnb. I was really pleased with the results. The photos were excellent, some great
+                                    angles, stand out shots, top class all round. And then they sent us the
+                                    video......absolutely first class!! Would highly recommend!"
+                                </p>
+
+                                <button class="review-toggle" type="button" hidden>
+                                    Read more
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="review-slide">
+                            <div class="review-slide-head">
+                                <div>
+                                    <p class="review-slide-name">Mohammed</p>
+                                    <p class="review-slide-date">March 2026</p>
+                                </div>
+                            </div>
+
+                            <p class="review-slide-stars">★★★★★</p>
+
+                            <div class="review-slide-body">
+                                <p class="review-slide-text is-collapsed">
+                                    "They produce some amazing work and I highly recommend them. I will be using them
+                                    more
+                                    in the future."
+                                </p>
+
+                                <button class="review-toggle" type="button" hidden>
+                                    Read more
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="review-slide">
+                            <div class="review-slide-head">
+                                <div>
+                                    <p class="review-slide-name">Sean</p>
+                                    <p class="review-slide-date">May 2026</p>
+                                </div>
+                            </div>
+
+                            <p class="review-slide-stars">★★★★★</p>
+
+                            <div class="review-slide-body">
+                                <p class="review-slide-text is-collapsed">
+                                    "Elliott reached out to me via my Airbnb listing Asking if we’re interested in
+                                    getting
+                                    professional pics taken to update my listing. He & Will turned up on time and did a
+                                    great job of taking new pics including drone shots. I can highly recommend these
+                                    guys"
+                                </p>
+
+                                <button class="review-toggle" type="button" hidden>
+                                    Read more
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="review-slide">
+                            <div class="review-slide-head">
+                                <div>
+                                    <p class="review-slide-name">Jay</p>
+                                    <p class="review-slide-date">May 2026</p>
+                                </div>
+                            </div>
+
+                            <p class="review-slide-stars">★★★★★</p>
+
+                            <div class="review-slide-body">
+                                <p class="review-slide-text is-collapsed">
+                                    "We had MW Photography over for a couple of our properties and the results were
+                                    stunning, highly recommend."
+                                </p>
+
+                                <button class="review-toggle" type="button" hidden>
+                                    Read more
+                                </button>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <button class="reviews-arrow reviews-arrow-right" type="button" id="reviewsNext"
+                        aria-label="Next reviews">
+                        ›
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="section shell" aria-labelledby="projectsTitle">
             <h2 id="projectsTitle" class="section-title">Featured Projects</h2>
 
@@ -517,6 +542,18 @@
                 <button class="masonry-item" type="button"><img data-img="acd" alt="MW Photography portfolio image"
                         loading="lazy" decoding="async" /></button>
                 <button class="masonry-item" type="button"><img data-img="ace" alt="MW Photography portfolio image"
+                        loading="lazy" decoding="async" /></button>
+                <button class="masonry-item h2 w2" type="button"><img data-img="acf"
+                        alt="MW Photography portfolio image" loading="lazy" decoding="async" /></button>
+                <button class="masonry-item" type="button"><img data-img="aci" alt="MW Photography portfolio image"
+                        loading="lazy" decoding="async" /></button>
+                <button class="masonry-item" type="button"><img data-img="ach" alt="MW Photography portfolio image"
+                        loading="lazy" decoding="async" /></button>
+                <button class="masonry-item h2" type="button"><img data-img="acg" alt="MW Photography portfolio image"
+                        loading="lazy" decoding="async" /></button>
+                <button class="masonry-item w2 h2" type="button"><img data-img="acj"
+                        alt="MW Photography portfolio image" loading="lazy" decoding="async" /></button>
+                <button class="masonry-item h2" type="button"><img data-img="ack" alt="MW Photography portfolio image"
                         loading="lazy" decoding="async" /></button>
             </div>
 
@@ -750,6 +787,12 @@
                         <div class="form-actions">
                             <button class="btn" type="submit">Send enquiry</button>
                         </div>
+
+                        <p class="form-privacy-notice">
+                            By submitting this form, you agree that MW Photography may use the information you provide
+                            to respond to your enquiry.
+                            For more information, please read our <a href="/privacy/">Privacy Policy</a>.
+                        </p>
                     </form>
 
                     <p class="contact-static-text contact-static-email-fallback">
@@ -788,6 +831,7 @@
             <div class="footer-social">
                 <a class="footer-link" href="mailto:mw.photography.enquire@gmail.com"
                     aria-label="Email MW Photography">Email</a>
+                <a class="footer-link" href="/privacy/">Privacy Policy</a>
             </div>
 
             <div class="footer-booking-notes" aria-label="Booking information">

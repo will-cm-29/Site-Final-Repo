@@ -238,6 +238,62 @@ a {
     right: 0;
 }
 
+/* submit privacy */
+
+.form-privacy-notice {
+    margin-top: 0.85rem;
+    max-width: 42rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--muted);
+}
+
+.form-privacy-notice {
+    margin-top: 0.85rem;
+    max-width: 42rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--muted);
+}
+
+.form-privacy-notice a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+
+/* styles for Privacy page*/
+
+.legal-page {
+    max-width: 900px;
+}
+
+.legal-content {
+    max-width: 760px;
+}
+
+.legal-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: clamp(1.25rem, 2vw, 1.6rem);
+}
+
+.legal-content p,
+.legal-content li {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.legal-content ul {
+    padding-left: 1.25rem;
+}
+
+.legal-content a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+
 /* FAQs */
 .faq-list {
     display: grid;
