@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo(0, 0);
 
     const heroImages = [
-        "assets/hero/hero-01.webp",
         "assets/hero/hero-02.webp",
         "assets/hero/hero-03.webp",
         "assets/hero/hero-04.webp",
@@ -558,53 +557,49 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    if (slideA && slideB && heroImages.length) {
+    if (slideA && slideB && heroImages.length && !prefersReducedMotion) {
         let index = 0;
         let showingA = true;
         let isTransitioning = false;
 
-        slideA.style.backgroundImage = `url("${heroImages[0]}")`;
-        slideA.style.opacity = "1";
+        slideA.style.opacity = "0";
         slideB.style.opacity = "0";
+        slideA.style.transition = "opacity 1.2s ease";
+        slideB.style.transition = "opacity 1.2s ease";
 
-        if (heroImages[1]) preloadImage(heroImages[1]);
+        preloadImage(heroImages[0]);
 
-        if (!prefersReducedMotion && heroImages.length > 1) {
-            slideA.style.transition = "opacity 1.2s ease";
-            slideB.style.transition = "opacity 1.2s ease";
+        const changeSlide = async () => {
+            if (isTransitioning) return;
+            isTransitioning = true;
 
-            const changeSlide = async () => {
-                if (isTransitioning) return;
-                isTransitioning = true;
+            const nextSrc = heroImages[index];
 
-                const nextIndex = (index + 1) % heroImages.length;
-                const nextSrc = heroImages[nextIndex];
+            const incoming = showingA ? slideA : slideB;
+            const outgoing = showingA ? slideB : slideA;
 
-                const incoming = showingA ? slideB : slideA;
-                const outgoing = showingA ? slideA : slideB;
+            try {
+                await loadImage(nextSrc);
+                incoming.style.backgroundImage = `url("${nextSrc}")`;
 
-                try {
-                    await loadImage(nextSrc);
-                    incoming.style.backgroundImage = `url("${nextSrc}")`;
+                requestAnimationFrame(() => {
+                    incoming.style.opacity = "1";
+                    outgoing.style.opacity = "0";
 
-                    requestAnimationFrame(() => {
-                        incoming.style.opacity = "1";
-                        outgoing.style.opacity = "0";
+                    showingA = !showingA;
+                    index = (index + 1) % heroImages.length;
 
-                        showingA = !showingA;
-                        index = nextIndex;
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 1200);
+                });
+            } catch {
+                isTransitioning = false;
+            }
+        };
 
-                        setTimeout(() => {
-                            isTransitioning = false;
-                        }, 1200);
-                    });
-                } catch {
-                    isTransitioning = false;
-                }
-            };
-
-            setInterval(changeSlide, 5200);
-        }
+        setTimeout(changeSlide, 5200);
+        setInterval(changeSlide, 5200);
     }
 
     const yearEl = qs("#year");
