@@ -723,28 +723,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lightboxImages = [];
     let lightboxIndex = 0;
-    let lightboxCaptionText = "";
+
+    function normaliseLightboxItem(item, index) {
+        if (typeof item === "string") {
+            return {
+                src: item,
+                alt: `Image ${index + 1}`
+            };
+        }
+
+        return {
+            src: item?.src || "",
+            alt: item?.alt || `Image ${index + 1}`
+        };
+    }
 
     function renderLightbox() {
         if (!lightboxImg || !lightboxImages.length) return;
 
-        const src = lightboxImages[lightboxIndex];
-        lightboxImg.src = src;
-        lightboxImg.alt = lightboxCaptionText || `Image ${lightboxIndex + 1}`;
+        const currentItem = normaliseLightboxItem(lightboxImages[lightboxIndex], lightboxIndex);
+        const nextItem = normaliseLightboxItem(
+            lightboxImages[(lightboxIndex + 1) % lightboxImages.length],
+            (lightboxIndex + 1) % lightboxImages.length
+        );
+        const prevItem = normaliseLightboxItem(
+            lightboxImages[(lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length],
+            (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length
+        );
+
+        lightboxImg.src = currentItem.src;
+        lightboxImg.alt = currentItem.alt;
 
         if (lightboxCaption) {
-            lightboxCaption.textContent = `${lightboxCaptionText || "Image"} (${lightboxIndex + 1}/${lightboxImages.length})`;
+            lightboxCaption.textContent = `${currentItem.alt} (${lightboxIndex + 1}/${lightboxImages.length})`;
         }
 
-        preloadImage(lightboxImages[(lightboxIndex + 1) % lightboxImages.length]);
-        preloadImage(lightboxImages[(lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length]);
+        preloadImage(nextItem.src);
+        preloadImage(prevItem.src);
     }
 
     function openLightbox(images, startIndex = 0, captionText = "") {
         if (!lightbox || !lightboxStage || !images.length) return;
-        lightboxImages = images.slice();
+
+        lightboxImages = images.map((item, index) => {
+            if (typeof item === "string") {
+                return {
+                    src: item,
+                    alt: captionText || `Image ${index + 1}`
+                };
+            }
+
+            return {
+                src: item?.src || "",
+                alt: item?.alt || captionText || `Image ${index + 1}`
+            };
+        }).filter(item => item.src);
+
+        if (!lightboxImages.length) return;
+
         lightboxIndex = Math.max(0, Math.min(startIndex, lightboxImages.length - 1));
-        lightboxCaptionText = captionText;
         renderLightbox();
         openDialog(lightbox, lightboxStage);
     }
@@ -754,7 +791,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (lightboxImg) lightboxImg.src = "";
         lightboxImages = [];
         lightboxIndex = 0;
-        lightboxCaptionText = "";
     }
 
     function nextLightbox() {
@@ -947,6 +983,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return qsa(".masonry-item:not(.is-hidden)", portfolioGrid);
     }
 
+
     function bindPortfolioLightbox() {
         const allItems = qsa(".masonry-item", portfolioGrid);
 
@@ -959,14 +996,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (btn.classList.contains("is-hidden")) return;
 
                 const currentVisibleItems = getVisiblePortfolioItems();
+
                 const fullList = currentVisibleItems
                     .map(item => qs("img", item))
-                    .map(img => img?.dataset.full || img?.src)
-                    .filter(Boolean);
+                    .map(img => ({
+                        src: img?.dataset.full || img?.src,
+                        alt: img?.getAttribute("alt") || "Portfolio image"
+                    }))
+                    .filter(item => item.src);
 
                 const clickedIndex = currentVisibleItems.indexOf(btn);
+
                 if (clickedIndex > -1) {
-                    openLightbox(fullList, clickedIndex, "Portfolio");
+                    openLightbox(fullList, clickedIndex);
                 }
             });
         });
