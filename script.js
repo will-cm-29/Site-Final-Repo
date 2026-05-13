@@ -2,7 +2,35 @@ document.addEventListener("DOMContentLoaded", () => {
     if ("scrollRestoration" in history) {
         history.scrollRestoration = "manual";
     }
-    window.scrollTo(0, 0);
+
+    function scrollToHashTarget() {
+        if (!window.location.hash) return;
+
+        const target = document.querySelector(window.location.hash);
+        if (!target) return;
+
+        const headerHeight = document.querySelector(".site-header")?.offsetHeight || 0;
+        const extraOffset = -55;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - extraOffset;
+
+        const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+        document.documentElement.style.scrollBehavior = "auto";
+
+        window.scrollTo({
+            top: Math.max(0, targetTop),
+            behavior: prefersReducedMotion ? "auto" : "smooth"
+        });
+
+        document.documentElement.style.scrollBehavior = previousScrollBehavior;
+    }
+
+    if (window.location.hash) {
+        window.addEventListener("load", () => {
+            scrollToHashTarget();
+        });
+    } else {
+        window.scrollTo(0, 0);
+    }
 
     const heroImages = [
         "assets/hero/hero-02.webp",

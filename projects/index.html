@@ -55,6 +55,93 @@
     <meta property="og:image:width" content="2400" />
     <meta property="og:image:height" content="1600" />
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://mwphotography.org/projects/#collectionpage",
+        "url": "https://mwphotography.org/projects/",
+        "name": "Projects | MW Photography",
+        "description": "Browse photography projects by MW Photography, including property, hospitality and commercial shoots across the South Coast, London, Hampshire and Dorset.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://mwphotography.org/#website",
+            "name": "MW Photography",
+            "url": "https://mwphotography.org/"
+        },
+        "about": [
+            {
+                "@type": "Service",
+                "name": "Property photography"
+            },
+            {
+                "@type": "Service",
+                "name": "Hospitality photography"
+            },
+            {
+                "@type": "Service",
+                "name": "Commercial photography"
+            }
+        ],
+        "mainEntity": {
+            "@type": "ItemList",
+            "@id": "https://mwphotography.org/projects/#project-list",
+            "name": "MW Photography project archive",
+            "numberOfItems": 6,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "5-Bed House — Boscombe",
+                    "url": "https://mwphotography.org/projects/#boscombe-5-bed",
+                    "image": "https://mwphotography.org/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-800.webp",
+                    "description": "Holiday let photography focused on layout, finish and strong online presentation."
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "The Coach House — Bournemouth",
+                    "url": "https://mwphotography.org/projects/#bournemouth-coach",
+                    "image": "https://mwphotography.org/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-800.webp",
+                    "description": "Character property photography highlighting setting, space and key interior features."
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "3-Bed House — Boscombe",
+                    "url": "https://mwphotography.org/projects/#boscombe-3-bed",
+                    "image": "https://mwphotography.org/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-800.webp",
+                    "description": "Sunny interior and drone photography for a modern home with strong open-plan presentation."
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Quayside House — Poole",
+                    "url": "https://mwphotography.org/projects/#poole-2-bed-j",
+                    "image": "https://mwphotography.org/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-drone-800.webp",
+                    "description": "Marina side holiday let, focusing on showcasing bright interiors and the surrounding area."
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Ashcroft House — Bournemouth",
+                    "url": "https://mwphotography.org/projects/#bouremouth-5-bed-s",
+                    "image": "https://mwphotography.org/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-open-800.webp",
+                    "description": "Coastal holiday home, focusing on spacious interiors, outdoor living and its beachside location."
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Holiday Let — Poole",
+                    "url": "https://mwphotography.org/projects/#poole-seaside",
+                    "image": "https://mwphotography.org/assets/projects/commissioned/poole-seaside/thumb/poole-out2-800.webp",
+                    "description": "A light-filled coastal Airbnb with bright, airy interiors designed to capture relaxed seaside living."
+                }
+            ]
+        }
+    }                
+    </script>
+
     <link rel="canonical" href="https://mwphotography.org/projects/">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -64,6 +151,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="/styles.css" />
+
 </head>
 
 <body>
@@ -101,6 +189,7 @@
             </p>
 
             <div class="page-hero-actions">
+                <a class="btn" href="/#contact">Request a quote</a>
                 <a class="btn btn-secondary" href="/">← Return to home</a>
             </div>
         </section>
@@ -114,11 +203,12 @@
             </div>
 
             <div class="project-grid project-grid-archive" id="allProjectsGrid">
-                <button class="project-card" type="button" data-project-id="boscombe-5-bed"
+                <button id="boscombe-5-bed" class="project-card" type="button" data-project-id="boscombe-5-bed"
                     aria-label="Open project: 5-Bed House, Boscombe">
                     <div class="project-card-media">
                         <img src="/assets/projects/commissioned/boscombe-5-bed/thumb/boscombe-5-bed-800.webp"
-                            width="2400" height="1600" alt="5-bed house in Boscombe" loading="lazy" decoding="async" />
+                            width="2400" height="1600" alt="5-bed house in Boscombe" loading="eager"
+                            fetchpriority="high" decoding="async" />
                     </div>
                     <div class="project-card-meta">
                         <p class="project-card-tag">Featured</p>
@@ -129,7 +219,7 @@
                     </div>
                 </button>
 
-                <button class="project-card" type="button" data-project-id="bournemouth-coach"
+                <button id="bournemouth-coach" class="project-card" type="button" data-project-id="bournemouth-coach"
                     aria-label="Open project: The Coach House, Bournemouth">
                     <div class="project-card-media">
                         <img src="/assets/projects/commissioned/bournemouth-coach-house/thumb/bournemouth-coach-800.webp"
@@ -145,7 +235,7 @@
                     </div>
                 </button>
 
-                <button class="project-card" type="button" data-project-id="boscombe-3-bed"
+                <button id="boscombe-3-bed" class="project-card" type="button" data-project-id="boscombe-3-bed"
                     aria-label="Open project: 3-Bed House, Boscombe">
                     <div class="project-card-media">
                         <img src="/assets/projects/commissioned/boscombe-3-bed-j/thumb/boscombe-3-bed-800.webp"
@@ -160,7 +250,7 @@
                     </div>
                 </button>
 
-                <button class="project-card" type="button" data-project-id="poole-2-bed-j"
+                <button id="poole-2-bed-j" class="project-card" type="button" data-project-id="poole-2-bed-j"
                     aria-label="Open project: 2-Bed House, Poole">
                     <div class="project-card-media">
                         <img src="/assets/projects/commissioned/poole-2-bed-j/thumb/poole-2-bed-drone-800.webp"
@@ -174,7 +264,7 @@
                     </div>
                 </button>
 
-                <button class="project-card" type="button" data-project-id="bouremouth-5-bed-s"
+                <button id="bouremouth-5-bed-s" class="project-card" type="button" data-project-id="bouremouth-5-bed-s"
                     aria-label="Open project: Ashcroft House, Bournemouth">
                     <div class="project-card-media">
                         <img src="/assets/projects/commissioned/bouremouth-5-bed-s/thumb/bouremouth-5-bed-open-800.webp"
@@ -190,20 +280,24 @@
                     </div>
                 </button>
 
-                <button class="project-card" type="button" data-project-id="poole-seaside"
+                <button id="poole-seaside" class="project-card" type="button" data-project-id="poole-seaside"
                     aria-label="Open project: Holiday Let, Poole">
                     <div class="project-card-media">
                         <img src="/assets/projects/commissioned/poole-seaside/thumb/poole-out2-800.webp" width="800"
                             height="534" alt="Holiday Let, Poole" loading="lazy" decoding="async" />
                     </div>
                     <div class="project-card-meta">
-                        <p class="project-card-title">Holiday Let — Poole</p>
+                        <p class="project-title">Holiday Let — Poole</p>
                         <p class="project-card-subtitle">
                             A light-filled coastal Airbnb with bright, airy interiors designed to capture relaxed
                             seaside living at its most inviting.
                         </p>
                     </div>
                 </button>
+            </div>
+            <div class="archive-cta">
+                <p>Interested in similar photography for your property or project?</p>
+                <a class="btn" href="/#contact">Request a quote</a>
             </div>
         </section>
     </main>
