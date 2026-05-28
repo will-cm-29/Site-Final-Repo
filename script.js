@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!target) return;
 
         const headerHeight = document.querySelector(".site-header")?.offsetHeight || 0;
-        const extraOffset = -55;
+        const extraOffset = -120;
         const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - extraOffset;
 
         const previousScrollBehavior = document.documentElement.style.scrollBehavior;
