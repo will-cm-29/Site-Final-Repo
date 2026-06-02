@@ -252,12 +252,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
                 {
                     tier: "Listing",
-                    price: "From £215",
+                    price: "From £195",
                     detail: "17–23 final edited images • best for most homes, HMOs, serviced accommodation and stronger listing coverage"
                 },
                 {
                     tier: "Premium",
-                    price: "From £255",
+                    price: "From £225",
                     detail: "25+ final edited images • best for larger homes, premium listings, holiday lets, commercial spaces and full marketing sets"
                 }
             ],
@@ -283,17 +283,17 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Essential",
-                    price: "From £235",
+                    price: "From £195",
                     detail: "7–10 final edited property images + 3–5 drone images • strong entry point for smaller listings, rentals and exterior context"
                 },
                 {
                     tier: "Listing",
-                    price: "From £295",
+                    price: "From £245",
                     detail: "17–23 final edited property images + 5–8 drone images • suitable for most homes, HMOs, holiday lets and stronger listing coverage"
                 },
                 {
                     tier: "Premium",
-                    price: "From £345",
+                    price: "From £295",
                     detail: "25+ final edited property images + 8–12 drone images • best for larger homes, premium listings, land, commercial spaces and standout settings"
                 }
             ],
@@ -319,18 +319,18 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Essential",
-                    price: "From £135",
-                    detail: "7–10 final edited images + floor plan • efficient option for smaller properties, rentals and straightforward marketing needs"
+                    price: "From £125",
+                    detail: "7–10 final edited images + floor plan • efficient bundle option for smaller properties, rentals and straightforward marketing needs"
                 },
                 {
                     tier: "Listing",
-                    price: "From £265",
-                    detail: "17–23 final edited images + floor plan • best overall value for most homes, HMOs and serviced accommodation"
+                    price: "From £235",
+                    detail: "17–23 final edited images + floor plan • better-value bundle for most homes, HMOs and serviced accommodation"
                 },
                 {
                     tier: "Premium",
-                    price: "From £305",
-                    detail: "25+ final edited images + floor plan • suited to larger homes, premium listings, holiday lets and stronger property presentation"
+                    price: "From £275",
+                    detail: "25+ final edited images + floor plan • discounted package for larger homes, premium listings, holiday lets and stronger property presentation"
                 }
             ],
             delivery: [
@@ -346,6 +346,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Larger, multi-level or more complex properties may require a tailored quote.",
                 "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents.",
+                "Bundled pricing is intended to offer better value than booking photography and floor plans separately.",
                 "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
             ]
         },
@@ -385,23 +386,23 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         "video": {
-            title: "Video",
-            intro: "Short-form property and marketing video tailored to the space, platform and required output.",
+            title: "Video Packages",
+            intro: "Property video packages for social media, reels and listing promotion, with single-format, dual-format and premium options grouped together in one place.",
             packages: [
                 {
-                    tier: "Highlight Reel",
-                    price: "From £225",
-                    detail: "30–45 sec • clean, concise edit for core marketing use"
+                    tier: "Single Format Video",
+                    price: "From £200",
+                    detail: "One edited property video up to 2 minutes • choose either vertical or horizontal format • ideal for a focused listing video or social media post"
                 },
                 {
-                    tier: "Walkthrough",
-                    price: "From £325",
-                    detail: "45–60 sec • most popular for fuller room-to-room coverage"
+                    tier: "Dual Format Social Media Video",
+                    price: "From £300",
+                    detail: "Vertical and horizontal edits included • up to 2 minutes each • ideal for reels, social media and property listing promotion"
                 },
                 {
-                    tier: "Showcase Film",
-                    price: "From £465",
-                    detail: "60–90 sec • more polished edit, stronger pacing and a more premium finish"
+                    tier: "Premium Video Package",
+                    price: "£400 (contact for details)",
+                    detail: "Premium property video package for stronger listing presentation, expanded shot coverage, more involved edits and tailored deliverables"
                 }
             ],
             delivery: [
@@ -411,6 +412,11 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             notes: [
                 "All prices are starting points.",
+                "Drone footage is included with all video packages, subject to weather, permissions, airspace restrictions and safe operating conditions.",
+                "Optional realtor / agent overlays can be added to any video package, including room names, bedroom counts, key features and property highlights.",
+                "Videos can be produced longer than 2 minutes where needed; please contact us so the scope, edit time and final deliverables can be quoted properly.",
+                "Final edits can be tailored to the client’s preferred use, with shorter cut-down versions available for platforms, listings or social media placements where required.",
+                "The £400 premium video package should be discussed before booking so the scope, shot list and deliverables are clear.",
                 "Final pricing depends on edit complexity, shot list, required output and turnaround.",
                 "Video turnaround depends more heavily on edit complexity than photography.",
                 "Same-day or next-day video delivery may be available for simpler edits but should be quoted separately.",
