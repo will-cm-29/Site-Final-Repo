@@ -2675,3 +2675,141 @@ button[hidden],
         right: 8%;
     }
 }
+
+/* Video page */
+.video-page-hero {
+    padding-top: calc(var(--header-h) + 72px);
+}
+
+.video-page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.video-feature-section {
+    padding-top: 28px;
+}
+
+.video-feature-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 28px;
+    align-items: center;
+}
+
+.video-feature-copy p:not(.section-kicker) {
+    margin: 12px 0 0 0;
+    max-width: 620px;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #000;
+    box-shadow: var(--shadow);
+}
+
+.video-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.video-package-section {
+    padding-top: 52px;
+}
+
+.video-package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.video-package-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: #fff;
+    padding: 22px;
+    box-shadow: var(--shadow-sm);
+}
+
+.video-package-price {
+    margin: 0 0 12px 0;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.video-package-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.video-package-card p:last-child {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.video-notes-panel {
+    margin-top: 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--soft-2);
+    padding: 22px;
+}
+
+.video-notes-panel h3 {
+    margin: 0 0 12px 0;
+    font-size: 15px;
+}
+
+.video-notes-panel ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.video-cta-section {
+    padding-top: 36px;
+}
+
+.video-cta-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--soft-2);
+    padding: 28px;
+}
+
+.video-cta-card p:not(.section-kicker) {
+    max-width: 760px;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.video-cta-card .btn {
+    margin-top: 10px;
+}
+
+@media (max-width: 980px) {
+    .video-feature-layout,
+    .video-package-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-page-hero {
+        padding-top: calc(var(--header-h) + 42px);
+    }
+}
