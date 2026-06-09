@@ -387,40 +387,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
         "video": {
             title: "Video Packages",
-            intro: "Property video packages for social media, reels and listing promotion, with single-format, dual-format and premium options grouped together in one place.",
+            intro: "Property video options for listings and social media, from affordable AI-assisted photo video through to fully filmed property video packages.",
             packages: [
+                {
+                    tier: "AI-assisted Photo Video",
+                    price: "From £65",
+                    detail: "Short moving video created from existing still property images • £50 when added to a new MW Photography shoot • usually around 20–45 seconds"
+                },
                 {
                     tier: "Single Format Video",
                     price: "From £200",
-                    detail: "One edited property video up to 2 minutes • choose either vertical or horizontal format • ideal for a focused listing video or social media post"
+                    detail: "One filmed property video up to 2 minutes • choose either vertical or horizontal format • ideal for a focused listing video or social media post"
                 },
                 {
                     tier: "Dual Format Social Media Video",
                     price: "From £300",
-                    detail: "Vertical and horizontal edits included • up to 2 minutes each • ideal for reels, social media and property listing promotion"
+                    detail: "Vertical and horizontal filmed edits included • up to 2 minutes each • ideal for reels, social media and property listing promotion"
                 },
                 {
                     tier: "Premium Video Package",
                     price: "£400 (contact for details)",
-                    detail: "Premium property video package for stronger listing presentation, expanded shot coverage, more involved edits and tailored deliverables"
+                    detail: "Premium filmed property video package for stronger listing presentation, expanded shot coverage, more involved edits and tailored deliverables"
                 }
             ],
             delivery: [
-                "Standard delivery: usually within 2–4 days",
-                "Priority turnaround: from £95 depending on edit complexity and workload",
+                "Standard delivery: usually within 2–4 working days",
+                "Priority turnaround: from £15 depending on edit complexity and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
                 "All prices are starting points.",
-                "Drone footage is included with all video packages, subject to weather, permissions, airspace restrictions and safe operating conditions.",
-                "Optional realtor / agent overlays can be added to any video package, including room names, bedroom counts, key features and property highlights.",
+                "AI-assisted photo video uses still images, AI animation tools and manual editing; it is not filmed video.",
+                "AI-assisted photo video starts from £65 using existing client-supplied photos, or £50 when added to a new MW Photography shoot.",
+                "Extra formats or additional AI-assisted photo video versions are usually quoted from £15–£25 depending on scope.",
+                "Drone footage is included with filmed video packages, subject to weather, permissions, airspace restrictions and safe operating conditions.",
+                "Optional realtor / agent overlays can be added to video packages, including room names, bedroom counts, key features and property highlights.",
                 "Videos can be produced longer than 2 minutes where needed; please contact us so the scope, edit time and final deliverables can be quoted properly.",
                 "Final edits can be tailored to the client’s preferred use, with shorter cut-down versions available for platforms, listings or social media placements where required.",
                 "The £400 premium video package should be discussed before booking so the scope, shot list and deliverables are clear.",
                 "Final pricing depends on edit complexity, shot list, required output and turnaround.",
-                "Video turnaround depends more heavily on edit complexity than photography.",
-                "Same-day or next-day video delivery may be available for simpler edits but should be quoted separately.",
-                "Agent-led pieces, scripting or more involved edits may be quoted individually depending on scope.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
             ]
