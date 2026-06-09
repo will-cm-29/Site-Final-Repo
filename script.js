@@ -386,7 +386,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         "video": {
-            title: "Walkthrough Video",
+            title: "Walkthrough",
             intro: "Filmed property video for listings, websites and social media. Best for properties that need a proper on-site walkthrough, drone footage and a stronger sense of flow, scale and setting.",
             packages: [
                 {
@@ -407,7 +407,6 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 2–4 working days",
-                "Priority turnaround: from £15 depending on edit complexity and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
@@ -424,7 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         "still-image-video": {
-            title: "Still Image Motion Video",
+            title: "Still Image Video",
             intro: "Affordable moving video created from still property photos. MW Photography completes the edit, while AI-assisted tools add controlled movement, depth and transitions to the supplied images.",
             packages: [
                 {
@@ -436,16 +435,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     tier: "Added to a new MW Photography shoot",
                     price: "From £50",
                     detail: "Lower add-on rate when booked alongside a new photography package • photography itself is charged at the standard package rate"
-                },
-                {
-                    tier: "Extra format or version",
-                    price: "From £15–£25",
-                    detail: "Additional vertical, landscape or shorter cut-down versions, depending on scope and edit complexity"
                 }
             ],
             delivery: [
                 "Standard delivery: usually within 2–4 working days after final images are available",
-                "Priority turnaround: from £15 depending on edit complexity and workload",
                 "Client-supplied photos can usually be handled remotely without a site visit"
             ],
             notes: [
@@ -455,7 +448,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "The £50 add-on price applies only when added to a new MW Photography shoot; the photography package is charged separately at the standard rate.",
                 "Cancellation and rescheduling terms only apply where a new shoot is booked. If the video is created from supplied photos with no site visit, there is usually no shoot cancellation issue, but the editing fee may not be refundable once editing has started.",
                 "Image quality matters: low-resolution, heavily compressed or poorly lit photos may limit the final result.",
-                "Final pricing may change for longer edits, heavy branding, complex revisions, multiple outputs or additional versions."
+                "Final pricing may change for longer edits, heavy branding or complex revisions."
             ]
         },
 
