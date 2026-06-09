@@ -18,8 +18,7 @@
         });
     </script>
 
-    <script id="cookieyes" type="text/javascript"
-        src="https://cdn-cookieyes.com/client_data/0ddc21c3c67c71450f35c2b6/script.js"></script>
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/0ddc21c3c67c71450f35c2b6/script.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-80M87RBH17"></script>
@@ -31,58 +30,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Property Video & AI-assisted Photo Video | MW Photography</title>
-    <meta name="description"
-        content="Property video production and affordable AI-assisted photo video from still images for estate agents, holiday lets and developers across Hampshire, Dorset, London and the South Coast." />
+    <title>Walkthrough Property Video | MW Photography</title>
+    <meta name="description" content="Filmed walkthrough property video for estate agents, holiday lets and developers across Hampshire, Dorset, London and the South Coast. Drone footage included where safe and permitted." />
     <link rel="canonical" href="https://mwphotography.org/video/">
 
-    <meta property="og:title" content="Property Video & AI-assisted Photo Video | MW Photography" />
-    <meta property="og:description"
-        content="Cinematic filmed property video, drone footage and affordable AI-assisted photo video for listings, social media and property marketing." />
+    <meta property="og:title" content="Walkthrough Property Video | MW Photography" />
+    <meta property="og:description" content="Filmed property walkthrough videos, drone footage and social media edits for listings and property marketing." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mwphotography.org/video/" />
     <meta property="og:site_name" content="MW Photography" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:image" content="https://mwphotography.org/assets/og/hero-01.webp" />
-    <meta property="og:image:alt" content="MW Photography property video and property marketing services." />
+    <meta property="og:image:alt" content="MW Photography filmed property video services." />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://mwphotography.org/video/#walkthrough-video-service",
+      "name": "Walkthrough Property Video",
+      "provider": {"@type": "ProfessionalService", "name": "MW Photography", "url": "https://mwphotography.org/"},
+      "areaServed": ["Dorset", "Hampshire", "London", "South Coast", "Bournemouth", "Poole", "Christchurch"],
+      "serviceType": ["Filmed property video", "Walkthrough video", "Drone video", "Social media video"],
+      "description": "Filmed walkthrough property video and drone footage for listings, social media and property marketing.",
+      "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Walkthrough video options", "itemListElement": [
+          {"@type": "Offer", "name": "Single Format Video", "price": "200", "priceCurrency": "GBP"},
+          {"@type": "Offer", "name": "Dual Format Social Media Video", "price": "300", "priceCurrency": "GBP"},
+          {"@type": "Offer", "name": "Premium Video Package", "price": "400", "priceCurrency": "GBP"}
+      ]}
+    }
+    </script>
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "@id": "https://mwphotography.org/video/#property-video-service",
-      "name": "Property Video and AI-assisted Photo Video",
-      "provider": {
-        "@type": "ProfessionalService",
-        "name": "MW Photography",
-        "url": "https://mwphotography.org/"
-      },
-      "areaServed": ["Dorset", "Hampshire", "London", "South Coast", "Bournemouth", "Poole", "Christchurch"],
-      "serviceType": ["Filmed property video", "Drone video", "Social media video", "AI-assisted photo video"],
-      "description": "Filmed property video, drone footage and AI-assisted photo video from still images for listings, social media and property marketing.",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Property video options",
-        "itemListElement": [
-          {"@type": "Offer", "name": "AI-assisted photo video from existing photos", "price": "65", "priceCurrency": "GBP"},
-          {"@type": "Offer", "name": "AI-assisted photo video add-on to a new photography package", "price": "50", "priceCurrency": "GBP"},
-          {"@type": "Offer", "name": "Single Format Video", "price": "200", "priceCurrency": "GBP"},
-          {"@type": "Offer", "name": "Dual Format Social Media Video", "price": "300", "priceCurrency": "GBP"},
-          {"@type": "Offer", "name": "Premium Video Package", "price": "400", "priceCurrency": "GBP"}
-        ]
-      }
-    }
-    </script>
-
     <link rel="stylesheet" href="/styles.css" />
 </head>
-
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div id="top"></div>
@@ -100,7 +85,13 @@
             <div class="nav-links" id="mobileNav">
                 <a class="nav-link" href="/#projects">Projects</a>
                 <a class="nav-link" href="/#portfolio">Portfolio</a>
-                <a class="nav-link" href="/video/" aria-current="page">Videos</a>
+                <div class="nav-dropdown">
+                    <a class="nav-link nav-dropdown-trigger" href="/video/" aria-current="page">Videos</a>
+                    <div class="nav-dropdown-menu" aria-label="Video options">
+                        <a href="/video/" aria-current="page">Walkthrough Video</a>
+                        <a href="/still-image-video/">Still Image Motion</a>
+                    </div>
+                </div>
                 <a class="nav-link" href="/projects/">All Projects</a>
                 <a class="nav-link" href="/#pricing">Pricing</a>
                 <a class="nav-link" href="/faq/">FAQs</a>
@@ -111,342 +102,75 @@
 
     <main id="main">
         <section class="page-hero shell video-page-hero" aria-labelledby="videoPageTitle">
-            <p class="page-hero-kicker">Property Video</p>
-            <h1 id="videoPageTitle" class="page-hero-title">Video Examples and Information</h1>
-            <p class="page-hero-text">
-                Choose a filmed property video for a full on-site walkthrough with drone footage, or use AI-assisted
-                photo video when you need a faster, lower-cost way to turn still property images into social and
-                listing-ready motion.
-            </p>
+            <p class="page-hero-kicker">Walkthrough Video</p>
+            <h1 id="videoPageTitle" class="page-hero-title">Filmed property video for listings that need the full walkthrough treatment.</h1>
+            <p class="page-hero-text">On-site filmed property video for estate agents, holiday lets, developers and property owners. Ideal when the layout, finish, setting and flow of the property need to be experienced rather than just seen in still images.</p>
             <div class="page-hero-actions">
                 <a class="btn" href="/#contact">Request a quote</a>
                 <a class="btn btn-secondary" href="#packages">View pricing</a>
-                <a class="btn btn-secondary" href="#photo-video">AI photo video</a>
+                <a class="btn btn-secondary" href="/still-image-video/">Still image option</a>
             </div>
         </section>
 
         <section class="section shell" id="filmed-video" aria-labelledby="filmedVideoTitle">
             <div class="video-showcase-row">
                 <div class="video-showcase-copy">
-                    <p class="video-eyebrow">Filmed property video</p>
-                    <h2 id="filmedVideoTitle" class="section-title video-left-title">For listings that need the full
-                        walkthrough treatment.</h2>
-                    <p class="section-note">
-                        Filmed on site, edited for listings, websites and social media, and supported with drone footage
-                        where conditions, permissions and airspace allow. This is the best option for premium homes,
-                        launches, holiday lets and campaigns where the property needs to feel fully experienced.
-                    </p>
+                    <p class="video-eyebrow">Filmed on site</p>
+                    <h2 id="filmedVideoTitle" class="section-title video-left-title">A proper walkthrough, not a slideshow.</h2>
+                    <p class="section-note">This is the best option for premium homes, launches, holiday lets and campaigns where the viewer needs to understand the space, route through the rooms, exterior setting and overall feel of the property.</p>
                     <ul class="video-check-list">
                         <li>On-site filmed footage with a clear sense of flow and layout</li>
-                        <li>Drone footage included where safe and permitted</li>
+                        <li>Drone footage included where safe, permitted and suitable</li>
                         <li>Landscape, vertical and social cut-down options available</li>
                         <li>Best for premium listings, holiday lets and larger marketing campaigns</li>
                     </ul>
-                    <div class="page-hero-actions video-inline-actions">
-                        <a class="btn" href="#packages">Filmed video pricing</a>
-                    </div>
                 </div>
                 <div class="video-embed video-embed-compact" aria-label="MW Photography filmed property video example">
-                    <iframe src="https://www.youtube.com/embed/ZRiZwT6O2rg"
-                        title="MW Photography filmed property video example" loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section class="section shell video-alt-section" id="photo-video" aria-labelledby="photoVideoTitle">
-            <div class="video-showcase-row video-showcase-row-reverse">
-                <div class="video-embed video-embed-compact" aria-label="AI-assisted property photo video example">
-                    <iframe src="https://www.youtube.com/embed/57TP2Ijq3us"
-                        title="AI-assisted property photo video example" loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="video-showcase-copy">
-                    <p class="video-eyebrow">Affordable alternative</p>
-                    <h2 id="photoVideoTitle" class="section-title video-left-title">AI-assisted photo video from still
-                        images.</h2>
-                    <p class="section-note">
-                        Need video without booking a full filmed shoot? We can turn existing property photos into a
-                        polished moving video for portals, websites and social media.
-                    </p>
-                    <p class="video-body-copy">
-                        This uses AI-assisted animation to add controlled movement, depth and transitions to still
-                        images. The final edit is then manually refined with pacing, music and delivery format in mind.
-                    </p>
-                    <div class="video-price-callout">
-                        <strong>From £65</strong> using your existing photos<br>
-                        <span>or £50 when added to a new MW Photography shoot.</span>
-                    </div>
-                    <p class="video-disclosure">
-                        Important note: this is not filmed video. It is an AI-assisted photo-to-video service, best used
-                        as a lower-cost marketing option when a full property video shoot is not required.
-                    </p>
-                    <div class="page-hero-actions video-inline-actions">
-                        <a class="btn" href="/#contact">Ask about AI photo video</a>
-                        <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=57TP2Ijq3us" target="_blank"
-                            rel="noopener noreferrer">Open example</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section shell" aria-labelledby="photoVideoExampleTitle">
-            <div class="video-showcase-row">
-                <div class="video-showcase-copy">
-                    <p class="video-eyebrow">Second AI-assisted example</p>
-                    <h2 id="photoVideoExampleTitle" class="section-title video-left-title">Useful when the photos
-                        already exist.</h2>
-                    <p class="section-note">
-                        AI-assisted photo video is especially useful for agents, landlords and hosts who already have a
-                        finished image set but want something more engaging for Reels, Shorts, websites or email
-                        marketing.
-                    </p>
-                    <ul class="video-check-list">
-                        <li>Created from supplied still property images</li>
-                        <li>Short edited video, usually around 20–45 seconds</li>
-                        <li>Music, pacing and simple title treatment included</li>
-                        <li>Extra formats or additional versions quoted from £15–£25</li>
-                    </ul>
-                </div>
-                <div class="video-embed video-embed-compact"
-                    aria-label="Second AI-assisted property photo video example">
-                    <iframe src="https://www.youtube.com/embed/8hJN7P2u5KA"
-                        title="Second AI-assisted property photo video example" loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/ZRiZwT6O2rg" title="MW Photography filmed property video example" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
 
         <section class="section shell" aria-labelledby="deliverablesTitle">
-            <div class="section-head">
-                <h2 id="deliverablesTitle" class="section-title">What We Create</h2>
-                <p class="section-note">
-                    A strong video package should fit the way the listing will actually be marketed, from full
-                    walkthroughs to short social edits and lower-cost photo-led motion.
-                </p>
-            </div>
+            <div class="section-head"><h2 id="deliverablesTitle" class="section-title">What We Create</h2><p class="section-note">Filmed video packages are built around where the listing will be used, from property portals and websites to Reels, Shorts and email campaigns.</p></div>
             <div class="video-card-grid video-card-grid-four">
-                <article class="video-info-card">
-                    <p class="video-card-number">01</p>
-                    <h3>Highlight reels</h3>
-                    <p>Short-form edits for social media, portals and listing promotion, optimised for Instagram, TikTok
-                        and Facebook.</p>
-                </article>
-                <article class="video-info-card">
-                    <p class="video-card-number">02</p>
-                    <h3>Walkthrough films</h3>
-                    <p>Full filmed property tours showing layout, flow, finish and scale in a way stills alone cannot
-                        communicate.</p>
-                </article>
-                <article class="video-info-card">
-                    <p class="video-card-number">03</p>
-                    <h3>Drone footage</h3>
-                    <p>Aerial coverage of the plot, setting and surrounding area, included with all filmed video
-                        packages as standard.</p>
-                </article>
-                <article class="video-info-card">
-                    <p class="video-card-number">04</p>
-                    <h3>AI photo video</h3>
-                    <p>Affordable motion videos created from still images when a full filmed shoot is not needed.</p>
-                </article>
+                <article class="video-info-card"><p class="video-card-number">01</p><h3>Walkthrough films</h3><p>Full filmed property tours showing layout, flow, finish and scale in a way stills alone cannot communicate.</p></article>
+                <article class="video-info-card"><p class="video-card-number">02</p><h3>Highlight reels</h3><p>Short-form edits for social media, portals and listing promotion, optimised for Instagram, TikTok and Facebook.</p></article>
+                <article class="video-info-card"><p class="video-card-number">03</p><h3>Drone footage</h3><p>Aerial coverage of the plot, setting and surrounding area, included with filmed packages where suitable.</p></article>
+                <article class="video-info-card"><p class="video-card-number">04</p><h3>Vertical edits</h3><p>Platform-native cuts for Reels, Stories and Shorts. Same shoot, different format, wider reach.</p></article>
             </div>
         </section>
 
         <section class="section shell" aria-labelledby="formatsTitle">
             <div class="video-feature-grid video-feature-grid-reverse">
-                <div class="video-format-panel" aria-hidden="true">
-                    <span>16:9 Landscape</span>
-                    <span>9:16 Vertical</span>
-                    <span>Social cut-downs</span>
-                </div>
-                <div>
-                    <div class="section-head video-section-head-left">
-                        <h2 id="formatsTitle" class="section-title video-left-title">One brief. Multiple outputs.</h2>
-                        <p class="section-note">
-                            Whether filmed on site or built from still images, the final output can be shaped for the
-                            places your audience will actually see it.
-                        </p>
-                    </div>
-                    <ul class="video-check-list">
-                        <li>Landscape edit for portals, websites and YouTube</li>
-                        <li>Vertical edit for Instagram Reels, Stories, Shorts and Facebook</li>
-                        <li>Optional overlays for room names, bedroom counts and key features</li>
-                        <li>Colour, music and pacing considered for commercial property marketing</li>
-                        <li>Delivered digitally, usually within 2–4 working days depending on scope</li>
-                    </ul>
-                </div>
+                <div class="video-format-panel" aria-hidden="true"><span>16:9 Landscape</span><span>9:16 Vertical</span><span>Social cut-downs</span></div>
+                <div><div class="section-head video-section-head-left"><h2 id="formatsTitle" class="section-title video-left-title">One shoot. Multiple outputs.</h2><p class="section-note">A single property shoot can produce a landscape listing film, a vertical social reel and shorter cut-downs for email campaigns, covering each channel your marketing needs.</p></div><ul class="video-check-list"><li>Landscape edit for portals, websites and YouTube</li><li>Vertical edit for Instagram Reels, TikTok and Facebook</li><li>Optional overlays for room names, bedroom counts and key features</li><li>Colour graded and music-licensed for commercial use</li></ul></div>
             </div>
         </section>
 
         <section class="section shell" id="packages" aria-labelledby="packagesTitle">
-            <div class="section-head">
-                <h2 id="packagesTitle" class="section-title">Video Pricing</h2>
-                <p class="section-note">
-                    AI-assisted photo video starts from £65 using existing photos, or £50 when added to a new MW
-                    Photography shoot. Filmed property video starts from £200 and includes drone footage where
-                    conditions and airspace allow.
-                </p>
-            </div>
-            <div class="video-package-grid video-package-grid-four">
-                <article class="video-package-card video-package-card-featured">
-                    <p class="video-package-label">Affordable alternative</p>
-                    <h3>AI-assisted Photo Video</h3>
-                    <p class="video-package-text">A short moving video created from still property images, ideal for
-                        lower-budget listings, social media and faster marketing updates.</p>
-                    <p class="video-package-price">From £65</p>
-                    <p class="video-package-subprice">or £50 as a photography add-on</p>
-                    <ul class="video-check-list">
-                        <li>Using your existing photos from £65</li>
-                        <li>Added to a new MW Photography shoot from £50</li>
-                        <li>Usually around 20–45 seconds</li>
-                        <li>AI-assisted animation and manual editing</li>
-                        <li>Extra format or additional version from £15–£25</li>
-                    </ul>
-                    <a class="btn" href="/#contact">Ask about this</a>
-                </article>
-
-                <article class="video-package-card">
-                    <p class="video-package-label">Single format</p>
-                    <h3>Single Format Video</h3>
-                    <p class="video-package-text">One filmed and edited video up to 2 minutes, supplied in either
-                        vertical or horizontal format. Ideal for a focused listing video, reel or social media post.</p>
-                    <p class="video-package-price">From £200</p>
-                    <ul class="video-check-list">
-                        <li>Up to 2-minute filmed edit</li>
-                        <li>Vertical or landscape format</li>
-                        <li>Drone footage included</li>
-                        <li>Licensed music and colour grade</li>
-                        <li>1 revision included</li>
-                    </ul>
-                    <a class="btn btn-secondary" href="/#contact">Request a quote</a>
-                </article>
-
-                <article class="video-package-card">
-                    <p class="video-package-label">Most popular filmed option</p>
-                    <h3>Dual Format Social Media Video</h3>
-                    <p class="video-package-text">Vertical and horizontal filmed edits, up to 2 minutes each, giving you
-                        versions suited to reels, stories, feeds, websites and property portals.</p>
-                    <p class="video-package-price">From £300</p>
-                    <ul class="video-check-list">
-                        <li>Up to 2-minute edits in both formats</li>
-                        <li>Landscape and vertical versions</li>
-                        <li>Drone footage included</li>
-                        <li>Licensed music and colour grade</li>
-                        <li>1 revision per format</li>
-                    </ul>
-                    <a class="btn btn-secondary" href="/#contact">Request a quote</a>
-                </article>
-
-                <article class="video-package-card">
-                    <p class="video-package-label">Premium filmed option</p>
-                    <h3>Premium Video Package</h3>
-                    <p class="video-package-text">A more complete and tailored filmed property video option for larger
-                        listings, premium homes and projects requiring a more involved edit.</p>
-                    <p class="video-package-price">£400</p>
-                    <ul class="video-check-list">
-                        <li>Extended shoot time</li>
-                        <li>Landscape and vertical formats</li>
-                        <li>Full drone coverage</li>
-                        <li>Info overlays and titles</li>
-                        <li>Turnaround quoted per project</li>
-                    </ul>
-                    <a class="btn btn-secondary" href="/#contact">Enquire about this</a>
-                </article>
+            <div class="section-head"><h2 id="packagesTitle" class="section-title">Walkthrough Video Pricing</h2><p class="section-note">Filmed property video starts from £200 and includes drone footage where conditions, permissions and airspace allow.</p></div>
+            <div class="video-package-grid video-package-grid-three">
+                <article class="video-package-card"><p class="video-package-label">Single format</p><h3>Single Format Video</h3><p class="video-package-text">One edited filmed property video up to 2 minutes, supplied in either vertical or horizontal format.</p><p class="video-package-price">From £200</p><ul class="video-check-list"><li>Vertical or landscape format</li><li>Drone footage included where suitable</li><li>Licensed music</li><li>Colour graded</li><li>1 revision included</li></ul><a class="btn btn-secondary" href="/#contact">Request a quote</a></article>
+                <article class="video-package-card video-package-card-featured"><p class="video-package-label">Most popular</p><h3>Dual Format Social Media Video</h3><p class="video-package-text">Vertical and horizontal edits, up to 2 minutes each, suited to reels, stories, feeds, websites and property portals.</p><p class="video-package-price">From £300</p><ul class="video-check-list"><li>Landscape and vertical versions</li><li>Drone footage included where suitable</li><li>Licensed music</li><li>Optional info overlays</li><li>1 revision per format</li></ul><a class="btn" href="/#contact">Request a quote</a></article>
+                <article class="video-package-card"><p class="video-package-label">Premium</p><h3>Premium Video Package</h3><p class="video-package-text">A more complete and tailored filmed property video option for larger listings and projects requiring a more involved edit.</p><p class="video-package-price">£400</p><ul class="video-check-list"><li>Extended shoot time</li><li>Landscape and vertical formats</li><li>Full drone coverage</li><li>Info overlays and titles</li><li>Turnaround quoted per project</li></ul><a class="btn btn-secondary" href="/#contact">Enquire about this</a></article>
             </div>
         </section>
 
-        <section class="section shell" aria-labelledby="droneTitle">
-            <div class="video-feature-grid video-alt-section">
-                <div>
-                    <div class="section-head video-section-head-left">
-                        <h2 id="droneTitle" class="section-title video-left-title">Drone footage included with filmed
-                            video.</h2>
-                        <p class="section-note">
-                            Drone footage is included with all filmed video packages, not treated as an add-on. Aerial
-                            coverage shows the plot, setting, exterior and surroundings in a way ground-level shooting
-                            cannot.
-                        </p>
-                    </div>
-                    <p class="video-disclosure">
-                        Subject to weather, airspace restrictions and safe operating conditions. Pre-flight checks are
-                        carried out before every shoot. AI-assisted photo videos do not include newly filmed drone
-                        footage unless booked as part of a separate shoot or package.
-                    </p>
-                </div>
-                <div class="video-card-grid video-card-grid-stack">
-                    <article class="video-info-card">
-                        <h3>Coverage</h3>
-                        <p>Aerial stills and footage of the plot, setting and exterior context.</p>
-                    </article>
-                    <article class="video-info-card">
-                        <h3>Included with</h3>
-                        <p>Single Format, Dual Format and Premium filmed video packages.</p>
-                    </article>
-                    <article class="video-info-card">
-                        <h3>Conditions</h3>
-                        <p>Subject to weather, airspace and permissions.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <section class="section shell" aria-labelledby="droneTitle"><div class="video-feature-grid video-alt-section"><div><div class="section-head video-section-head-left"><h2 id="droneTitle" class="section-title video-left-title">Drone footage included with filmed video.</h2><p class="section-note">Aerial coverage shows the plot, setting, exterior and surroundings in a way ground-level shooting cannot.</p></div><p class="video-disclosure">Subject to weather, airspace restrictions and safe operating conditions. Pre-flight checks are carried out before every shoot.</p></div><div class="video-card-grid video-card-grid-stack"><article class="video-info-card"><h3>Coverage</h3><p>Aerial stills and footage of the plot, setting and exterior context.</p></article><article class="video-info-card"><h3>Included with</h3><p>Single Format, Dual Format and Premium filmed video packages.</p></article><article class="video-info-card"><h3>Conditions</h3><p>Subject to weather, airspace and permissions.</p></article></div></div></section>
 
-        <section class="section shell" aria-labelledby="bookingTitle">
-            <div class="section-head">
-                <h2 id="bookingTitle" class="section-title">Before You Book</h2>
-            </div>
-            <div class="video-card-grid video-card-grid-three">
-                <article class="video-info-card">
-                    <h3>Delivery</h3>
-                    <p>Standard delivery is usually 2–4 working days. Priority turnaround may be available from £15
-                        depending on the package, edit complexity and workload.</p>
-                </article>
-                <article class="video-info-card">
-                    <h3>Deposit</h3>
-                    <p>A 25% deposit is required to secure the booking. The remaining balance is due before final
-                        delivery.</p>
-                </article>
-                <article class="video-info-card">
-                    <h3>AI disclosure</h3>
-                    <p>AI-assisted photo video is clearly offered as a separate service from filmed videography. It uses
-                        still images, AI animation tools and manual editing.</p>
-                </article>
-                <article class="video-info-card">
-                    <h3>Longer edits</h3>
-                    <p>Videos longer than 2 minutes, additional cut-downs and platform-specific versions are available
-                        by request and quoted based on the brief.</p>
-                </article>
-                <article class="video-info-card">
-                    <h3>Property prep</h3>
-                    <p>For filmed video, please ensure the property is ready at the agreed arrival time. Significant
-                        delays on site may shorten the available shoot window.</p>
-                </article>
-                <article class="video-info-card">
-                    <h3>Travel</h3>
-                    <p>Based on the South Coast, working across Hampshire, Dorset and London. Travel costs may apply
-                        depending on distance and access requirements.</p>
-                </article>
-            </div>
-            <div class="archive-cta video-final-cta">
-                <p>Send over the property details, location and whether you need filmed video, AI-assisted photo video,
-                    or both. We can recommend the most suitable option and confirm availability.</p>
-                <a class="btn" href="/#contact">Request a quote</a>
-            </div>
-        </section>
+        <section class="section shell" aria-labelledby="bookingTitle"><div class="section-head"><h2 id="bookingTitle" class="section-title">Before You Book</h2></div><div class="video-card-grid video-card-grid-three"><article class="video-info-card"><h3>Delivery</h3><p>Standard delivery is usually 2–4 working days. Priority turnaround may be available from £15 depending on package, edit complexity and workload.</p></article><article class="video-info-card"><h3>Deposit</h3><p>A 25% deposit is required to secure the booking. The remaining balance is due before final delivery.</p></article><article class="video-info-card"><h3>Cancellations</h3><p>Deposits are non-refundable for cancellations made less than 72 hours before the booking. With at least 72 hours’ notice, a deposit can usually be transferred once to a new date.</p></article><article class="video-info-card"><h3>Longer edits</h3><p>Videos longer than 2 minutes, additional cut-downs and platform-specific versions are available by request and quoted based on the brief.</p></article><article class="video-info-card"><h3>Property prep</h3><p>Please ensure the property is ready at the agreed arrival time. Significant delays on site may shorten the available shoot window.</p></article><article class="video-info-card"><h3>Still image option</h3><p>If a full filmed shoot is not needed, Still Image Motion Video is available separately from £65 using existing photos.</p></article></div><div class="archive-cta video-final-cta"><p>Send over the property details, location and the type of video you need. We can recommend the most suitable option and confirm availability.</p><a class="btn" href="/#contact">Request a quote</a></div></section>
     </main>
 
     <footer class="site-footer">
         <div class="shell footer-inner">
             <div class="footer-social">
-                <a class="footer-link" href="mailto:mw.photography.enquire@gmail.com"
-                    aria-label="Email MW Photography">Email</a>
-                <a class="footer-link" href="https://www.instagram.com/mw.photographyuk/" target="_blank"
-                    rel="noopener noreferrer" aria-label="MW Photography on Instagram">Instagram</a>
+                <a class="footer-link" href="mailto:mw.photography.enquire@gmail.com" aria-label="Email MW Photography">Email</a>
+                <a class="footer-link" href="https://www.instagram.com/mw.photographyuk/" target="_blank" rel="noopener noreferrer" aria-label="MW Photography on Instagram">Instagram</a>
                 <a class="footer-link" href="/privacy/">Privacy Policy</a>
                 <a class="footer-link" href="/faq/">FAQs</a>
                 <a class="footer-link" href="/video/">Videos</a>
+                <a class="footer-link" href="/still-image-video/">Still Image Motion</a>
             </div>
             <p class="footer-copy">© <span id="year"></span> MW Photography. All rights reserved.</p>
         </div>

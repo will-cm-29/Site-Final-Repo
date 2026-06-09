@@ -84,6 +84,7 @@
             "Commercial interiors photography",
             "Drone photography",
             "Property video",
+            "Still image motion video",
             "360 tours",
             "Floor plans"
         ],
@@ -121,7 +122,13 @@
             <div class="nav-links" id="mobileNav">
                 <a class="nav-link" href="#projects">Projects</a>
                 <a class="nav-link" href="#portfolio">Portfolio</a>
-                <a class="nav-link" href="/video/">Videos</a>
+                <div class="nav-dropdown">
+                    <a class="nav-link nav-dropdown-trigger" href="/video/">Videos</a>
+                    <div class="nav-dropdown-menu" aria-label="Video options">
+                        <a href="/video/">Walkthrough Video</a>
+                        <a href="/still-image-video/">Still Image Motion</a>
+                    </div>
+                </div>
                 <button class="nav-link nav-button" type="button" id="aboutOpen">About</button>
                 <a class="nav-link" href="#pricing">Pricing</a>
                 <a class="nav-link" href="/faq/">FAQs</a>
@@ -673,16 +680,14 @@
                     </button>
 
                     <button class="pricing-guide-item pricing-trigger" type="button" data-pricing-id="video"
-                        aria-label="Open pricing details for Video packages">
+                        aria-label="Open pricing details for walkthrough video packages">
                         <div>
-                            <h3>Video Packages</h3>
+                            <h3>Walkthrough Video</h3>
                             <p>
-                                Property video for social media, reels and listing promotion. Includes AI-assisted
-                                photo video from still images, plus filmed single-format, dual-format and premium video
-                                options.
+                                Filmed property video for listings, websites and social media. Suitable for full walkthrough-style edits, highlight reels, drone footage and platform-specific versions.
                             </p>
                         </div>
-                        <p class="pricing-guide-price">From £65</p>
+                        <p class="pricing-guide-price">From £200</p>
                     </button>
 
                     <button class="pricing-guide-item pricing-trigger" type="button" data-pricing-id="tour-360"
@@ -709,6 +714,17 @@
                         </div>
                         <p class="pricing-guide-price">From £45</p>
                     </button>
+
+                    <button class="pricing-guide-item pricing-trigger" type="button" data-pricing-id="still-image-video"
+                        aria-label="Open pricing details for Still Image Motion Video">
+                        <div>
+                            <h3>Still Image Motion Video</h3>
+                            <p>
+                                Affordable moving video created from still property photos. MW Photography completes the edit, while AI-assisted tools add controlled motion, depth and transitions.
+                            </p>
+                        </div>
+                        <p class="pricing-guide-price">From £65</p>
+                    </button>
                 </div>
 
                 <aside class="pricing-guide-side" aria-label="Pricing notes">
@@ -725,10 +741,10 @@
                         <li>Drone work is subject to weather, airspace restrictions and permissions.</li>
                         <li>Combined photography packages are priced as booking deals and are intended to be better
                             value than booking the same services separately.</li>
-                        <li>AI-assisted photo video starts from £65 using existing photos, or £50 when added to a new MW Photography shoot.</li>
-                        <li>Drone footage is included with filmed video packages, subject to weather, permissions, airspace
+                        <li>Still Image Motion Video starts from £65 using existing photos, or £50 when added to a new MW Photography shoot.</li>
+                        <li>Drone footage is included with walkthrough video packages, subject to weather, permissions, airspace
                             restrictions and safe operating conditions.</li>
-                        <li>Video packages can include optional realtor / agent overlays such as room details, bedroom
+                        <li>Walkthrough video packages can include optional realtor / agent overlays such as room details, bedroom
                             counts and key property features. Longer videos and shorter platform-specific cut-downs are
                             available by request.</li>
                         <li>Weekend and urgent bookings are available by request and quoted depending on availability.
@@ -748,6 +764,7 @@
                                 booking.</li>
                             <li>With at least 72 hours’ notice, a deposit can usually be transferred once to a new date.
                             </li>
+                            <li>Still Image Motion Video using client-supplied photos does not usually involve a shoot cancellation policy, but the editing fee may not be refundable once editing has started.</li>
                         </ul>
                     </div>
 
@@ -808,8 +825,8 @@
                                     <option>Photography + Drone</option>
                                     <option>Photography + Floor Plan</option>
                                     <option>Drone Only</option>
-                                    <option>Video</option>
-                                    <option>AI-assisted Photo Video</option>
+                                    <option>Walkthrough Video</option>
+                                    <option>Still Image Motion Video</option>
                                     <option>360 Tour</option>
                                     <option>Floor Plans</option>
                                     <option>Other / Not sure yet</option>
@@ -881,6 +898,7 @@
                 <a class="footer-link" href="/privacy/">Privacy Policy</a>
                 <a class="footer-link" href="/faq/">FAQs</a>
                 <a class="footer-link" href="/video/">Videos</a>
+                <a class="footer-link" href="/still-image-video/">Still Image Motion</a>
             </div>
 
             <div class="footer-booking-notes" aria-label="Booking information">

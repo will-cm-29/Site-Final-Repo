@@ -386,14 +386,9 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         "video": {
-            title: "Video Packages",
-            intro: "Property video options for listings and social media, from affordable AI-assisted photo video through to fully filmed property video packages.",
+            title: "Walkthrough Video",
+            intro: "Filmed property video for listings, websites and social media. Best for properties that need a proper on-site walkthrough, drone footage and a stronger sense of flow, scale and setting.",
             packages: [
-                {
-                    tier: "AI-assisted Photo Video",
-                    price: "From £65",
-                    detail: "Short moving video created from existing still property images • £50 when added to a new MW Photography shoot • usually around 20–45 seconds"
-                },
                 {
                     tier: "Single Format Video",
                     price: "From £200",
@@ -417,17 +412,50 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             notes: [
                 "All prices are starting points.",
-                "AI-assisted photo video uses still images, AI animation tools and manual editing; it is not filmed video.",
-                "AI-assisted photo video starts from £65 using existing client-supplied photos, or £50 when added to a new MW Photography shoot.",
-                "Extra formats or additional AI-assisted photo video versions are usually quoted from £15–£25 depending on scope.",
-                "Drone footage is included with filmed video packages, subject to weather, permissions, airspace restrictions and safe operating conditions.",
-                "Optional realtor / agent overlays can be added to video packages, including room names, bedroom counts, key features and property highlights.",
+                "Drone footage is included with walkthrough video packages, subject to weather, permissions, airspace restrictions and safe operating conditions.",
+                "Optional realtor / agent overlays can be added, including room names, bedroom counts, key features and property highlights.",
                 "Videos can be produced longer than 2 minutes where needed; please contact us so the scope, edit time and final deliverables can be quoted properly.",
                 "Final edits can be tailored to the client’s preferred use, with shorter cut-down versions available for platforms, listings or social media placements where required.",
                 "The £400 premium video package should be discussed before booking so the scope, shot list and deliverables are clear.",
                 "Final pricing depends on edit complexity, shot list, required output and turnaround.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
+            ]
+        },
+
+        "still-image-video": {
+            title: "Still Image Motion Video",
+            intro: "Affordable moving video created from still property photos. MW Photography completes the edit, while AI-assisted tools add controlled movement, depth and transitions to the supplied images.",
+            packages: [
+                {
+                    tier: "Using existing photos",
+                    price: "From £65",
+                    detail: "Short edited moving video from client-supplied property photos • usually around 20–45 seconds • music, pacing and simple title treatment included"
+                },
+                {
+                    tier: "Added to a new MW Photography shoot",
+                    price: "From £50",
+                    detail: "Lower add-on rate when booked alongside a new photography package • photography itself is charged at the standard package rate"
+                },
+                {
+                    tier: "Extra format or version",
+                    price: "From £15–£25",
+                    detail: "Additional vertical, landscape or shorter cut-down versions, depending on scope and edit complexity"
+                }
+            ],
+            delivery: [
+                "Standard delivery: usually within 2–4 working days after final images are available",
+                "Priority turnaround: from £15 depending on edit complexity and workload",
+                "Client-supplied photos can usually be handled remotely without a site visit"
+            ],
+            notes: [
+                "This is not filmed walkthrough video.",
+                "MW Photography handles the creative edit, pacing, music and delivery format; AI-assisted tools are used to add controlled movement, depth and transitions to still images.",
+                "The £65 price applies when suitable existing photos are supplied by the client.",
+                "The £50 add-on price applies only when added to a new MW Photography shoot; the photography package is charged separately at the standard rate.",
+                "Cancellation and rescheduling terms only apply where a new shoot is booked. If the video is created from supplied photos with no site visit, there is usually no shoot cancellation issue, but the editing fee may not be refundable once editing has started.",
+                "Image quality matters: low-resolution, heavily compressed or poorly lit photos may limit the final result.",
+                "Final pricing may change for longer edits, heavy branding, complex revisions, multiple outputs or additional versions."
             ]
         },
 
