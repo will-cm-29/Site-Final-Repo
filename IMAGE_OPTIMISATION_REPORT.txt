@@ -1,0 +1,45 @@
+assets/hero/hero-01.webp before 644.1 KB
+  hero-01-640.webp: 640x427, 28.5 KB
+  hero-01-960.webp: 960x640, 53.7 KB
+  hero-01-1280.webp: 1280x853, 83.9 KB
+  hero-01-1920.webp: 1920x1280, 159.6 KB
+assets/hero/hero-02.webp before 1368.4 KB
+  hero-02-640.webp: 640x427, 50.2 KB
+  hero-02-960.webp: 960x640, 107.8 KB
+  hero-02-1280.webp: 1280x853, 196.6 KB
+  hero-02-1920.webp: 1920x1280, 439.9 KB
+assets/hero/hero-03.webp before 772.0 KB
+  hero-03-640.webp: 640x427, 37.9 KB
+  hero-03-960.webp: 960x640, 79.2 KB
+  hero-03-1280.webp: 1280x854, 135.0 KB
+  hero-03-1920.webp: 1920x1280, 268.2 KB
+assets/hero/hero-04.webp before 929.1 KB
+  hero-04-640.webp: 640x427, 35.9 KB
+  hero-04-960.webp: 960x640, 74.6 KB
+  hero-04-1280.webp: 1280x853, 131.1 KB
+  hero-04-1920.webp: 1920x1280, 288.6 KB
+assets/hero/hero-05.webp before 839.7 KB
+  hero-05-640.webp: 640x426, 30.4 KB
+  hero-05-960.webp: 960x639, 64.9 KB
+  hero-05-1280.webp: 1280x852, 114.7 KB
+  hero-05-1920.webp: 1920x1279, 261.4 KB
+assets/about/services/aerial-drone-shots-1600.webp before 660.4 KB
+  aerial-drone-shots-640.webp: 640x427, 82.7 KB
+  aerial-drone-shots-960.webp: 960x640, 188.1 KB
+  aerial-drone-shots-1280.webp: 1280x854, 342.7 KB
+  aerial-drone-shots-1600.webp: 1600x1067, 559.5 KB
+assets/about/services/high-quality-photography-1600.webp before 1502.9 KB
+  high-quality-photography-640.webp: 640x427, 37.4 KB
+  high-quality-photography-960.webp: 960x640, 60.9 KB
+  high-quality-photography-1280.webp: 1280x854, 86.2 KB
+  high-quality-photography-1600.webp: 1600x1067, 113.9 KB
+assets/about/services/post-production-retouching-1600.webp before 4038.9 KB
+  post-production-retouching-640.webp: 640x427, 33.7 KB
+  post-production-retouching-960.webp: 960x640, 67.0 KB
+  post-production-retouching-1280.webp: 1280x853, 112.5 KB
+  post-production-retouching-1600.webp: 1600x1067, 168.4 KB
+assets/projects/commissioned/poole-seaside/thumb/poole-drone2-1600.webp before 363.1 KB
+  poole-drone2-640.webp: 640x427, 41.2 KB
+  poole-drone2-960.webp: 960x640, 95.1 KB
+  poole-drone2-1280.webp: 1280x854, 170.0 KB
+  poole-drone2-1600.webp: 1600x1067, 283.2 KB

@@ -64,7 +64,7 @@
         "name": "MW Photography",
         "url": "https://mwphotography.org/",
         "logo": "https://mwphotography.org/assets/logo/logo.svg",
-        "image": "https://mwphotography.org/assets/hero/hero-01.webp",
+        "image": "https://mwphotography.org/assets/hero/hero-01-1920.webp",
         "description": "Professional property, Airbnb, hospitality and commercial photography based on the South Coast, covering Dorset, Hampshire and London.",
         "email": "mw.photography.enquire@gmail.com",
         "areaServed": [
@@ -140,8 +140,11 @@
     <main id="main">
         <section class="hero" aria-label="Featured photography slideshow">
             <picture class="hero-primary">
-                <source srcset="/assets/hero/hero-01.webp" type="image/webp">
-                <img src="/assets/hero/hero-01.webp" width="3200" height="2133" alt="" fetchpriority="high"
+                <source
+                    type="image/webp"
+                    srcset="/assets/hero/hero-01-640.webp 640w, /assets/hero/hero-01-960.webp 960w, /assets/hero/hero-01-1280.webp 1280w, /assets/hero/hero-01-1920.webp 1920w"
+                    sizes="100vw">
+                <img src="/assets/hero/hero-01-960.webp" width="1920" height="1280" alt="" fetchpriority="high"
                     decoding="async">
             </picture>
 

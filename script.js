@@ -32,12 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo(0, 0);
     }
 
-    const heroImages = [
-        "assets/hero/hero-02.webp",
-        "assets/hero/hero-03.webp",
-        "assets/hero/hero-04.webp",
-        "assets/hero/hero-05.webp"
+    const heroImageNames = [
+        "hero-02",
+        "hero-03",
+        "hero-04",
+        "hero-05"
     ];
+
+    function getResponsiveHeroSrc(name) {
+        const effectiveWidth = window.innerWidth * Math.min(window.devicePixelRatio || 1, 2);
+        const targetWidth = effectiveWidth <= 700 ? 640 : effectiveWidth <= 1050 ? 960 : effectiveWidth <= 1500 ? 1280 : 1920;
+        return `/assets/hero/${name}-${targetWidth}.webp`;
+    }
+
+    const heroImages = heroImageNames.map(getResponsiveHeroSrc);
 
     const projects = {
         "boscombe-5-bed": {
