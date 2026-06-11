@@ -247,12 +247,12 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Essential",
-                    price: "From £95",
+                    price: "£95",
                     detail: "7–10 final edited images • best for rooms, small flats, quick rental listings and refresh shoots"
                 },
                 {
                     tier: "Listing",
-                    price: "From £195",
+                    price: "£195",
                     detail: "17–23 final edited images • best for most homes, HMOs, serviced accommodation and stronger listing coverage"
                 },
                 {
@@ -263,17 +263,18 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15",
+                "Same-day priority: from £15, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "All prices are starting points.",
+                "Listed prices apply to standard-scope bookings.",
+                "Larger properties, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Final pricing depends on property size, access, location, required deliverables and turnaround.",
                 "Image ranges are based on final edited images delivered, not every image taken on the day.",
                 "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners.",
-                "A 25% deposit secures the booking, with the remaining balance due before final delivery."
+                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         },
 
@@ -283,33 +284,35 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Essential",
-                    price: "From £195",
+                    price: "£195",
                     detail: "7–10 final edited property images + 3–5 drone images • strong entry point for smaller listings, rentals and exterior context"
                 },
                 {
                     tier: "Listing",
-                    price: "From £245",
+                    price: "£245",
                     detail: "17–23 final edited property images + 5–8 drone images • suitable for most homes, HMOs, holiday lets and stronger listing coverage"
                 },
                 {
                     tier: "Premium",
-                    price: "From £295",
+                    price: "From £325",
                     detail: "25+ final edited property images + 8–12 drone images • best for larger homes, premium listings, land, commercial spaces and standout settings"
                 }
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15",
+                "Same-day priority: from £15, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "All prices are starting points.",
+                "Listed prices apply to standard-scope bookings.",
+                "Larger properties, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Drone coverage is subject to weather, permissions, airspace restrictions and safe operating conditions.",
                 "Image ranges are based on final edited images delivered, not every image taken on the day.",
                 "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
-                "Bundled pricing is intended to offer better value than booking photography and drone separately.",
-                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
+                "Bundled pricing is designed to offer better value than booking photography and drone separately.",
+                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners.",
+                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         },
 
@@ -319,12 +322,12 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Essential",
-                    price: "From £125",
+                    price: "£125",
                     detail: "7–10 final edited images + floor plan • efficient bundle option for smaller properties, rentals and straightforward marketing needs"
                 },
                 {
                     tier: "Listing",
-                    price: "From £235",
+                    price: "£225",
                     detail: "17–23 final edited images + floor plan • better-value bundle for most homes, HMOs and serviced accommodation"
                 },
                 {
@@ -335,19 +338,21 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15",
+                "Same-day priority: from £15, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "All prices are starting points.",
+                "Listed prices apply to standard-scope bookings.",
+                "Larger properties, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Final pricing depends on property size, access, location, floor plan complexity and turnaround.",
                 "Image ranges are based on final edited images delivered, not every image taken on the day.",
                 "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Larger, multi-level or more complex properties may require a tailored quote.",
                 "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents.",
-                "Bundled pricing is intended to offer better value than booking photography and floor plans separately.",
-                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
+                "Bundled pricing is designed to offer better value than booking photography and floor plans separately.",
+                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners.",
+                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         },
 
@@ -357,51 +362,53 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Essential",
-                    price: "From £135",
+                    price: "£135",
                     detail: "4–6 edited drone shots • suitable for simple exterior coverage"
                 },
                 {
                     tier: "Listing",
-                    price: "From £185",
+                    price: "£185",
                     detail: "7–10 edited drone shots • best for most residential properties and stronger exterior context"
                 },
                 {
                     tier: "Premium",
                     price: "From £255",
-                    detail: "10+ drone shots or stills + short clip • broader coverage for larger sites or stronger marketing use"
+                    detail: "10+ edited drone shots, with optional short clip coverage • broader coverage for larger sites or stronger marketing use"
                 }
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15",
+                "Same-day priority: from £15, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "All prices are starting points.",
+                "Listed prices apply to standard-scope bookings.",
+                "Larger sites, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Drone-only work is subject to weather, permissions, airspace restrictions and safe flying conditions.",
                 "Exterior scope, site restrictions, location and turnaround may affect final pricing.",
                 "Same-day delivery may increase depending on site size, shoot complexity and workload.",
-                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote."
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
+                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         },
 
         "video": {
-            title: "Walkthrough",
+            title: "Video",
             intro: "Filmed property video for listings, websites and social media. Best for properties that need a proper on-site walkthrough, drone footage and a stronger sense of flow, scale and setting.",
             packages: [
                 {
                     tier: "Single Format Video",
-                    price: "From £200",
+                    price: "£200",
                     detail: "One filmed property video up to 2 minutes • choose either vertical or horizontal format • ideal for a focused listing video or social media post"
                 },
                 {
                     tier: "Dual Format Social Media Video",
-                    price: "From £300",
+                    price: "£300",
                     detail: "Vertical and horizontal filmed edits included • up to 2 minutes each • ideal for reels, social media and property listing promotion"
                 },
                 {
                     tier: "Premium Video Package",
-                    price: "£400 (contact for details)",
+                    price: "From £400",
                     detail: "Premium filmed property video package for stronger listing presentation, expanded shot coverage, more involved edits and tailored deliverables"
                 }
             ],
@@ -410,15 +417,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "All prices are starting points.",
+                "Listed prices apply to standard-scope bookings.",
+                "Larger properties, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Drone footage is included with walkthrough video packages, subject to weather, permissions, airspace restrictions and safe operating conditions.",
                 "Optional realtor / agent overlays can be added, including room names, bedroom counts, key features and property highlights.",
                 "Videos can be produced longer than 2 minutes where needed; please contact us so the scope, edit time and final deliverables can be quoted properly.",
                 "Final edits can be tailored to the client’s preferred use, with shorter cut-down versions available for platforms, listings or social media placements where required.",
-                "The £400 premium video package should be discussed before booking so the scope, shot list and deliverables are clear.",
+                "The premium video package starts from £400 and should be discussed before booking so the scope, shot list and deliverables are clear.",
                 "Final pricing depends on edit complexity, shot list, required output and turnaround.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
-                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners."
+                "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners.",
+                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         },
 
@@ -428,12 +437,12 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Using existing photos",
-                    price: "From £65",
+                    price: "£65",
                     detail: "Short edited moving video from client-supplied property photos • usually around 20–45 seconds • music, pacing and simple title treatment included"
                 },
                 {
                     tier: "Added to a new MW Photography shoot",
-                    price: "From £50",
+                    price: "£50",
                     detail: "Lower add-on rate when booked alongside a new photography package • photography itself is charged at the standard package rate"
                 }
             ],
@@ -442,13 +451,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Client-supplied photos can usually be handled remotely without a site visit"
             ],
             notes: [
+                "Listed prices apply to standard short edits.",
                 "This is not filmed walkthrough video.",
                 "MW Photography handles the creative edit, pacing, music and delivery format; AI-assisted tools are used to add controlled movement, depth and transitions to still images.",
                 "The £65 price applies when suitable existing photos are supplied by the client.",
                 "The £50 add-on price applies only when added to a new MW Photography shoot; the photography package is charged separately at the standard rate.",
                 "Cancellation and rescheduling terms only apply where a new shoot is booked. If the video is created from supplied photos with no site visit, there is usually no shoot cancellation issue, but the editing fee may not be refundable once editing has started.",
                 "Image quality matters: low-resolution, heavily compressed or poorly lit photos may limit the final result.",
-                "Final pricing may change for longer edits, heavy branding or complex revisions."
+                "Prices apply to standard short edits. Longer edits, heavy branding, additional versions or complex revisions may require a tailored quote.",
+                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         },
 
@@ -459,31 +470,32 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     tier: "Essential 360",
                     price: "From £119",
-                    detail: "Entry-level 360 capture for simpler properties"
+                    detail: "Entry-level 360 capture for smaller or simpler properties"
                 },
                 {
                     tier: "Hosted Tour",
                     price: "From £169",
-                    detail: "Hosted tour setup included • best value for most users"
+                    detail: "Hosted tour setup included • best value for most standard properties"
                 },
                 {
                     tier: "Enhanced Tour",
                     price: "From £229",
-                    detail: "Larger property or enhanced tour setup with broader coverage"
+                    detail: "Broader coverage for larger, multi-level or more complex properties"
                 }
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15",
+                "Same-day priority: from £15, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "All prices are starting points.",
+                "360 tour prices are starting points and depend on property size, number of viewpoints, hosting requirements and setup complexity.",
                 "Hosted tour requirements and property size can affect final pricing.",
                 "Larger or multi-level properties may require a tailored quote.",
                 "Same-day delivery may increase depending on property size, tour complexity and workload.",
                 "Any ongoing hosting or platform costs should be confirmed where relevant.",
-                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote."
+                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
+                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         },
 
@@ -493,12 +505,12 @@ document.addEventListener("DOMContentLoaded", () => {
             packages: [
                 {
                     tier: "Essential",
-                    price: "From £45",
+                    price: "£45",
                     detail: "Smaller or simpler property layout"
                 },
                 {
                     tier: "Standard",
-                    price: "From £55",
+                    price: "£55",
                     detail: "Typical residential property layout"
                 },
                 {
@@ -509,16 +521,18 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15",
+                "Same-day priority: from £15, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
-                "All prices are starting points.",
+                "Listed prices apply to standard-scope bookings.",
+                "Larger or more complex properties, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Final pricing depends on size and layout complexity.",
                 "Larger multi-level properties may be quoted individually.",
                 "Same-day delivery may increase depending on property size, floor plan complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
-                "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents."
+                "Floor plans are supplied for marketing purposes and should not be relied on as legal or survey documents.",
+                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         }
     };

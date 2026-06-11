@@ -348,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
                 {
                     thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-kitchen-800.webp",
-                    full: "/assets/projects/commissioned/poole-seaside/full/poole-kitchen-1600.webp"
+                    full: "/assets/projects/commissioned/poole-seaside/full/poole-kitchen-2400.webp"
                 },
                 {
                     thumb: "/assets/projects/commissioned/poole-seaside/thumb/poole-bed-800.webp",
