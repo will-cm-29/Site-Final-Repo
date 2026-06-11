@@ -102,6 +102,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <!-- Mobile-only preload for the LCP hero image. Desktop keeps the existing loading behaviour. -->
+    <link
+        rel="preload"
+        as="image"
+        href="/assets/hero/hero-01-640.webp"
+        imagesrcset="/assets/hero/hero-01-640.webp 640w, /assets/hero/hero-01-960.webp 960w, /assets/hero/hero-01-1280.webp 1280w"
+        imagesizes="100vw"
+        fetchpriority="high"
+        media="(max-width: 720px)">
+
     <link rel="stylesheet" href="/styles.css" />
 </head>
 

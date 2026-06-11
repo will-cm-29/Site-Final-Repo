@@ -3192,3 +3192,16 @@ button[hidden],
 .blog-directory-hero-media {
     display: block;
 }
+
+
+/* Mobile-only performance trim: keep desktop hero/slideshow behaviour unchanged. */
+@media (max-width: 720px) {
+    .hero-slides {
+        display: none;
+    }
+
+    .hero-slide {
+        will-change: auto;
+        transform: none;
+    }
+}

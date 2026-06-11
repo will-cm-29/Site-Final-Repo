@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return `/assets/hero/${name}-${targetWidth}.webp`;
     }
 
-    const heroImages = heroImageNames.map(getResponsiveHeroSrc);
+    const heroImages = window.matchMedia("(max-width: 720px)").matches ? [] : heroImageNames.map(getResponsiveHeroSrc);
 
     const projects = {
         "boscombe-5-bed": {
@@ -639,7 +639,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    if (slideA && slideB && heroImages.length && !prefersReducedMotion) {
+    if (slideA && slideB && heroImages.length && !prefersReducedMotion && !mobileViewport.matches) {
         let index = 0;
         let showingA = true;
         let isTransitioning = false;
@@ -1189,7 +1189,36 @@ document.addEventListener("DOMContentLoaded", () => {
         bindPortfolioLightbox();
     }
 
-    initPortfolio();
+    function initPortfolioAtTheRightTime() {
+        if (!portfolioGrid) return;
+
+        // Desktop behaviour is intentionally unchanged. Mobile waits until the portfolio is near the viewport
+        // so the homepage hero is not competing with dozens of below-the-fold portfolio thumbnail checks.
+        if (!mobileViewport.matches || !("IntersectionObserver" in window)) {
+            initPortfolio();
+            return;
+        }
+
+        let hasStartedPortfolio = false;
+        const startPortfolio = () => {
+            if (hasStartedPortfolio) return;
+            hasStartedPortfolio = true;
+            portfolioObserver.disconnect();
+            initPortfolio();
+        };
+
+        const portfolioObserver = new IntersectionObserver((entries) => {
+            if (entries.some(entry => entry.isIntersecting)) {
+                startPortfolio();
+            }
+        }, {
+            rootMargin: "900px 0px"
+        });
+
+        portfolioObserver.observe(portfolioGrid);
+    }
+
+    initPortfolioAtTheRightTime();
 
     const reviewsCarousel = qs("#reviewsCarousel");
     const reviewsPrev = qs("#reviewsPrev");
