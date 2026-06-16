@@ -2,14 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if ("scrollRestoration" in history) {
         history.scrollRestoration = "manual";
     }
-    window.scrollTo(0, 0);
 
-const qs = (sel, root = document) => root?.querySelector(sel);
+    const qs = (sel, root = document) => root?.querySelector(sel);
     const qsa = (sel, root = document) => Array.from(root?.querySelectorAll(sel) || []);
-
+    const mobileViewport = window.matchMedia("(max-width: 720px)");
     let scrollLockCount = 0;
     let lastFocusedElement = null;
-    const mobileViewport = window.matchMedia("(max-width: 720px)");
 
     function lockScroll() {
         scrollLockCount += 1;
@@ -23,14 +21,12 @@ const qs = (sel, root = document) => root?.querySelector(sel);
 
     function trapFocus(container, event) {
         if (!container || event.key !== "Tab") return;
-
         const focusable = qsa(
             'a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])',
             container
         ).filter(el => el.offsetParent !== null);
 
         if (!focusable.length) return;
-
         const first = focusable[0];
         const last = focusable[focusable.length - 1];
 
@@ -80,27 +76,19 @@ const qs = (sel, root = document) => root?.querySelector(sel);
 
     function openDialog(overlayEl, panelEl) {
         if (!overlayEl || !panelEl) return;
-
         lastFocusedElement = document.activeElement;
         overlayEl.hidden = false;
         overlayEl.scrollTop = 0;
         panelEl.scrollTop = 0;
-
         lockScroll();
-
-        requestAnimationFrame(() => {
-            panelEl.focus({ preventScroll: true });
-        });
+        requestAnimationFrame(() => panelEl.focus({ preventScroll: true }));
     }
 
     function closeDialog(overlayEl) {
         if (!overlayEl || overlayEl.hidden) return;
-
         overlayEl.hidden = true;
         overlayEl.scrollTop = 0;
-
         unlockScroll();
-
         if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
             lastFocusedElement.focus();
         }
@@ -109,12 +97,13 @@ const qs = (sel, root = document) => root?.querySelector(sel);
     const aboutOverlay = qs("#aboutOverlay");
     const aboutPanel = qs(".overlay-about");
     const aboutOpenBtn = qs("#aboutOpen");
-
-    const openAbout = () => openDialog(aboutOverlay, aboutPanel);
     const closeAbout = () => closeDialog(aboutOverlay);
 
-    if (aboutOpenBtn) aboutOpenBtn.addEventListener("click", openAbout);
+    if (aboutOpenBtn) aboutOpenBtn.addEventListener("click", () => openDialog(aboutOverlay, aboutPanel));
     qsa("[data-close-about]").forEach(el => el.addEventListener("click", closeAbout));
+    aboutOverlay?.addEventListener("click", (e) => {
+        if (e.target === aboutOverlay || e.target.classList.contains("overlay-backdrop")) closeAbout();
+    });
 
     const lightbox = qs("#lightbox");
     const lightboxStage = qs(".lightbox-stage");
@@ -124,22 +113,18 @@ const qs = (sel, root = document) => root?.querySelector(sel);
     const lightboxNext = qs("#lightboxNext");
     const lightboxTapLeft = qs(".lightbox-tapzone-left");
     const lightboxTapRight = qs(".lightbox-tapzone-right");
-
     let lightboxImages = [];
     let lightboxIndex = 0;
     let lightboxCaptionText = "";
 
     function renderLightbox() {
         if (!lightboxImg || !lightboxImages.length) return;
-
         const src = lightboxImages[lightboxIndex];
         lightboxImg.src = src;
         lightboxImg.alt = lightboxCaptionText || `Image ${lightboxIndex + 1}`;
-
         if (lightboxCaption) {
             lightboxCaption.textContent = `${lightboxCaptionText || "Image"} (${lightboxIndex + 1}/${lightboxImages.length})`;
         }
-
         preloadImage(lightboxImages[(lightboxIndex + 1) % lightboxImages.length]);
         preloadImage(lightboxImages[(lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length]);
     }
@@ -175,24 +160,9 @@ const qs = (sel, root = document) => root?.querySelector(sel);
 
     if (lightboxPrev) lightboxPrev.addEventListener("click", prevLightbox);
     if (lightboxNext) lightboxNext.addEventListener("click", nextLightbox);
-
-    if (lightboxTapLeft) {
-        lightboxTapLeft.addEventListener("click", () => {
-            if (!mobileViewport.matches) return;
-            prevLightbox();
-        });
-    }
-
-    if (lightboxTapRight) {
-        lightboxTapRight.addEventListener("click", () => {
-            if (!mobileViewport.matches) return;
-            nextLightbox();
-        });
-    }
-
-    qsa("[data-close-lightbox]").forEach(el => {
-        el.addEventListener("click", closeLightbox);
-    });
+    if (lightboxTapLeft) lightboxTapLeft.addEventListener("click", () => { if (mobileViewport.matches) prevLightbox(); });
+    if (lightboxTapRight) lightboxTapRight.addEventListener("click", () => { if (mobileViewport.matches) nextLightbox(); });
+    qsa("[data-close-lightbox]").forEach(el => el.addEventListener("click", closeLightbox));
 
     if (lightbox) {
         lightbox.addEventListener("click", (e) => {
@@ -207,6 +177,15 @@ const qs = (sel, root = document) => root?.querySelector(sel);
         });
     }
 
+    qsa("[data-project-gallery]").forEach(gallery => {
+        const buttons = qsa(".masonry-item", gallery);
+        const images = buttons.map(btn => btn.dataset.full || qs("img", btn)?.dataset.full).filter(Boolean);
+        const caption = gallery.dataset.galleryTitle || "Project image";
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => openLightbox(images, index, caption));
+        });
+    });
+
     let touchStartX = 0;
     let touchEndX = 0;
     let touchStartY = 0;
@@ -215,15 +194,9 @@ const qs = (sel, root = document) => root?.querySelector(sel);
     function handleLightboxSwipe() {
         const dx = touchEndX - touchStartX;
         const dy = touchEndY - touchStartY;
-
         if (Math.abs(dx) < 40) return;
         if (Math.abs(dy) > Math.abs(dx) * 0.8) return;
-
-        if (dx < 0) {
-            nextLightbox();
-        } else {
-            prevLightbox();
-        }
+        if (dx < 0) nextLightbox(); else prevLightbox();
     }
 
     if (lightboxStage) {
@@ -241,45 +214,18 @@ const qs = (sel, root = document) => root?.querySelector(sel);
         }, { passive: true });
     }
 
-    aboutOverlay?.addEventListener("click", (e) => {
-        if (e.target === aboutOverlay || e.target.classList.contains("overlay-backdrop")) {
-            closeAbout();
-        }
-    });
-
     document.addEventListener("keydown", (e) => {
         if (lightbox && !lightbox.hidden) {
             trapFocus(lightboxStage, e);
-
-            if (e.key === "Escape") {
-                e.preventDefault();
-                closeLightbox();
-                return;
-            }
-
-            if (e.key === "ArrowRight") {
-                e.preventDefault();
-                nextLightbox();
-                return;
-            }
-
-            if (e.key === "ArrowLeft") {
-                e.preventDefault();
-                prevLightbox();
-                return;
-            }
-
+            if (e.key === "Escape") { e.preventDefault(); closeLightbox(); return; }
+            if (e.key === "ArrowRight") { e.preventDefault(); nextLightbox(); return; }
+            if (e.key === "ArrowLeft") { e.preventDefault(); prevLightbox(); return; }
             return;
         }
 
-
         if (aboutOverlay && !aboutOverlay.hidden) {
             trapFocus(aboutPanel, e);
-
-            if (e.key === "Escape") {
-                e.preventDefault();
-                closeAbout();
-            }
+            if (e.key === "Escape") { e.preventDefault(); closeAbout(); }
         }
     });
 });
