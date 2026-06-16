@@ -3205,8 +3205,12 @@ button[hidden],
 
 
 /* Project detail pages */
-.project-page {
+.project-detail-page main {
     padding-top: calc(var(--header-h) + 38px);
+}
+
+.project-page {
+    padding-top: 0;
     padding-bottom: 54px;
 }
 
@@ -3333,11 +3337,14 @@ button[hidden],
 }
 
 @media (max-width: 720px) {
-    .project-page {
+    .project-detail-page main {
         padding-top: calc(var(--header-h) + 24px);
-        padding-bottom: 38px;
     }
 
+    .project-page {
+        padding-top: 0;
+        padding-bottom: 38px;
+    }
 
     .project-page-content {
         padding: 18px 16px 16px;
