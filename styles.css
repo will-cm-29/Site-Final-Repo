@@ -2594,10 +2594,48 @@ button[hidden],
     box-shadow: 0 20px 54px rgba(20, 20, 20, 0.08);
 }
 
+.blog-inline-image picture {
+    display: block;
+}
+
 .blog-inline-image img {
+    display: block;
     width: 100%;
-    aspect-ratio: 16 / 10;
+    height: min(52vw, 520px);
     object-fit: cover;
+}
+
+.blog-inline-image--short img {
+    height: min(42vw, 380px);
+}
+
+.blog-inline-image--floor-plan {
+    padding: clamp(14px, 2vw, 22px);
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    background: #fff;
+}
+
+.blog-inline-image--floor-plan img {
+    height: auto;
+    object-fit: contain;
+}
+
+.blog-image-credit {
+    margin: 0;
+    padding: 10px 14px 14px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.4;
+    background: #fff;
+}
+
+.blog-directory-card-image--contain {
+    background: #fff;
+}
+
+.blog-directory-card-image--contain img {
+    padding: 12px;
+    object-fit: contain;
 }
 
 .blog-practical-box {
@@ -2746,7 +2784,15 @@ button[hidden],
 
 @media (max-width: 700px) {
     .blog-inline-image img {
-        aspect-ratio: 4 / 3;
+        height: min(74vw, 420px);
+    }
+
+    .blog-inline-image--short img {
+        height: min(64vw, 340px);
+    }
+
+    .blog-inline-image--floor-plan img {
+        height: auto;
     }
 
     .tour-hotspot-three {

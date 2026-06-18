@@ -764,7 +764,7 @@ const pricingData = {
     function getPortfolioRoot(imgEl) {
         const masonry = imgEl.closest(".masonry");
         const gallery = masonry?.getAttribute("data-gallery") || "home1";
-        return `assets/portfolio/${gallery}`;
+        return `/assets/portfolio/${gallery}`;
     }
 
     function thumbSrc(root, base, w) {
