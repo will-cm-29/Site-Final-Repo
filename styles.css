@@ -3620,3 +3620,56 @@ button[hidden],
     }
 }
 
+
+/* Portfolio and project-gallery hardening: keep the cobbled image layouts tight, with no browser button padding or inline-image gaps. */
+.masonry,
+.overlay-gallery {
+    grid-auto-flow: dense;
+    align-items: stretch;
+}
+
+.masonry-item,
+.overlay-gallery .masonry-item {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    line-height: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.masonry-item img,
+.overlay-gallery .masonry-item img {
+    display: block;
+}
+
+.overlay-gallery .masonry-item {
+    min-width: 0;
+    min-height: 0;
+}
+
+@media (max-width: 520px) {
+    .overlay-gallery,
+    .project-detail-page .project-gallery-tight {
+        gap: 6px;
+    }
+}
+
+/* Southampton gallery final desktop pass: 20 selected images sit in a complete 4-column grid, avoiding an unfinished desktop row. */
+.project-detail-page .project-gallery-tight {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+    .project-detail-page .project-gallery-tight {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .project-detail-page .project-gallery-tight {
+        grid-template-columns: 1fr;
+    }
+}
