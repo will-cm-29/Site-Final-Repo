@@ -143,5 +143,19 @@
 </main>
 <footer class="site-footer"><div class="shell footer-inner"><div class="footer-social"><a class="footer-link" href="mailto:mw.photography.enquire@gmail.com">Email</a><a class="footer-link" href="https://www.instagram.com/mw.photographyuk/" rel="noopener noreferrer" target="_blank">Instagram</a><a class="footer-link" href="/pricing/">Pricing</a><a class="footer-link" href="/projects/">Projects</a><a class="footer-link" href="/blog/">Guides</a><a class="footer-link" href="/privacy/">Privacy</a></div><nav aria-label="Footer services" class="footer-seo-links"><a href="/services/property-photography/">Property photography</a><a href="/services/airbnb-holiday-let-photography/">Airbnb photography</a><a href="/services/drone-property-photography/">Drone photography</a><a href="/services/hospitality-photography/">Hospitality photography</a><a href="/video/">Property video</a></nav><p class="footer-copy">© <span id="year"></span> MW Photography. All rights reserved.</p></div></footer><div aria-label="Quick contact" class="mobile-contact-bar"><a href="mailto:mw.photography.enquire@gmail.com">Email us</a><a href="/contact/">Get a quote</a></div>
 <script defer="" src="/script.js"></script>
-</body>
+<script id="v23-enhancements">document.addEventListener('DOMContentLoaded',()=>{
+  const path=window.location.pathname.replace(/\/+$/,'/')||'/';
+  document.querySelectorAll('.nav-link').forEach(link=>{
+    link.removeAttribute('aria-current');
+    const href=new URL(link.href,window.location.origin).pathname.replace(/\/+$/,'/')||'/';
+    if(href!=='/' && (path===href || path.startsWith(href))){link.setAttribute('aria-current','page');}
+  });
+  const phone=document.querySelector('input[name="phone"]');
+  if(phone){phone.addEventListener('input',()=>{phone.value=phone.value.replace(/[^0-9+()\s-]/g,'').slice(0,20);});}
+  document.querySelectorAll('[data-card-href]').forEach(card=>{
+    const open=()=>{window.location.href=card.dataset.cardHref;};
+    card.addEventListener('click',e=>{if(!e.target.closest('a,button'))open();});
+    card.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){e.preventDefault();open();}});
+  });
+});</script></body>
 </html>

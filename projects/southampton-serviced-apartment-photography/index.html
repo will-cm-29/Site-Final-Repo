@@ -468,5 +468,19 @@
 </div>
 </div>
 <script defer="" src="/project-page.js"></script>
-</body>
+<script id="v23-enhancements">document.addEventListener('DOMContentLoaded',()=>{
+  const path=window.location.pathname.replace(/\/+$/,'/')||'/';
+  document.querySelectorAll('.nav-link').forEach(link=>{
+    link.removeAttribute('aria-current');
+    const href=new URL(link.href,window.location.origin).pathname.replace(/\/+$/,'/')||'/';
+    if(href!=='/' && (path===href || path.startsWith(href))){link.setAttribute('aria-current','page');}
+  });
+  const phone=document.querySelector('input[name="phone"]');
+  if(phone){phone.addEventListener('input',()=>{phone.value=phone.value.replace(/[^0-9+()\s-]/g,'').slice(0,20);});}
+  document.querySelectorAll('[data-card-href]').forEach(card=>{
+    const open=()=>{window.location.href=card.dataset.cardHref;};
+    card.addEventListener('click',e=>{if(!e.target.closest('a,button'))open();});
+    card.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){e.preventDefault();open();}});
+  });
+});</script></body>
 </html>
