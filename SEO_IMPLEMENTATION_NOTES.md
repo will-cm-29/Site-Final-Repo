@@ -64,3 +64,14 @@ After deployment, submit the sitemap in Google Search Console and test represent
 
 ## v2.5 project thumbnail update
 - Replaced the Bournemouth Airbnb with Pool archive thumbnail and structured-data image from the kitchen image to the stronger private-pool exterior image.
+
+
+## v2.6 visual curation update
+- Removed the poorly lit Southampton kitchen-dining image from the project gallery, lightbox data and ImageGallery structured data.
+- Replaced the Services page lead image with the supplied brighter conservatory photograph and added responsive WebP derivatives.
+
+
+## v2.7 portfolio curation
+- Reordered the homepage portfolio into a mixed, cross-project showcase rather than grouping photographs by shoot.
+- Balanced the opening gallery set across interiors, exteriors, aerials, bedrooms, bathrooms and amenity images.
+- Retained every existing portfolio image and lightbox reference while adjusting tile emphasis for a more deliberate masonry rhythm.
