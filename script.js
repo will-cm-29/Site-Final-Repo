@@ -244,12 +244,12 @@ const pricingData = {
             packages: [
                 {
                     tier: "Using existing photos",
-                    price: "£65",
+                    price: "£45",
                     detail: "Short edited moving video from client-supplied property photos • usually around 20–45 seconds • music, pacing and simple title treatment included"
                 },
                 {
                     tier: "Added to a new MW Photography shoot",
-                    price: "£50",
+                    price: "£35",
                     detail: "Lower add-on rate when booked alongside a new photography package • photography itself is charged at the standard package rate"
                 }
             ],
@@ -261,47 +261,11 @@ const pricingData = {
                 "Listed prices apply to standard short edits.",
                 "This is not filmed walkthrough video.",
                 "MW Photography handles the creative edit, pacing, music and delivery format; AI-assisted tools are used to add controlled movement, depth and transitions to still images.",
-                "The £65 price applies when suitable existing photos are supplied by the client.",
-                "The £50 add-on price applies only when added to a new MW Photography shoot; the photography package is charged separately at the standard rate.",
+                "The £45 standalone price applies when suitable existing photos are supplied by the client.",
+                "The £35 add-on price applies when the edit is added to an existing MW Photography photography package; the photography package is charged separately.",
                 "Cancellation and rescheduling terms only apply where a new shoot is booked. If the video is created from supplied photos with no site visit, there is usually no shoot cancellation issue, but the editing fee may not be refundable once editing has started.",
                 "Image quality matters: low-resolution, heavily compressed or poorly lit photos may limit the final result.",
                 "Prices apply to standard short edits. Longer edits, heavy branding, additional versions or complex revisions may require a tailored quote.",
-                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
-            ]
-        },
-
-        "tour-360": {
-            title: "360 Tour",
-            intro: "Interactive 360 tour options for stronger online presentation and walkthrough-style viewing.",
-            packages: [
-                {
-                    tier: "Essential 360",
-                    price: "From £119",
-                    detail: "Entry-level 360 capture for smaller or simpler properties"
-                },
-                {
-                    tier: "Hosted Tour",
-                    price: "From £169",
-                    detail: "Hosted tour setup included • best value for most standard properties"
-                },
-                {
-                    tier: "Enhanced Tour",
-                    price: "From £229",
-                    detail: "Broader coverage for larger, multi-level or more complex properties"
-                }
-            ],
-            delivery: [
-                "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15, depending on service type, shoot size and workload",
-                "Weekend and urgent bookings: available by request and quoted depending on availability"
-            ],
-            notes: [
-                "360 tour prices are starting points and depend on property size, number of viewpoints, hosting requirements and setup complexity.",
-                "Hosted tour requirements and property size can affect final pricing.",
-                "Larger or multi-level properties may require a tailored quote.",
-                "Same-day delivery may increase depending on property size, tour complexity and workload.",
-                "Any ongoing hosting or platform costs should be confirmed where relevant.",
-                "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
             ]
         },

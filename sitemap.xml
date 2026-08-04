@@ -1,147 +1,198 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mwphotography.org/</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-04</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mwphotography.org/projects/</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://mwphotography.org/about/</loc>
+    <lastmod>2026-08-04</lastmod>
     <priority>0.8</priority>
-  </url>
-  <url><loc>https://mwphotography.org/projects/southampton-serviced-apartment-photography/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url><url>
-    <loc>https://mwphotography.org/projects/boscombe-5-bed-holiday-let/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/projects/boscombe-3-bed-property-photography/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/projects/bournemouth-coach-house/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/projects/poole-quayside-house/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/projects/ashcroft-house-bournemouth/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/projects/poole-seaside-holiday-let/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/faq/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/privacy/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://mwphotography.org/blog/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/blog/airbnb-photo-checklist-for-hosts/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/blog/airbnb-photography-dorset-complete-guide/</loc>
+    <lastmod>2026-08-04</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mwphotography.org/blog/airbnb-photography-important/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/blog/airbnb-photography-dorset-complete-guide/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/blog/holiday-let-photography-preparation-checklist/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/blog/airbnb-photo-checklist-for-hosts/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/blog/drone-photography-for-holiday-lets-dorset/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mwphotography.org/blog/professional-property-photography-vs-smartphone-airbnb/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mwphotography.org/blog/best-hero-image-for-airbnb-listing/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mwphotography.org/blog/seasonal-holiday-let-photography/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://mwphotography.org/blog/drone-photography-for-holiday-lets-dorset/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/blog/holiday-let-photography-preparation-checklist/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mwphotography.org/blog/interior-styling-tips-before-airbnb-photoshoot/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mwphotography.org/blog/video-360-tours-floor-plans-holiday-lets/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://mwphotography.org/blog/professional-property-photography-vs-smartphone-airbnb/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mwphotography.org/blog/property-photography-for-direct-booking-websites/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mwphotography.org/video/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://mwphotography.org/blog/seasonal-holiday-let-photography/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/blog/video-360-tours-floor-plans-holiday-lets/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/contact/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/faq/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/locations/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/locations/property-photography-bournemouth/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/locations/property-photography-dorset/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/locations/property-photography-poole/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/locations/property-photography-southampton/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/pricing/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/privacy/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/ashcroft-house-bournemouth/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/boscombe-3-bed-property-photography/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/boscombe-5-bed-holiday-let/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/bournemouth-airbnb-pool-photography/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/bournemouth-coach-house/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/poole-quayside-house/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/poole-seaside-holiday-let/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/projects/southampton-serviced-apartment-photography/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/services/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/services/airbnb-holiday-let-photography/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/services/drone-property-photography/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/services/hospitality-photography/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/services/property-photography/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mwphotography.org/still-image-video/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mwphotography.org/video/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
