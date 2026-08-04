@@ -54,3 +54,13 @@ After deployment, submit the sitemap in Google Search Console and test represent
 - Strengthened the pricing-to-service decision path with contextual service links.
 - Repaired two zero-byte full-size WebP assets using their valid 1600px derivatives, preventing broken lightbox images.
 - Revalidated local links, image assets, canonical URLs, heading structure and JSON-LD after the changes.
+
+## v2.4 project presentation fixes
+- Standardised the Bournemouth Airbnb with pool project gallery/lightbox behaviour.
+- Restored the Southampton serviced-apartment gallery to the shared masonry layout.
+- Replaced the Southampton page hero kitchen image with a brighter four-poster bedroom image.
+- Increased homepage hero CTA contrast and button definition.
+
+
+## v2.5 project thumbnail update
+- Replaced the Bournemouth Airbnb with Pool archive thumbnail and structured-data image from the kitchen image to the stronger private-pool exterior image.
