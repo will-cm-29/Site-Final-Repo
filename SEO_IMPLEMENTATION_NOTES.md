@@ -47,3 +47,10 @@ After deployment, submit the sitemap in Google Search Console and test represent
 - Refreshed the homepage portfolio with eight strong images from the new shoot and removed eight weaker or repetitive items.
 - Added explicit OAI-SearchBot, ChatGPT-User and Bingbot access while retaining full general crawl access. This supports access but does not guarantee recommendation or citation.
 - No llms.txt file was added because Google states it is not required for AI search visibility.
+
+## v2.2 service-intent and technical repair batch
+- Added four service-specific FAQ sections using only operationally supportable claims.
+- Added matching FAQPage structured data to each service page.
+- Strengthened the pricing-to-service decision path with contextual service links.
+- Repaired two zero-byte full-size WebP assets using their valid 1600px derivatives, preventing broken lightbox images.
+- Revalidated local links, image assets, canonical URLs, heading structure and JSON-LD after the changes.
