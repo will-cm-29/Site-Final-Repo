@@ -41,7 +41,6 @@ After deployment, submit the sitemap in Google Search Console and test represent
 
 
 ## August 2026 content and AI-search update
-- Updated Still Image Video pricing to £45 standalone and £35 when added to an existing photography package.
 - Added a crawlable pricing page with visible GBP prices and matching Offer schema.
 - Added a curated Bournemouth Airbnb project using 16 of 23 supplied photographs; near-duplicate bathroom, conservatory, pool and exterior angles were excluded.
 - Refreshed the homepage portfolio with eight strong images from the new shoot and removed eight weaker or repetitive items.
@@ -75,3 +74,34 @@ After deployment, submit the sitemap in Google Search Console and test represent
 - Reordered the homepage portfolio into a mixed, cross-project showcase rather than grouping photographs by shoot.
 - Balanced the opening gallery set across interiors, exteriors, aerials, bedrooms, bathrooms and amenity images.
 - Retained every existing portfolio image and lightbox reference while adjusting tile emphasis for a more deliberate masonry rhythm.
+
+## v2.8 editorial visual-system overhaul
+- Replaced the cool white/app-like interface with a warmer editorial palette and a more restrained studio identity.
+- Added a full wordmark lock-up to the header and a studio statement to the footer.
+- Introduced a serif display hierarchy, tighter navigation, square controls, quieter borders and reduced card/shadow styling.
+- Reworked the homepage hero copy and hierarchy while preserving the page's SEO metadata and existing URL structure.
+- Restyled service, project, pricing, contact, review and supporting content patterns site-wide without removing functionality.
+- Retained reduced-motion support, responsive layouts, structured data, internal linking and existing analytics/consent integrations.
+
+## v2.9 refined studio overhaul
+- Removed the discontinued Still Image Video product from the public site, pricing, enquiry options, FAQ content, schema, scripts and XML sitemap.
+- Replaced the v2.8 display-serif treatment with a restrained Helvetica-led typographic system to reduce the template/AI aesthetic.
+- Converted pricing packages from promotional tiles into quieter specification rows with subtle dividers.
+- Reduced boxed-card treatments across SEO, services, forms, FAQ and CTA sections; increased editorial spacing and image-led hierarchy.
+- Added alternating service layouts and a softer neutral/olive palette while keeping navigation, lightboxes, forms, CookieYes, GA4 and existing URLs intact.
+- Removed decorative page-reveal animation and retained reduced-motion/accessibility behaviour.
+
+## v3.0 visual refinement — 2026-08-11
+- Increased nav logo/wordmark/navigation sizing for stronger brand presence.
+- Reworked homepage introduction into a concise editorial statement rather than a large SEO-like text block.
+- Renamed homepage "Kind words" to "Reviews", "Selected work" to "Featured projects", and "A wider edit" to "Portfolio".
+- Shifted the site from beige-grey to a lighter near-white studio palette while retaining the dark header/hero contrast.
+- Introduced restrained Baskerville/Georgia-style display typography for major headings, keeping body/navigation typography neutral.
+- Tightened section spacing and fixed malformed multi-column section-heading layouts.
+- Added subtle bordered/shadowed treatment to projects, services, reviews and forms to avoid document-like flatness.
+- Rebuilt service-page process steps as responsive numbered cards.
+- Made pricing cards visibly interactive and aligned pricing overlays with the main site palette.
+- Restored clear borders/focus states to enquiry form controls.
+- Standardised blog directory card heights.
+- Added overflow/min-width safeguards to prevent heading clipping at page edges.
+- Replaced the property-photography showcase image with the brighter conservatory image and refined service-specific showcase copy.

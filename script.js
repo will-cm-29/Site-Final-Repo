@@ -238,38 +238,6 @@ const pricingData = {
             ]
         },
 
-        "still-image-video": {
-            title: "Still Image Video",
-            intro: "Affordable moving video created from still property photos. MW Photography completes the edit, while AI-assisted tools add controlled movement, depth and transitions to the supplied images.",
-            packages: [
-                {
-                    tier: "Using existing photos",
-                    price: "£45",
-                    detail: "Short edited moving video from client-supplied property photos • usually around 20–45 seconds • music, pacing and simple title treatment included"
-                },
-                {
-                    tier: "Added to a new MW Photography shoot",
-                    price: "£35",
-                    detail: "Lower add-on rate when booked alongside a new photography package • photography itself is charged at the standard package rate"
-                }
-            ],
-            delivery: [
-                "Standard delivery: usually within 2–4 working days after final images are available",
-                "Client-supplied photos can usually be handled remotely without a site visit"
-            ],
-            notes: [
-                "Listed prices apply to standard short edits.",
-                "This is not filmed walkthrough video.",
-                "MW Photography handles the creative edit, pacing, music and delivery format; AI-assisted tools are used to add controlled movement, depth and transitions to still images.",
-                "The £45 standalone price applies when suitable existing photos are supplied by the client.",
-                "The £35 add-on price applies when the edit is added to an existing MW Photography photography package; the photography package is charged separately.",
-                "Cancellation and rescheduling terms only apply where a new shoot is booked. If the video is created from supplied photos with no site visit, there is usually no shoot cancellation issue, but the editing fee may not be refundable once editing has started.",
-                "Image quality matters: low-resolution, heavily compressed or poorly lit photos may limit the final result.",
-                "Prices apply to standard short edits. Longer edits, heavy branding, additional versions or complex revisions may require a tailored quote.",
-                "Bookings are secured with a 25% deposit unless otherwise agreed. The remaining balance is due before final delivery."
-            ]
-        },
-
         "floor-plans": {
             title: "Floor Plans",
             intro: "Clear floor plan delivery for listings, lettings, HMOs, holiday lets and supporting marketing packs.",
