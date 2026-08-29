@@ -755,35 +755,25 @@ const pricingData = {
     async function setupPortfolioImages() {
         const portfolioImages = qsa("#portfolio img[data-img]");
 
-        const results = await Promise.all(
-            portfolioImages.map(async (img) => {
-                const base = img.getAttribute("data-img");
-                const btn = img.closest(".masonry-item");
-                if (!base || !btn) return null;
+        return portfolioImages.map((img, index) => {
+            const base = img.getAttribute("data-img");
+            const btn = img.closest(".masonry-item");
+            if (!base || !btn) return null;
 
-                const root = getPortfolioRoot(img);
-                const smallThumb = thumbSrc(root, base, THUMB_SIZES[0]);
-                const fullImage = fullSrc(root, base);
+            const root = getPortfolioRoot(img);
+            const smallThumb = thumbSrc(root, base, THUMB_SIZES[0]);
+            const fullImage = fullSrc(root, base);
 
-                const exists = await validateImage(smallThumb);
+            img.src = smallThumb;
+            img.srcset = THUMB_SIZES.map(w => `${thumbSrc(root, base, w)} ${w}w`).join(", ");
+            img.sizes = sizesForTile(btn);
+            img.loading = index < 12 ? "eager" : "lazy";
+            img.decoding = "async";
+            img.dataset.full = fullImage;
+            img.addEventListener("error", () => btn.remove(), { once: true });
 
-                if (!exists) {
-                    btn.remove();
-                    return null;
-                }
-
-                img.src = smallThumb;
-                img.srcset = THUMB_SIZES.map(w => `${thumbSrc(root, base, w)} ${w}w`).join(", ");
-                img.sizes = sizesForTile(btn);
-                img.loading = "lazy";
-                img.decoding = "async";
-                img.dataset.full = fullImage;
-
-                return btn;
-            })
-        );
-
-        return results.filter(Boolean);
+            return btn;
+        }).filter(Boolean);
     }
 
     function setupPortfolioLoadMore(validItems) {
