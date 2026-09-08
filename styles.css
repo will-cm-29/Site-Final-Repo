@@ -4664,3 +4664,13 @@ button[hidden],
         display: none;
     }
 }
+
+
+/* v5.1 portfolio presentation refinement */
+.editorial-site #portfolio .masonry-item img {
+    filter: contrast(1.035) saturate(1.045);
+}
+.editorial-site #portfolio .masonry-item:hover img {
+    opacity: 1;
+    filter: contrast(1.045) saturate(1.055);
+}
