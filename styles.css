@@ -4674,3 +4674,57 @@ button[hidden],
     opacity: 1;
     filter: contrast(1.045) saturate(1.055);
 }
+
+
+/* v5.2 homepage portfolio: composition-preserving masonry */
+#portfolioGrid {
+    display: block;
+    column-count: 4;
+    column-gap: 8px;
+}
+
+#portfolioGrid .masonry-item,
+#portfolioGrid .masonry-item.w2,
+#portfolioGrid .masonry-item.h2,
+#portfolioGrid .masonry-item.w2.h2 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 8px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    border: 0;
+    background: #eef0f0;
+    vertical-align: top;
+}
+
+#portfolioGrid .masonry-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    aspect-ratio: auto;
+}
+
+#portfolioGrid .masonry-item.is-hidden {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    #portfolioGrid {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 720px) {
+    #portfolioGrid {
+        column-count: 2;
+        column-gap: 6px;
+    }
+    #portfolioGrid .masonry-item,
+    #portfolioGrid .masonry-item.w2,
+    #portfolioGrid .masonry-item.h2,
+    #portfolioGrid .masonry-item.w2.h2 {
+        margin-bottom: 6px;
+    }
+}
