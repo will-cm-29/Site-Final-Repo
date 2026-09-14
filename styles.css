@@ -4677,27 +4677,30 @@ button[hidden],
 
 
 
-/* v5.3 homepage portfolio: cobbled gallery with composition protection */
+
+
+/* v5.5 final portfolio: aesthetic-first cobbled gallery */
 #portfolioGrid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-auto-flow: dense;
-    grid-auto-rows: 46px;
+    grid-auto-rows: 44px;
     gap: 8px;
 }
 
 #portfolioGrid .masonry-item {
     position: relative;
-    overflow: hidden;
     display: block;
+    overflow: hidden;
     width: 100%;
-    margin: 0;
-    border: 0;
-    background: #eef0f0;
     min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
 }
 
-/* Default cobble shapes */
+/* Deliberate cobble proportions */
 #portfolioGrid .cobble-standard {
     grid-column: span 3;
     grid-row: span 5;
@@ -4718,31 +4721,82 @@ button[hidden],
     grid-row: span 8;
 }
 
+/* Edge-to-edge imagery: no borders, no letterboxing */
 #portfolioGrid .masonry-item img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: 50% 50%;
 }
 
-/* Protect portrait compositions from being over-cropped. */
-#portfolioGrid .cobble-tall img {
-    object-fit: contain;
-    background: #eef0f0;
-}
-
-/* A small set of framing nudges for images where the subject sits off-centre. */
-#portfolioGrid img[data-img="stylised-blue-dining"],
-#portfolioGrid img[data-img="blue-island-kitchen-pendant-lights"],
-#portfolioGrid img[data-img="open-plan-kitchen-island-breakfast-bar"] {
-    object-position: 50% 55%;
-}
-
-#portfolioGrid img[data-img="southampton-roof-terrace-hot-tub-drone"],
-#portfolioGrid img[data-img="southampton-city-centre-waterfront-drone"],
-#portfolioGrid img[data-img="aerial-beach-coastline"] {
+/* Image-specific framing to protect key features */
+#portfolioGrid img[data-img="stylised-blue-bedroom"] {
     object-position: 50% 45%;
+}
+
+#portfolioGrid img[data-img="stylised-blue-dining"] {
+    object-position: 50% 54%;
+}
+
+#portfolioGrid img[data-img="southampton-four-poster-bedroom-ensuite"] {
+    object-position: 50% 52%;
+}
+
+#portfolioGrid img[data-img="stylised-family-bedroom"] {
+    object-position: 50% 50%;
+}
+
+#portfolioGrid img[data-img="southampton-roof-terrace-hot-tub-drone"] {
+    object-position: 50% 46%;
+}
+
+#portfolioGrid img[data-img="southampton-city-centre-waterfront-drone"] {
+    object-position: 50% 44%;
+}
+
+#portfolioGrid img[data-img="stylised-kitchen-dining"] {
+    object-position: 50% 54%;
+}
+
+#portfolioGrid img[data-img="living-room-fireplace-built-in-shelving"] {
+    object-position: 50% 50%;
+}
+
+#portfolioGrid img[data-img="blue-island-kitchen-pendant-lights"] {
+    object-position: 50% 56%;
+}
+
+#portfolioGrid img[data-img="garden-hot-tub-sauna-pod"] {
+    object-position: 50% 54%;
+}
+
+#portfolioGrid img[data-img="bedroom-bay-window-seating"] {
+    object-position: 50% 52%;
+}
+
+#portfolioGrid img[data-img="stylised-white-bedroom"] {
+    object-position: 50% 50%;
+}
+
+#portfolioGrid img[data-img="freestanding-bath-wooden-vanity"] {
+    object-position: 50% 48%;
+}
+
+#portfolioGrid img[data-img="aerial-beach-coastline"] {
+    object-position: 50% 43%;
+}
+
+#portfolioGrid img[data-img="open-plan-kitchen-island-breakfast-bar"] {
+    object-position: 50% 56%;
+}
+
+#portfolioGrid img[data-img="dark-tiled-walk-in-shower"] {
+    object-position: 50% 42%;
+}
+
+#portfolioGrid img[data-img="bedroom-detail-oval-mirror-reflection"] {
+    object-position: 50% 42%;
 }
 
 #portfolioGrid .masonry-item.is-hidden {
@@ -4754,20 +4808,52 @@ button[hidden],
         grid-template-columns: repeat(8, minmax(0, 1fr));
         grid-auto-rows: 42px;
     }
-    #portfolioGrid .cobble-standard { grid-column: span 4; grid-row: span 5; }
-    #portfolioGrid .cobble-wide { grid-column: span 8; grid-row: span 5; }
-    #portfolioGrid .cobble-tall { grid-column: span 4; grid-row: span 8; }
-    #portfolioGrid .cobble-feature { grid-column: span 8; grid-row: span 7; }
+
+    #portfolioGrid .cobble-standard {
+        grid-column: span 4;
+        grid-row: span 5;
+    }
+
+    #portfolioGrid .cobble-wide {
+        grid-column: span 8;
+        grid-row: span 5;
+    }
+
+    #portfolioGrid .cobble-tall {
+        grid-column: span 4;
+        grid-row: span 8;
+    }
+
+    #portfolioGrid .cobble-feature {
+        grid-column: span 8;
+        grid-row: span 7;
+    }
 }
 
 @media (max-width: 640px) {
     #portfolioGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-auto-rows: 56px;
+        grid-auto-rows: 54px;
         gap: 6px;
     }
-    #portfolioGrid .cobble-standard { grid-column: span 1; grid-row: span 4; }
-    #portfolioGrid .cobble-wide { grid-column: span 2; grid-row: span 4; }
-    #portfolioGrid .cobble-tall { grid-column: span 1; grid-row: span 6; }
-    #portfolioGrid .cobble-feature { grid-column: span 2; grid-row: span 6; }
+
+    #portfolioGrid .cobble-standard {
+        grid-column: span 1;
+        grid-row: span 4;
+    }
+
+    #portfolioGrid .cobble-wide {
+        grid-column: span 2;
+        grid-row: span 4;
+    }
+
+    #portfolioGrid .cobble-tall {
+        grid-column: span 1;
+        grid-row: span 6;
+    }
+
+    #portfolioGrid .cobble-feature {
+        grid-column: span 2;
+        grid-row: span 6;
+    }
 }
