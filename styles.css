@@ -2891,6 +2891,68 @@ button[hidden],
     align-self: flex-start;
 }
 
+/* Keep video prices visually tied to their package titles. */
+.editorial-site #packages .video-package-card .video-package-label {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.editorial-site #packages .video-package-card h3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.editorial-site #packages .video-package-card .video-package-price {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: baseline;
+    margin: 0;
+}
+
+.editorial-site #packages .video-package-card .video-package-text,
+.editorial-site #packages .video-package-card .video-check-list,
+.editorial-site #packages .video-package-card .btn {
+    grid-column: 1 / -1;
+}
+
+/* The quick-contact bar is intentionally mobile-only. */
+.mobile-contact-bar { display: none; }
+
+@media (max-width: 720px) {
+    .mobile-contact-bar {
+        position: fixed;
+        z-index: 900;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid var(--line-strong);
+        background: #fff;
+        box-shadow: 0 -8px 24px rgba(20, 20, 18, 0.08);
+    }
+    .mobile-contact-bar a {
+        padding: 14px 12px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    .mobile-contact-bar a + a {
+        border-left: 1px solid var(--line);
+        background: var(--ink);
+        color: #fff;
+    }
+    body { padding-bottom: 48px; }
+    .editorial-site #packages .video-package-card h3,
+    .editorial-site #packages .video-package-card .video-package-price { grid-column: 1 / -1; }
+    .editorial-site #packages .video-package-card .video-package-price {
+        grid-row: 3;
+        margin-top: 4px;
+    }
+}
+
 .video-final-cta {
     margin-top: 22px;
 }

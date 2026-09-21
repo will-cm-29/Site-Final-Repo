@@ -814,9 +814,15 @@ const pricingData = {
             hasExpanded = false;
             updateVisibility();
 
-            portfolioGrid?.scrollIntoView({
-                behavior: prefersReducedMotion ? "auto" : "smooth",
-                block: "start"
+            const portfolioSection = portfolioGrid?.closest("section") || portfolioGrid;
+            const headerOffset = (qs(".site-header")?.offsetHeight || 0) + 16;
+            const targetTop = portfolioSection
+                ? portfolioSection.getBoundingClientRect().top + window.scrollY - headerOffset
+                : window.scrollY;
+
+            window.scrollTo({
+                top: Math.max(0, targetTop),
+                behavior: prefersReducedMotion ? "auto" : "smooth"
             });
 
             bindPortfolioLightbox();
