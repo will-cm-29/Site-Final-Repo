@@ -686,6 +686,9 @@ const pricingData = {
     const portfolioGrid = qs("#portfolioGrid");
 
     function sizesForTile(btn) {
+        if (btn.closest("#portfolioGrid.portfolio-curated-grid")) {
+            return "(max-width: 600px) calc(100vw - 32px), (max-width: 1000px) 46vw, (max-width: 1400px) 30vw, 440px";
+        }
         const isWide = btn.classList.contains("w2");
         if (!isWide) {
             return "(max-width: 520px) 50vw, (max-width: 700px) 50vw, (max-width: 1000px) 33vw, 25vw";
@@ -781,8 +784,9 @@ const pricingData = {
         const hideAllBtn = qs("#portfolioHideAll");
         if (!loadMoreBtn || !hideAllBtn || !validItems.length) return;
 
-        const initialCount = mobileViewport.matches ? 8 : 12;
-        const stepCount = mobileViewport.matches ? 8 : 12;
+        // Show complete rows at every breakpoint; the curated set has 18 images.
+        const initialCount = mobileViewport.matches ? 6 : 12;
+        const stepCount = 6;
 
         let visibleCount = initialCount;
         let hasExpanded = false;
