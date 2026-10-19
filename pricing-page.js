@@ -5,9 +5,9 @@
       intro: "Choose the image count and revision allowance that match the size of the property and how extensively it needs to be marketed.",
       footnote: "All photography tiers include interior and exterior coverage where relevant, professional post-production and standard 24–48 hour delivery.",
       tiers: [
-        {name:"Essential",price:"£95",best:"Smaller properties, room refreshes and concise listings",coverage:"7–10 final edited images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Focused coverage of the key selling spaces"},
-        {name:"Listing",price:"£195",best:"Most homes, HMOs and serviced accommodation",coverage:"17–23 final edited images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader room, exterior and detail coverage"},
-        {name:"Premium",price:"From £225",best:"Larger homes, premium listings and full marketing sets",coverage:"25+ final edited images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Most comprehensive still-image coverage; final scope tailored to the property"}
+        {name:"Essential",price:"£99",best:"Smaller properties, room refreshes and concise listings",coverage:"7–10 final edited images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Focused coverage of the key selling spaces"},
+        {name:"Listing",price:"£149",best:"Most homes, HMOs and serviced accommodation",coverage:"17–23 final edited images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader room, exterior and detail coverage"},
+        {name:"Premium",price:"From £229",best:"Larger homes, premium listings and full marketing sets",coverage:"25+ final edited images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Most comprehensive still-image coverage; final scope tailored to the property"}
       ]
     },
     "photography-drone": {
@@ -15,9 +15,9 @@
       intro: "Combined ground and aerial coverage, with larger tiers adding both property images and more complete aerial context.",
       footnote: "Drone work is subject to weather, permissions, airspace restrictions and safe operating conditions.",
       tiers: [
-        {name:"Essential",price:"£195",best:"Smaller listings that benefit from clear location or plot context",coverage:"7–10 property images + 3–5 aerial images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Core interiors/exteriors plus concise aerial context"},
-        {name:"Listing",price:"£245",best:"Most homes, holiday lets and stronger listing campaigns",coverage:"17–23 property images + 5–8 aerial images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader ground coverage and more varied aerial angles"},
-        {name:"Premium",price:"From £325",best:"Larger homes, land, premium listings and standout settings",coverage:"25+ property images + 8–12 aerial images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Fuller property story with expanded aerial coverage"}
+        {name:"Essential",price:"£169",best:"Smaller listings that benefit from clear location or plot context",coverage:"7–10 property images + 3–5 aerial images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Core interiors/exteriors plus concise aerial context"},
+        {name:"Listing",price:"£219",best:"Most homes, holiday lets and stronger listing campaigns",coverage:"17–23 property images + 5–8 aerial images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader ground coverage and more varied aerial angles"},
+        {name:"Premium",price:"From £299",best:"Larger homes, land, premium listings and standout settings",coverage:"25+ property images + 8–12 aerial images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Fuller property story with expanded aerial coverage"}
       ]
     },
     "photography-floorplan": {
@@ -25,9 +25,9 @@
       intro: "A combined listing package pairing edited photography with a clear marketing floor plan.",
       footnote: "Floor plans are supplied for marketing use and should not be relied upon as legal or survey documents.",
       tiers: [
-        {name:"Essential",price:"£125",best:"Smaller or straightforward properties",coverage:"7–10 final images + floor plan",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Efficient listing bundle with key-space coverage"},
-        {name:"Listing",price:"£225",best:"Most homes, HMOs and serviced accommodation",coverage:"17–23 final images + floor plan",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader photographic coverage with the same coordinated floor-plan delivery"},
-        {name:"Premium",price:"From £275",best:"Larger homes and premium marketing",coverage:"25+ final images + floor plan",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Most complete still-image package; complex layouts may require a tailored quote"}
+        {name:"Essential",price:"£129",best:"Smaller or straightforward properties",coverage:"7–10 final images + floor plan",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Efficient listing bundle with key-space coverage"},
+        {name:"Listing",price:"£179",best:"Most homes, HMOs and serviced accommodation",coverage:"17–23 final images + floor plan",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader photographic coverage with the same coordinated floor-plan delivery"},
+        {name:"Premium",price:"From £259",best:"Larger homes and premium marketing",coverage:"25+ final images + floor plan",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Most complete still-image package; complex layouts may require a tailored quote"}
       ]
     },
     "drone-only": {
@@ -35,9 +35,9 @@
       intro: "Choose the amount of aerial coverage according to how much context, land or setting the property needs to show.",
       footnote: "All aerial work remains subject to weather, airspace, permissions and safe operating conditions.",
       tiers: [
-        {name:"Essential",price:"£135",best:"Simple exterior or location context",coverage:"4–6 edited aerial images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"A concise set of core aerial angles"},
-        {name:"Listing",price:"£185",best:"Most residential listings and holiday lets",coverage:"7–10 edited aerial images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"More varied elevations, orientations and setting context"},
-        {name:"Premium",price:"From £255",best:"Larger sites, land and broader commercial marketing",coverage:"10+ edited aerial images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Expanded aerial coverage with optional short clip capture by agreement"}
+        {name:"Essential",price:"£125",best:"Simple exterior or location context",coverage:"4–6 edited aerial images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"A concise set of core aerial angles"},
+        {name:"Listing",price:"£165",best:"Most residential listings and holiday lets",coverage:"7–10 edited aerial images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"More varied elevations, orientations and setting context"},
+        {name:"Premium",price:"From £225",best:"Larger sites, land and broader commercial marketing",coverage:"10+ edited aerial images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Expanded aerial coverage with optional short clip capture by agreement"}
       ]
     },
     "video": {
@@ -48,6 +48,24 @@
         {name:"Single format",price:"£200",best:"One focused listing or social-media use",coverage:"One filmed edit up to ~2 minutes; vertical or horizontal",delivery:"2–4 working days",revisions:"1 edit revision round included",extras:"Professional edit with drone footage where feasible"},
         {name:"Dual format",price:"£300",best:"Listings plus reels/social channels",coverage:"Horizontal + vertical edits, up to ~2 minutes each",delivery:"2–4 working days",revisions:"2 edit revision rounds included",extras:"Two platform-ready formats from the same coordinated shoot"},
         {name:"Premium production",price:"From £400",best:"Higher-end campaigns and more involved briefs",coverage:"Expanded shot coverage and tailored deliverables",delivery:"Quoted to scope",revisions:"3 edit revision rounds included",extras:"More involved production, pacing, overlays and deliverable planning as required"}
+      ]
+    },
+    "360-tour": {
+      title: "360 Tour",
+      intro: "Interactive panoramic presentation to help viewers explore the layout of a property. This is not a measured 3D Matterport model.",
+      footnote: "Final coverage, delivery method, hosting duration and any hosting charges are confirmed in the quote.",
+      tiers: [
+        {name:"Standard",price:"From £109",best:"Compact homes, flats and focused virtual viewing",coverage:"Linked panoramic views, agreed to scope",delivery:"Quoted to scope",revisions:"1 reasonable correction round",extras:"Interactive tour presentation; hosting and access arrangements confirmed before booking"},
+        {name:"Larger / bespoke",price:"Quoted individually",best:"Larger homes, multi-floor properties or complex requirements",coverage:"More viewpoints and tailored navigation",delivery:"Quoted to scope",revisions:"Confirmed in quote",extras:"Custom room coverage and hosting requirements"}
+      ]
+    },
+    "still-image-video": {
+      title: "Still Image Video",
+      intro: "An edited moving sequence built from property photographs, with optional AI-assisted motion. This is not a filmed property walkthrough.",
+      footnote: "The £50 add-on is available only alongside a new MW Photography photoshoot; suitability depends on source image quality and usage rights.",
+      tiers: [
+        {name:"Existing photos",price:"From £65",best:"Owners and agents with a suitable existing photo gallery",coverage:"One edited photo-based video in an agreed format",delivery:"Quoted to scope",revisions:"1 edit correction round",extras:"Photo selection, transitions, pacing and AI-assisted motion where suitable"},
+        {name:"Add to new shoot",price:"£50 add-on",best:"Clients booking new MW Photography stills",coverage:"One edited photo-based video from that shoot",delivery:"Quoted to scope",revisions:"1 edit correction round",extras:"Reduced edit fee when produced alongside the new photo booking"}
       ]
     },
     "floor-plans": {

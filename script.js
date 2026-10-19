@@ -54,23 +54,23 @@ const pricingData = {
             packages: [
                 {
                     tier: "Essential",
-                    price: "£95",
+                    price: "£99",
                     detail: "7–10 final edited images • best for rooms, small flats, quick rental listings and refresh shoots"
                 },
                 {
                     tier: "Listing",
-                    price: "£195",
+                    price: "£149",
                     detail: "17–23 final edited images • best for most homes, HMOs, serviced accommodation and stronger listing coverage"
                 },
                 {
                     tier: "Premium",
-                    price: "From £225",
+                    price: "From £229",
                     detail: "25+ final edited images • best for larger homes, premium listings, holiday lets, commercial spaces and full marketing sets"
                 }
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15, depending on service type, shoot size and workload",
+                "Same-day priority: from £35, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
@@ -91,23 +91,23 @@ const pricingData = {
             packages: [
                 {
                     tier: "Essential",
-                    price: "£195",
+                    price: "£169",
                     detail: "7–10 final edited property images + 3–5 drone images • strong entry point for smaller listings, rentals and exterior context"
                 },
                 {
                     tier: "Listing",
-                    price: "£245",
+                    price: "£219",
                     detail: "17–23 final edited property images + 5–8 drone images • suitable for most homes, HMOs, holiday lets and stronger listing coverage"
                 },
                 {
                     tier: "Premium",
-                    price: "From £325",
+                    price: "From £299",
                     detail: "25+ final edited property images + 8–12 drone images • best for larger homes, premium listings, land, commercial spaces and standout settings"
                 }
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15, depending on service type, shoot size and workload",
+                "Same-day priority: from £35, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
@@ -129,23 +129,23 @@ const pricingData = {
             packages: [
                 {
                     tier: "Essential",
-                    price: "£125",
+                    price: "£129",
                     detail: "7–10 final edited images + floor plan • efficient bundle option for smaller properties, rentals and straightforward marketing needs"
                 },
                 {
                     tier: "Listing",
-                    price: "£225",
+                    price: "£179",
                     detail: "17–23 final edited images + floor plan • better-value bundle for most homes, HMOs and serviced accommodation"
                 },
                 {
                     tier: "Premium",
-                    price: "From £275",
+                    price: "From £259",
                     detail: "25+ final edited images + floor plan • discounted package for larger homes, premium listings, holiday lets and stronger property presentation"
                 }
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15, depending on service type, shoot size and workload",
+                "Same-day priority: from £35, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
@@ -169,23 +169,23 @@ const pricingData = {
             packages: [
                 {
                     tier: "Essential",
-                    price: "£135",
+                    price: "£125",
                     detail: "4–6 edited drone shots • suitable for simple exterior coverage"
                 },
                 {
                     tier: "Listing",
-                    price: "£185",
+                    price: "£165",
                     detail: "7–10 edited drone shots • best for most residential properties and stronger exterior context"
                 },
                 {
                     tier: "Premium",
-                    price: "From £255",
+                    price: "From £225",
                     detail: "10+ edited drone shots, with optional short clip coverage • broader coverage for larger sites or stronger marketing use"
                 }
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15, depending on service type, shoot size and workload",
+                "Same-day priority: from £35, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
@@ -238,6 +238,28 @@ const pricingData = {
             ]
         },
 
+        "360-tour": {
+            title: "360 Tour",
+            intro: "Interactive property panorama tour; coverage, links and hosting requirements are agreed in the quote. This is not a measured Matterport 3D model.",
+            packages: [
+                { tier: "Standard", price: "From £109", detail: "Linked panoramic views for compact properties; final viewpoint count and hosting confirmed at booking" },
+                { tier: "Larger / Bespoke", price: "Quoted individually", detail: "Expanded property coverage, multiple floors and custom tour requirements" }
+            ],
+            delivery: ["Delivery timeline confirmed with the agreed capture and hosting scope"],
+            notes: ["Quoted price depends on layout, capture requirements and hosting arrangements.", "This is a 360 tour, not a measured 3D survey.", "Travel and other non-standard expenses are confirmed before booking."]
+        },
+
+        "still-image-video": {
+            title: "Still Image Video",
+            intro: "A photo-based video edit with controlled motion, pacing and transitions. It is not a filmed property walkthrough.",
+            packages: [
+                { tier: "Using Existing Photos", price: "From £65", detail: "One photo-based video from suitable existing photographs" },
+                { tier: "Add to a New Photography Shoot", price: "£50 add-on", detail: "One photo-based video using imagery from the new MW Photography shoot" }
+            ],
+            delivery: ["Editing timeline and output format confirmed when quoting"],
+            notes: ["AI-assisted movement can be used where suitable and agreed.", "The £50 fee applies only with a new photography booking.", "Input images must be usable and you must have the right to provide them for editing."]
+        },
+
         "floor-plans": {
             title: "Floor Plans",
             intro: "Clear floor plan delivery for listings, lettings, HMOs, holiday lets and supporting marketing packs.",
@@ -260,7 +282,7 @@ const pricingData = {
             ],
             delivery: [
                 "Standard delivery: usually within 24–48 hours",
-                "Same-day priority: from £15, depending on service type, shoot size and workload",
+                "Same-day priority: from £35, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
             notes: [
