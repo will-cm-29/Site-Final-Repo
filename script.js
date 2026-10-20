@@ -53,23 +53,23 @@ const pricingData = {
             intro: "Interior and exterior photography for listings, websites, lettings, HMOs, holiday lets and marketing materials.",
             packages: [
                 {
-                    tier: "Essential",
-                    price: "£99",
-                    detail: "7–10 final edited images • best for rooms, small flats, quick rental listings and refresh shoots"
+                    tier: "Entry",
+                    price: "£89",
+                    detail: "8–12 final edited images • best for small flats, studios and focused rental listings"
                 },
                 {
-                    tier: "Listing",
-                    price: "£149",
-                    detail: "17–23 final edited images • best for most homes, HMOs, serviced accommodation and stronger listing coverage"
+                    tier: "Standard",
+                    price: "£109",
+                    detail: "18–22 final edited images • best for most family homes, HMOs and serviced accommodation"
                 },
                 {
                     tier: "Premium",
-                    price: "From £229",
-                    detail: "25+ final edited images • best for larger homes, premium listings, holiday lets, commercial spaces and full marketing sets"
+                    price: "£139",
+                    detail: "30–40 final edited images • best for larger homes and detailed residential listing coverage; unusually large or commercial projects quoted separately"
                 }
             ],
             delivery: [
-                "Standard delivery: usually within 24–48 hours",
+                "Standard delivery: usually 24–48 hours; we aim for 24 hours on straightforward residential photo shoots where practical",
                 "Same-day priority: from £35, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
@@ -90,23 +90,23 @@ const pricingData = {
             intro: "Property photography with aerial coverage to show the plot, setting, exterior context and surrounding area.",
             packages: [
                 {
-                    tier: "Essential",
-                    price: "£169",
-                    detail: "7–10 final edited property images + 3–5 drone images • strong entry point for smaller listings, rentals and exterior context"
+                    tier: "Entry",
+                    price: "£149",
+                    detail: "8–12 final edited property images + 3–5 drone images • strong entry point for smaller listings, rentals and exterior context"
                 },
                 {
-                    tier: "Listing",
-                    price: "£219",
-                    detail: "17–23 final edited property images + 5–8 drone images • suitable for most homes, HMOs, holiday lets and stronger listing coverage"
+                    tier: "Standard",
+                    price: "£179",
+                    detail: "18–22 final edited property images + 5–8 drone images • suitable for most homes, HMOs, holiday lets and stronger listing coverage"
                 },
                 {
                     tier: "Premium",
-                    price: "From £299",
-                    detail: "25+ final edited property images + 8–12 drone images • best for larger homes, premium listings, land, commercial spaces and standout settings"
+                    price: "£219",
+                    detail: "30–40 final edited property images + 8–12 drone images • best for larger homes and plots where an expanded photo and aerial set adds value"
                 }
             ],
             delivery: [
-                "Standard delivery: usually within 24–48 hours",
+                "Standard delivery: usually 24–48 hours; we aim for 24 hours on straightforward residential photo shoots where practical",
                 "Same-day priority: from £35, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],
@@ -128,23 +128,23 @@ const pricingData = {
             intro: "Property photography combined with a clear floor plan for sales, lettings, HMOs, serviced accommodation and holiday-let marketing.",
             packages: [
                 {
-                    tier: "Essential",
-                    price: "£129",
-                    detail: "7–10 final edited images + floor plan • efficient bundle option for smaller properties, rentals and straightforward marketing needs"
+                    tier: "Entry",
+                    price: "£109",
+                    detail: "8–12 final edited images + floor plan • efficient bundle option for smaller properties, rentals and straightforward marketing needs"
                 },
                 {
-                    tier: "Listing",
-                    price: "£179",
-                    detail: "17–23 final edited images + floor plan • better-value bundle for most homes, HMOs and serviced accommodation"
+                    tier: "Standard",
+                    price: "£125",
+                    detail: "18–22 final edited images + floor plan • better-value bundle for most homes, HMOs and serviced accommodation"
                 },
                 {
                     tier: "Premium",
-                    price: "From £259",
-                    detail: "25+ final edited images + floor plan • discounted package for larger homes, premium listings, holiday lets and stronger property presentation"
+                    price: "£159",
+                    detail: "30–40 final edited images + floor plan • best for larger homes that need a wider still-image set plus a marketing floor plan"
                 }
             ],
             delivery: [
-                "Standard delivery: usually within 24–48 hours",
+                "Standard delivery: usually 24–48 hours; we aim for 24 hours on straightforward residential photo shoots where practical",
                 "Same-day priority: from £35, depending on service type, shoot size and workload",
                 "Weekend and urgent bookings: available by request and quoted depending on availability"
             ],

@@ -5369,3 +5369,21 @@ body.home-unified { --header-h:86px; --shell:1420px; }
         transition: none;
     }
 }
+
+/* Residential package snapshot (October 2026 price review). */
+.editorial-site .pricing-residential-quick{margin:0 0 42px;padding:30px 32px 32px;background:#f3f5f5;border:1px solid var(--line);}
+.editorial-site .pricing-residential-quick h3{margin:0 0 10px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(23px,2.4vw,31px);font-weight:400;letter-spacing:-.02em;}
+.editorial-site .pricing-residential-quick>p{max-width:920px;margin:0 0 20px;font-size:13px;line-height:1.7;color:var(--muted);}
+.editorial-site .pricing-quick-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.editorial-site .pricing-quick-table{width:100%;min-width:570px;border-collapse:collapse;background:#fff;text-align:left;}
+.editorial-site .pricing-quick-table th,.editorial-site .pricing-quick-table td{padding:16px 18px;border:1px solid var(--line);}
+.editorial-site .pricing-quick-table thead th{background:#e6eff1;color:#243e47;font-size:12px;font-weight:700;}
+.editorial-site .pricing-quick-table thead th span{display:block;margin-top:5px;font-size:11px;font-weight:400;}
+.editorial-site .pricing-quick-table tbody th{font-size:13px;font-weight:500;}
+.editorial-site .pricing-quick-table td{font-family:Georgia,"Times New Roman",serif;font-size:21px;color:#182e37;white-space:nowrap;}
+.editorial-site .pricing-residential-quick .pricing-quick-note{margin:18px 0 14px;font-size:12px;line-height:1.65;}
+.editorial-site .pricing-residential-quick .text-link{font-size:12px;font-weight:700;color:var(--accent-dark);}
+@media(max-width:640px){.editorial-site .pricing-residential-quick{padding:22px 15px 24px;margin-bottom:30px;}.editorial-site .pricing-quick-table th,.editorial-site .pricing-quick-table td{padding:12px 13px;}}
+
+.editorial-site .pricing-swipe-note{display:none;}
+@media(max-width:640px){.editorial-site .pricing-residential-quick .pricing-swipe-note{display:block;margin:0 0 9px;font-size:11px;color:var(--muted);}}

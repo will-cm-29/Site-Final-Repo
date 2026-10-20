@@ -3,31 +3,31 @@
     "photography": {
       title: "Photography",
       intro: "Choose the image count and revision allowance that match the size of the property and how extensively it needs to be marketed.",
-      footnote: "All photography tiers include interior and exterior coverage where relevant, professional post-production and standard 24–48 hour delivery.",
+      footnote: "All photography tiers include interior and exterior coverage where relevant, professional post-production and normal 24–48 hour delivery. We aim for 24 hours on straightforward residential shoots where practical. Unusually large properties and commercial briefs are quoted separately.",
       tiers: [
-        {name:"Essential",price:"£99",best:"Smaller properties, room refreshes and concise listings",coverage:"7–10 final edited images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Focused coverage of the key selling spaces"},
-        {name:"Listing",price:"£149",best:"Most homes, HMOs and serviced accommodation",coverage:"17–23 final edited images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader room, exterior and detail coverage"},
-        {name:"Premium",price:"From £229",best:"Larger homes, premium listings and full marketing sets",coverage:"25+ final edited images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Most comprehensive still-image coverage; final scope tailored to the property"}
+        {name:"Entry",price:"£89",best:"Smaller properties, room refreshes and concise listings",coverage:"8–12 final edited images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Focused coverage of the key selling spaces"},
+        {name:"Standard",price:"£109",best:"Most homes, HMOs and serviced accommodation",coverage:"18–22 final edited images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader room, exterior and detail coverage"},
+        {name:"Premium",price:"£139",best:"Larger homes, premium listings and full marketing sets",coverage:"30–40 final edited images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"A comprehensive residential image set; larger or complex briefs quoted separately"}
       ]
     },
     "photography-drone": {
       title: "Photography + Drone",
       intro: "Combined ground and aerial coverage, with larger tiers adding both property images and more complete aerial context.",
-      footnote: "Drone work is subject to weather, permissions, airspace restrictions and safe operating conditions.",
+      footnote: "Drone work is subject to weather, permissions, airspace restrictions and safe operating conditions. Standard photo delivery is usually 24–48 hours.",
       tiers: [
-        {name:"Essential",price:"£169",best:"Smaller listings that benefit from clear location or plot context",coverage:"7–10 property images + 3–5 aerial images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Core interiors/exteriors plus concise aerial context"},
-        {name:"Listing",price:"£219",best:"Most homes, holiday lets and stronger listing campaigns",coverage:"17–23 property images + 5–8 aerial images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader ground coverage and more varied aerial angles"},
-        {name:"Premium",price:"From £299",best:"Larger homes, land, premium listings and standout settings",coverage:"25+ property images + 8–12 aerial images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Fuller property story with expanded aerial coverage"}
+        {name:"Entry",price:"£149",best:"Smaller listings that benefit from clear location or plot context",coverage:"8–12 property images + 3–5 aerial images",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Core interiors/exteriors plus concise aerial context"},
+        {name:"Standard",price:"£179",best:"Most homes, holiday lets and stronger listing campaigns",coverage:"18–22 property images + 5–8 aerial images",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader ground coverage and more varied aerial angles"},
+        {name:"Premium",price:"£219",best:"Larger homes, land, premium listings and standout settings",coverage:"30–40 property images + 8–12 aerial images",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Fuller property story with expanded aerial coverage"}
       ]
     },
     "photography-floorplan": {
       title: "Photography + Floor Plan",
       intro: "A combined listing package pairing edited photography with a clear marketing floor plan.",
-      footnote: "Floor plans are supplied for marketing use and should not be relied upon as legal or survey documents.",
+      footnote: "Floor plans are supplied for marketing use and are not legal or survey documents. Larger or unusually complex layouts are quoted separately.",
       tiers: [
-        {name:"Essential",price:"£129",best:"Smaller or straightforward properties",coverage:"7–10 final images + floor plan",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Efficient listing bundle with key-space coverage"},
-        {name:"Listing",price:"£179",best:"Most homes, HMOs and serviced accommodation",coverage:"17–23 final images + floor plan",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader photographic coverage with the same coordinated floor-plan delivery"},
-        {name:"Premium",price:"From £259",best:"Larger homes and premium marketing",coverage:"25+ final images + floor plan",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Most complete still-image package; complex layouts may require a tailored quote"}
+        {name:"Entry",price:"£109",best:"Smaller or straightforward properties",coverage:"8–12 final images + floor plan",delivery:"24–48 hours",revisions:"1 correction round included",extras:"Efficient listing bundle with key-space coverage"},
+        {name:"Standard",price:"£125",best:"Most homes, HMOs and serviced accommodation",coverage:"18–22 final images + floor plan",delivery:"24–48 hours",revisions:"2 correction rounds included",extras:"Broader photographic coverage with the same coordinated floor-plan delivery"},
+        {name:"Premium",price:"£159",best:"Larger homes and premium marketing",coverage:"30–40 final images + floor plan",delivery:"24–48 hours",revisions:"3 correction rounds included",extras:"Most complete still-image package; complex layouts may require a tailored quote"}
       ]
     },
     "drone-only": {
