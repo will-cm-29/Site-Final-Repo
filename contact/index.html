@@ -130,14 +130,19 @@
 <label>Property location<input autocomplete="street-address" name="location" required="" type="text"/>
 </label>
 </div>
-<label>Service required<select name="service" required="">
+<label>Service required<select name="service" required>
 <option value="">Choose a service</option>
-<option>Property photography</option>
-<option>Airbnb / holiday-let photography</option>
-<option>Drone photography</option>
-<option>Property video</option>
-<option>Hospitality photography</option>
-<option>Combined package</option>
+<option value="Property photography">Property photography</option>
+<option value="Airbnb / holiday-let photography">Airbnb / holiday-let photography</option>
+<option value="Photography + floor plan">Photography + floor plan</option>
+<option value="Photography + drone">Photography + drone</option>
+<option value="Drone photography">Drone photography</option>
+<option value="Floor plans">Floor plans</option>
+<option value="Property video">Property video</option>
+<option value="360 tour">360 tour</option>
+<option value="Still-image video">Still-image video</option>
+<option value="Hospitality photography">Hospitality photography</option>
+<option value="Combined package">Combined package</option>
 <option value="Other">Other — tell us about it below</option>
 </select>
 </label>
@@ -197,5 +202,28 @@
     card.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!e.target.closest('a,button')){e.preventDefault();open();}});
   });
 });</script>
-</body>
+<script id="mw-pricing-enquiry-prefill">document.addEventListener('DOMContentLoaded',()=>{
+  const params=new URLSearchParams(window.location.search);
+  const service=params.get('service');
+  const tier=params.get('tier');
+  const options={
+    'photography':['Property photography','Property photography'],
+    'photography-floorplan':['Photography + floor plan','Photography + floor plan'],
+    'photography-drone':['Photography + drone','Photography + drone'],
+    'drone-only':['Drone photography','Drone photography'],
+    'floor-plans':['Floor plans','Floor plans'],
+    'video':['Property video','Property video'],
+    '360-tour':['360 tour','360 tour'],
+    'still-image-video':['Still-image video','Still-image video']
+  };
+  const tiers={entry:{label:'Entry',photos:12,prices:{photography:89,'photography-floorplan':119,'photography-drone':159}},standard:{label:'Standard',photos:22,prices:{photography:119,'photography-floorplan':149,'photography-drone':209}},premium:{label:'Premium',photos:32,prices:{photography:159,'photography-floorplan':199,'photography-drone':259}}};
+  if(!service || !Object.hasOwn(options,service))return;
+  const select=document.querySelector('select[name="service"]');
+  const message=document.querySelector('textarea[name="message"]');
+  if(select)select.value=options[service][0];
+  if(message && tier && Object.hasOwn(tiers,tier) && Object.hasOwn(tiers[tier].prices,service) && !message.value.trim()){
+    const packageDetails=tiers[tier];
+    message.value='I would like to enquire about the '+packageDetails.label+' '+options[service][1]+' package (£'+packageDetails.prices[service]+', up to '+packageDetails.photos+' edited ground photographs'+(service==='photography-drone'?', plus aerial coverage':'')+(service==='photography-floorplan'?', plus a floor plan':'')+').\n\nProperty type / size: \nPreferred shoot date: \nOther requirements: ';
+  }
+});</script></body>
 </html>

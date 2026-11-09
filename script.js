@@ -55,17 +55,17 @@ const pricingData = {
                 {
                     tier: "Entry",
                     price: "£89",
-                    detail: "8–12 final edited images • best for small flats, studios and focused rental listings"
+                    detail: "Up to 12 final edited images • best for small flats, studios and focused rental listings"
                 },
                 {
                     tier: "Standard",
-                    price: "£109",
-                    detail: "18–22 final edited images • best for most family homes, HMOs and serviced accommodation"
+                    price: "£119",
+                    detail: "Up to 22 final edited images • best for most family homes, HMOs and serviced accommodation"
                 },
                 {
                     tier: "Premium",
-                    price: "£139",
-                    detail: "30–40 final edited images • best for larger homes and detailed residential listing coverage; unusually large or commercial projects quoted separately"
+                    price: "£159",
+                    detail: "Up to 32 final edited images • best for larger homes and detailed residential listing coverage; unusually large or commercial projects quoted separately"
                 }
             ],
             delivery: [
@@ -77,7 +77,7 @@ const pricingData = {
                 "Listed prices apply to standard-scope bookings.",
                 "Larger properties, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Final pricing depends on property size, access, location, required deliverables and turnaround.",
-                "Image ranges are based on final edited images delivered, not every image taken on the day.",
+                "Photo package counts are maximum included edited-image allowances: up to 12, 22 or 32, without any gaps between tiers. Additional captured images can be supplied at £6 each.",
                 "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Regular client and multi-property rates are available for estate agents, landlords, developers and portfolio owners.",
@@ -91,18 +91,18 @@ const pricingData = {
             packages: [
                 {
                     tier: "Entry",
-                    price: "£149",
-                    detail: "8–12 final edited property images + 3–5 drone images • strong entry point for smaller listings, rentals and exterior context"
+                    price: "£159",
+                    detail: "Up to 12 final edited property images + up to 5 additional drone images • strong entry point for smaller listings, rentals and exterior context"
                 },
                 {
                     tier: "Standard",
-                    price: "£179",
-                    detail: "18–22 final edited property images + 5–8 drone images • suitable for most homes, HMOs, holiday lets and stronger listing coverage"
+                    price: "£209",
+                    detail: "Up to 22 final edited property images + up to 8 additional drone images • suitable for most homes, HMOs, holiday lets and stronger listing coverage"
                 },
                 {
                     tier: "Premium",
-                    price: "£219",
-                    detail: "30–40 final edited property images + 8–12 drone images • best for larger homes and plots where an expanded photo and aerial set adds value"
+                    price: "£259",
+                    detail: "Up to 32 final edited property images + up to 12 additional drone images • best for larger homes and plots where an expanded photo and aerial set adds value"
                 }
             ],
             delivery: [
@@ -114,7 +114,7 @@ const pricingData = {
                 "Listed prices apply to standard-scope bookings.",
                 "Larger properties, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Drone coverage is subject to weather, permissions, airspace restrictions and safe operating conditions.",
-                "Image ranges are based on final edited images delivered, not every image taken on the day.",
+                "Photo package counts are maximum included edited-image allowances: up to 12, 22 or 32, without any gaps between tiers. Additional captured images can be supplied at £6 each.",
                 "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Bundled pricing is designed to offer better value than booking photography and drone separately.",
@@ -129,18 +129,18 @@ const pricingData = {
             packages: [
                 {
                     tier: "Entry",
-                    price: "£109",
-                    detail: "8–12 final edited images + floor plan • efficient bundle option for smaller properties, rentals and straightforward marketing needs"
+                    price: "£119",
+                    detail: "Up to 12 final edited images + floor plan • efficient bundle option for smaller properties, rentals and straightforward marketing needs"
                 },
                 {
                     tier: "Standard",
-                    price: "£125",
-                    detail: "18–22 final edited images + floor plan • better-value bundle for most homes, HMOs and serviced accommodation"
+                    price: "£149",
+                    detail: "Up to 22 final edited images + floor plan • better-value bundle for most homes, HMOs and serviced accommodation"
                 },
                 {
                     tier: "Premium",
-                    price: "£159",
-                    detail: "30–40 final edited images + floor plan • best for larger homes that need a wider still-image set plus a marketing floor plan"
+                    price: "£199",
+                    detail: "Up to 32 final edited images + floor plan • best for larger homes that need a wider still-image set plus a marketing floor plan"
                 }
             ],
             delivery: [
@@ -152,7 +152,7 @@ const pricingData = {
                 "Listed prices apply to standard-scope bookings.",
                 "Larger properties, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Final pricing depends on property size, access, location, floor plan complexity and turnaround.",
-                "Image ranges are based on final edited images delivered, not every image taken on the day.",
+                "Photo package counts are maximum included edited-image allowances: up to 12, 22 or 32, without any gaps between tiers. Additional captured images can be supplied at £6 each.",
                 "Same-day delivery may increase depending on shoot size, service type, edit complexity and workload.",
                 "Travel, parking, congestion charges, access delays or restricted entry may affect the final quote.",
                 "Larger, multi-level or more complex properties may require a tailored quote.",
@@ -227,7 +227,7 @@ const pricingData = {
                 "Listed prices apply to standard-scope bookings.",
                 "Larger properties, complex shoots, additional deliverables, difficult access, urgent turnaround, travel, parking or congestion charges may affect the final quote.",
                 "Drone footage is included with walkthrough video packages, subject to weather, permissions, airspace restrictions and safe operating conditions.",
-                "Optional realtor / agent overlays can be added, including room names, bedroom counts, key features and property highlights.",
+                "Optional estate-agent overlays can be added, including room names, bedroom counts, key features and property highlights.",
                 "Videos can be produced longer than 2 minutes where needed; please contact us so the scope, edit time and final deliverables can be quoted properly.",
                 "Final edits can be tailored to the client’s preferred use, with shorter cut-down versions available for platforms, listings or social media placements where required.",
                 "The premium video package starts from £400 and should be discussed before booking so the scope, shot list and deliverables are clear.",
