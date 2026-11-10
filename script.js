@@ -792,7 +792,7 @@ const pricingData = {
             img.src = smallThumb;
             img.srcset = THUMB_SIZES.map(w => `${thumbSrc(root, base, w)} ${w}w`).join(", ");
             img.sizes = sizesForTile(btn);
-            img.loading = index < 12 ? "eager" : "lazy";
+            img.loading = index < (mobileViewport.matches ? 6 : 12) ? "eager" : "lazy";
             img.decoding = "async";
             img.dataset.full = fullImage;
             img.addEventListener("error", () => btn.remove(), { once: true });
@@ -804,11 +804,12 @@ const pricingData = {
     function setupPortfolioLoadMore(validItems) {
         const loadMoreBtn = qs("#portfolioLoadMore");
         const hideAllBtn = qs("#portfolioHideAll");
+        const countLabel = qs("#portfolioCount");
         if (!loadMoreBtn || !hideAllBtn || !validItems.length) return;
 
-        // Show complete rows at every breakpoint; the curated set has 18 images.
+        // Show a small initial edit, then expand in substantial blocks to avoid excessive taps on mobile.
         const initialCount = mobileViewport.matches ? 6 : 12;
-        const stepCount = 6;
+        const stepCount = 12;
 
         let visibleCount = initialCount;
         let hasExpanded = false;
@@ -821,10 +822,11 @@ const pricingData = {
             const allVisible = visibleCount >= validItems.length;
             const canExpand = validItems.length > initialCount;
 
-            loadMoreBtn.textContent = "Show more";
+            loadMoreBtn.textContent = `Show ${Math.min(stepCount, validItems.length - visibleCount)} more photographs`;
             loadMoreBtn.hidden = !canExpand || allVisible;
 
-            hideAllBtn.textContent = "Hide all";
+            hideAllBtn.textContent = "Show fewer photographs";
+            if (countLabel) countLabel.textContent = `Showing ${Math.min(visibleCount, validItems.length)} of ${validItems.length} photographs`;
             hideAllBtn.hidden = !hasExpanded;
         }
 
